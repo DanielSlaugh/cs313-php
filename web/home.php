@@ -24,7 +24,7 @@
        </header>
 
          <div class="container">
-            <img src="campus.jpg" alt="campus students" style="width:100%;">
+            <img src="whitney.jpg" alt="campus students" style="width:100%;">
             <div class="centered">
                <ul>
                  <li><a id="Top" href="assign08.html" style="color: white; text-decoration: none;">Home</a></li>
