@@ -10,7 +10,7 @@
    </head>
    <body>
          <h1 style=" text-align: center; color: lightgrey;">Daniel's 313 HW</h1>
-         <section class="container button">
+         <section class="container">
             <li><a href="assign02.html">Assignment 02</a></li>
             <li><a href="assign03.html">Assignment 03</a></li>
             <li><a href="assign04.html">Assignment 04</a></li>
