@@ -14,7 +14,6 @@
       </style>
    </head>
    <body>
-      <div style="background-color: black; text-align: center;">
          <h1 style=" text-align: center; color: lightgrey;">Daniel's 313 HW</h1>
 
          <ul class="container">
