@@ -7,11 +7,7 @@
       <meta name="viewpoint" content="width=device-width, initial-scale=1">
       <link href="home.css" rel="stylesheet">
       <title>Daniel Slaugh's Assignments</title>
-      <style>
-          body  { background-color: black; font-family: Arial, Helvetica, sans-serif;}
-          table { font-family: Arial, Georgia, sans-serif;  }
-          div   {border: 10px ; padding: 10px;              }
-      </style>
+
    </head>
    <body>
          <h1 style=" text-align: center; color: lightgrey;">Daniel's 313 HW</h1>
