@@ -7,11 +7,9 @@
       <meta name="viewpoint" content="width=device-width, initial-scale=1">
       <link href="home.css" rel="stylesheet">
       <title>Daniel Slaugh's Assignments</title>
-
    </head>
    <body>
          <h1 style=" text-align: center; color: lightgrey;">Daniel's 313 HW</h1>
-
          <section class="container">
             <li><a href="assign02.html">Assignment 02</a></li>
             <li><a href="assign03.html">Assignment 03</a></li>
@@ -27,15 +25,11 @@
             <li><a href="assign13.html">Assignment 13</a></li>
          </section>
       </div>
-
-
    </body>
 </html>
-
 </body>
 </html>
 
 <?php
 
-  print("Why, hello there");
 ?>
