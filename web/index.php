@@ -1,5 +1,4 @@
 <?php
 
-  phpinfo();
-
+  print("Why, hello there");
 ?>
