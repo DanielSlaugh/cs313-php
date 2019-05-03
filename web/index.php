@@ -12,7 +12,7 @@
    <body>
          <h1 style=" text-align: center; color: lightgrey;">Daniel's 313 HW</h1>
 
-         <ul class="container">
+         <section class="container">
             <li><a href="assign02.html">Assignment 02</a></li>
             <li><a href="assign03.html">Assignment 03</a></li>
             <li><a href="assign04.html">Assignment 04</a></li>
@@ -25,7 +25,7 @@
             <li><a href="assign11.html">Assignment 11</a></li>
             <li><a href="assign12.html">Assignment 12</a></li>
             <li><a href="assign13.html">Assignment 13</a></li>
-         </ul>
+         </section>
       </div>
 
 
