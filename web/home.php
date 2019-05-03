@@ -5,8 +5,7 @@
       <meta charset="utf-8">
       <meta name="description" content="Slnik University is a private, four year university. Slink university seeks to create a wholesome learning environment in which students can strengthen their commitment to their faith and receive a quality education that prepares them for leadership in the home, the community, and the workplace.">
       <meta name="viewpoint" content="width=device-width, initial-scale=1">
-      <link href="assign08Style.css" rel="stylesheet">
-      <link rel=canonical href="http://157.201.194.254/~dlslaug/assign08.html">
+      <link href="home.css" rel="stylesheet">
       <title>Slink University</title>
 
       <style>
