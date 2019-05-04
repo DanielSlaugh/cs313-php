@@ -7,22 +7,16 @@
       <meta name="viewpoint" content="width=device-width, initial-scale=1">
       <link href="home.css" rel="stylesheet">
       <title>Slink Home Page</title>
-
-      <style>
-
-      </style>
+      <style></style>
     </head>
 
     <body>
-
       <header>
          <h1 style="padding-bottom: 30px; color: white;" >
             <p>Daniel Slaugh
             <p style="font-size: 50%">Home Page</p>
          </h1>
-
        </header>
-
          <div class="container">
             <img src="whitney.jpg" alt="campus students" style="width:100%;">
             <div class="centered">
@@ -35,7 +29,10 @@
                </ul>
             </div>
             <nav class="top-left" style="color: black;">
-               <p>“Don't be pushed around by the fears in your mind. Be lead by the dreams in your heart.” <br> ― Roy T. Bennett</p>
+               <?php
+                 print "<p>“Don't be pushed around by the fears in your mind.
+                 Be lead by the dreams in your heart.” <br> ― Roy T. Bennett</p>"
+               ?>
             </nav>
          </div>
 
