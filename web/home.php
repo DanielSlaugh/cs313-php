@@ -30,8 +30,8 @@
                  <li><a id="Top" href="assign08.html" style="color: white; text-decoration: none;">Home</a></li>
                  <li><a href="assign08B.html" style="color: white; text-decoration: none;">Academics</a></li>
                  <li><a href="assign08C.html" style="color: white; text-decoration: none;">Athletics</a></li>
-                 <li><a href="assign08D.html" style="color: white; text-decoration: none;">Fine Arts</a></li>
-                 <li><a href="http://www.byui.edu/" style="color: white; text-decoration: none;">Our Partner School</a></li>
+                 <li><a href="http://www.byui.edu/canvas-authentication" style="color: white; text-decoration: none;">Canvas</a></li>
+                 <li><a href="http://www.byui.edu/" style="color: white; text-decoration: none;">BYUI Home</a></li>
                </ul>
             </div>
             <nav class="top-left" style="color: black;">
