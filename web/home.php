@@ -41,7 +41,7 @@
 
          <footer>
             <p>Daniel Slaugh</p>
-            <p>CS 213</p>
+            <p>CS 313</p>
             <p>Copyright 2019</p>
          </footer>
     </body>
