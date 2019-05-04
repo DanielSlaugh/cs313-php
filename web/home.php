@@ -6,7 +6,7 @@
       <meta name="description" content="Slnik University is a private, four year university. Slink university seeks to create a wholesome learning environment in which students can strengthen their commitment to their faith and receive a quality education that prepares them for leadership in the home, the community, and the workplace.">
       <meta name="viewpoint" content="width=device-width, initial-scale=1">
       <link href="home.css" rel="stylesheet">
-      <title>Daniel Slaugh</title>
+      <title>Slink Home Page</title>
 
       <style>
 
@@ -17,8 +17,8 @@
 
       <header>
          <h1 style="padding-bottom: 30px; color: white;" >
-            <p>Slink
-            <p style="font-size: 50%">University</p>
+            <p>Daniel Slaugh
+            <p style="font-size: 50%">Home Page</p>
          </h1>
 
        </header>
@@ -35,7 +35,7 @@
                </ul>
             </div>
             <nav class="top-left" style="color: black;">
-               <p>“Your comfort zone is a place where you keep yourself in a self-illusion and nothing can grow there but your potentiality can grow only when you can think and grow out of that zone.” <br> ― Rashedur Ryan Rahman</p>
+               <p>“Don't be pushed around by the fears in your mind. Be lead by the dreams in your heart.” <br> ― Roy T. Bennett</p>
             </nav>
          </div>
 
