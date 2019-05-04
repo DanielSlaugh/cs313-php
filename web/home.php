@@ -6,7 +6,7 @@
       <meta name="description" content="Slnik University is a private, four year university. Slink university seeks to create a wholesome learning environment in which students can strengthen their commitment to their faith and receive a quality education that prepares them for leadership in the home, the community, and the workplace.">
       <meta name="viewpoint" content="width=device-width, initial-scale=1">
       <link href="home.css" rel="stylesheet">
-      <title>Slink University</title>
+      <title>Daniel Slaugh</title>
 
       <style>
 
