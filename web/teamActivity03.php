@@ -90,7 +90,9 @@
    <?php
       for ($i=0; $i < 7; $i++) {
          $places[$i] = $_POST["checklist[$i]"];
+         echo $places[$i];
       }
+
 
    ?>
 
