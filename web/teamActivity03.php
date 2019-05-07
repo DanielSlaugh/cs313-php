@@ -93,9 +93,9 @@
       //    echo $places[$i];
       // }
 
-      $places = $_POST["checklist[]"];
-      foreach ($places as $key => $value) {
-         echo $value;
+      $places = $_POST["checklist"];
+      foreach ($places as $place) {
+         echo $place;
       }
    ?>
 
