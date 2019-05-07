@@ -84,16 +84,17 @@
    echo $comments;
    echo "<br>";
 
-      // for ($i=0; $i < 7; $i++) {
-      //    $places[$i] = $_POST["checklist[$i]"];
-      //    echo $places[$i];
-      // }
+   // for ($i=0; $i < 7; $i++) {
+   //    $places[$i] = $_POST["checklist[$i]"];
+   //    echo $places[$i];
+   // }
 
-      $places = $_POST["checklist"];
-      foreach ($places as $place) {
-         echo $place;
-      }
-      echo "Working?"
+   $places = $_POST["checklist"];
+   foreach ($places as $place) {
+      echo $place;
+      echo "<br>";
+   }
+   echo "Working?"
    ?>
 
 
