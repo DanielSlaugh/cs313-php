@@ -27,7 +27,7 @@
       <br><br>
       <label for="comments" rows="5" cols="40">Comments:</label>
       <textarea name="comments"></textarea>
-      <button type="submit" value="submit" name="submit"></button>
+      <input type="submit" value="submit" name="submit">
    </form>
 
    <?php
