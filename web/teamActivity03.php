@@ -24,7 +24,7 @@
       </select>
       <br>
       <label for="comments" rows="5" cols="40">Comments:</label>
-      <input type="textarea" name="comments">
+      <input type="textarea" name="comments"></textarea>
    </form>
 </body>
 </html>
