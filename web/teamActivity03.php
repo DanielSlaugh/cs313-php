@@ -85,16 +85,14 @@
          <td>Antartica</td>
          <td><input id="antarctica" type="checkbox" name="checklist[6]" value="Antartica"></td>
       </tr>
-      <tr>
-         <td>
-            <p>Total</p>
-         </td>
-         <td>
-            <p id="amount"></p>
-         </td>
-      </tr>
    </table>
 
+   <?php
+      for ($i=0; $i < 7; $i++) {
+         $places[$i] = $_POST["checklist[$i]"];
+      }
+
+   ?>
 
 
 </body>
