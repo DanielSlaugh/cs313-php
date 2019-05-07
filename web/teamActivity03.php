@@ -63,36 +63,39 @@
       </tr>
       <tr>
          <td>South America</td>
-         <td><input id="south america" type="checkbox" name="checklist[1]" value="South America"></td>
+         <td><input id="south america" type="checkbox" name="checklist[]" value="South America"></td>
       </tr>
       <tr>
          <td>Europe</td>
-         <td><input id="europe" type="checkbox" name="checklist[2]" value="Europe"></td>
+         <td><input id="europe" type="checkbox" name="checklist[]" value="Europe"></td>
       </tr>
       <tr>
          <td>Asia</td>
-         <td><input id="asia" type="checkbox" name="checklist[3]" value="Asia"></td>
+         <td><input id="asia" type="checkbox" name="checklist[]" value="Asia"></td>
       </tr>
       <tr>
          <td>Australia</td>
-         <td><input id="australia" type="checkbox" name="checklist[4]" value="Australia"></td>
+         <td><input id="australia" type="checkbox" name="checklist[]" value="Australia"></td>
       </tr>
       <tr>
          <td>Africa</td>
-         <td><input id="africa" type="checkbox" name="checklist[5]" value="Africa"></td>
+         <td><input id="africa" type="checkbox" name="checklist[]" value="Africa"></td>
       </tr>
       <tr>
          <td>Antartica</td>
-         <td><input id="antarctica" type="checkbox" name="checklist[6]" value="Antartica"></td>
+         <td><input id="antarctica" type="checkbox" name="checklist[]" value="Antartica"></td>
       </tr>
    </table>
 
    <?php
-      for ($i=0; $i < 7; $i++) {
-         $places[$i] = $_POST["checklist[$i]"];
-         echo $places[$i];
+      // for ($i=0; $i < 7; $i++) {
+      //    $places[$i] = $_POST["checklist[$i]"];
+      //    echo $places[$i];
+      // }
+      $places = $_POST["checklist"];
+      foreach ($places as $key => $value) {
+         echo $value;
       }
-
 
    ?>
 
