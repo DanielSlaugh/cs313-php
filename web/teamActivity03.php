@@ -13,7 +13,7 @@
       <label for="Name">Name: </label>
       <input type="text" name="name">
       <br>
-      <label for="Email">Email: </label>
+      <label for="email">Email: </label>
       <input type="text" name="email">
       <br>
       <label for="major">Major:</label>
