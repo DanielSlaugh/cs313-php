@@ -8,10 +8,15 @@
 </head>
 <body>
    <form>
-      <input type="text" name="Name: ">
-      <input type="text" name="Email: ">
+      <label for="Name">Name: </label>
+      <input type="text" name="Name">
+      <br>
+      <label for="Email">Email: </label>
+      <input type="text" name="Email">
+      <br>
       <label for="major">Major:</label>
       <select id="major" name="major">
+      <br>
       <option value="cs">Computer Science</option>
       <option value="wwd">Web Design and Development</option>
       <option value="cit">Computer Information tech</option>
