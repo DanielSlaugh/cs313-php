@@ -42,6 +42,15 @@
    $major = $_POST["major"];
    $comments = $_POST["comments"];
 
+   echo $name;
+   echo "<br";
+   echo $email;
+   echo "<br";
+   echo $major;
+   echo "<br";
+   echo $comments;
+   echo "<br";
+
    ?>
 
 
