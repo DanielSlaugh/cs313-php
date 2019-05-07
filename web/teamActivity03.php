@@ -96,7 +96,6 @@
       foreach ($places as $key => $value) {
          echo $value;
       }
-
    ?>
 
 
