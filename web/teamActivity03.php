@@ -97,6 +97,7 @@
       foreach ($places as $place) {
          echo $place;
       }
+      echo "Working?"
    ?>
 
 
