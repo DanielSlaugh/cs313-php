@@ -16,13 +16,13 @@
       <br>
       <label for="major">Major:</label>
       <select id="major" name="major">
-      <br>
+      <br><br>
       <option value="cs">Computer Science</option>
       <option value="wwd">Web Design and Development</option>
       <option value="cit">Computer Information tech</option>
       <option value="ce">Computer engineering</option>
       </select>
-      <br>
+      <br><br>
       <label for="comments" rows="5" cols="40">Comments:</label>
       <textarea name="comments"></textarea>
    </form>
