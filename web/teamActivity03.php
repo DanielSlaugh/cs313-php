@@ -56,41 +56,33 @@
    <table>
       <tr>
          <th>Where have you been :</th>
-         <th>Price:</th>
       </tr>
       <tr>
-         <td>Shovel</td>
-         <td>$ 19.99</td>
+         <td>North America</td>
          <td><input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
       </tr>
       <tr>
-         <td>Fertalizer(5 lbs)</td>
-         <td>$ 27.99</td>
+         <td>South America</td>
          <td><input id="south america" type="checkbox" name="checklist[1]" value="South America"></td>
       </tr>
       <tr>
-         <td>Cat</td>
-         <td>$ 30.99</td>
+         <td>Europe</td>
          <td><input id="europe" type="checkbox" name="checklist[2]" value="Europe"></td>
       </tr>
       <tr>
-         <td>Barbed wire(100 Yards)</td>
-         <td>$ 74.99</td>
+         <td>Asia</td>
          <td><input id="asia" type="checkbox" name="checklist[3]" value="Asia"></td>
       </tr>
       <tr>
-         <td>Top Soil(10 lbs)</td>
-         <td>$ 16.99</td>
+         <td>Australia</td>
          <td><input id="australia" type="checkbox" name="checklist[4]" value="Australia"></td>
       </tr>
       <tr>
-         <td>Rake</td>
-         <td>$ 19.99</td>
+         <td>Africa</td>
          <td><input id="africa" type="checkbox" name="checklist[5]" value="Africa"></td>
       </tr>
       <tr>
-         <td>Farmin' Shirt</td>
-         <td>$ 14.99</td>
+         <td>Antartica</td>
          <td><input id="antarctica" type="checkbox" name="checklist[6]" value="Antartica"></td>
       </tr>
       <tr>
