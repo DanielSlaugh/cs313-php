@@ -131,16 +131,16 @@ nav {
 }
 
 .top-left {
-   position: absolute;
-   top: 40px;
-   left: 0px;
-   max-height: 300px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    max-height: 300px;
 }
 
 .bottom-left {
    position: absolute;
-   opacity: .8;
    bottom: -25px;
+   width: 100%;
    left: 16px;
 }
 

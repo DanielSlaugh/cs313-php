@@ -34,7 +34,7 @@
       ?>
    </nav>
 
-   <footer>
+   <footer class="bottom-left">
       <p>Daniel Slaugh</p>
       <p>CS 313</p>
       <p>Copyright 2019</p>
