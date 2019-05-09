@@ -22,7 +22,7 @@
    <div class="container">
 
       <div class="centered">
-         <ul>
+         <ul style="width: 100%">
             <li><a id="Top" href="https://polar-plateau-20469.herokuapp.com/home.php" style="color: white; text-decoration: none;">Home</a></li>
             <li><a href="https://polar-plateau-20469.herokuapp.com/index.php" style="color: white; text-decoration: none;">More Websites</a></li>
             <li><a href="https://www.tripadvisor.com/Restaurants-g35583-Rexburg_Idaho.html" style="color: white; text-decoration: none;">Food</a></li>
