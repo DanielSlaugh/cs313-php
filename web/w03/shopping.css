@@ -29,7 +29,7 @@ ul li {
 }
 
 ul li a:hover {
-   text-decoration-color: #e20b0b;
+   color: #e20b0b;
    text-decoration: none;
 
 }
