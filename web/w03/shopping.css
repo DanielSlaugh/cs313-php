@@ -21,7 +21,7 @@ ul li {
    float: left;
    width: 20%;
    height: 30px;
-   background-color: #003399;
+   background-color: #bbbdc0;
    opacity: .8;
    line-height: 30px;
    font-size: 14px;
@@ -29,7 +29,7 @@ ul li {
 }
 
 ul li a:hover {
-   background-color: #0099ff;
+   color: #e20b0b;
    text-decoration: none;
 
 }
