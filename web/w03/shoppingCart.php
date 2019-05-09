@@ -26,16 +26,13 @@
       <li><a href="http://www.byui.edu/canvas-authentication" >Canvas</a></li>
       <li><a href="http://www.byui.edu/">BYUI Home</a></li>
    </ul>
-   <div class="container">
 
-
-      <nav class="top-left" style="color: black;">
-         <?php
-         print "<p>“Don't be pushed around by the fears in your mind.
-                 Be lead by the dreams in your heart.” <br> ― Roy T. Bennett</p>"
-         ?>
-      </nav>
-   </div>
+   <nav class="top-left" style="color: black;">
+      <?php
+      print "<p>“Don't be pushed around by the fears in your mind.
+               Be lead by the dreams in your heart.” <br> ― Roy T. Bennett</p>"
+      ?>
+   </nav>
 
    <footer>
       <p>Daniel Slaugh</p>

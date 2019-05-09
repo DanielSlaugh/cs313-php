@@ -133,7 +133,7 @@ nav {
 .top-left {
    position: absolute;
    top: 40px;
-   left: 16px;
+   left: 0px;
    max-height: 300px;
 }
 
