@@ -14,7 +14,7 @@
 
 <body>
    <header>
-      <h1 style="padding-bottom: 30px; color: white;">
+      <h1 style="padding-bottom: 5px; color: white;">
          <p>Daniel Slaugh
             <p style="font-size: 50%">Home Page</p>
       </h1>
