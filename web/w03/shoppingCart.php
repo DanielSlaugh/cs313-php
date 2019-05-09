@@ -21,15 +21,15 @@
    </header>
    <div class="container">
 
-      <div class="centered">
+
          <ul style="width: 100%">
-            <li><a id="Top" href="https://polar-plateau-20469.herokuapp.com/home.php" >Home</a></li>
-            <li><a href="https://polar-plateau-20469.herokuapp.com/index.php" >More Websites</a></li>
-            <li><a href="https://www.tripadvisor.com/Restaurants-g35583-Rexburg_Idaho.html" >Food</a></li>
+            <li><a id="Top" href="https://polar-plateau-20469.herokuapp.com/home.php">Home</a></li>
+            <li><a href="https://polar-plateau-20469.herokuapp.com/index.php">More Websites</a></li>
+            <li><a href="https://www.tripadvisor.com/Restaurants-g35583-Rexburg_Idaho.html">Food</a></li>
             <li><a href="http://www.byui.edu/canvas-authentication" >Canvas</a></li>
-            <li><a href="http://www.byui.edu/" >BYUI Home</a></li>
+            <li><a href="http://www.byui.edu/">BYUI Home</a></li>
          </ul>
-      </div>
+
       <nav class="top-left" style="color: black;">
          <?php
          print "<p>“Don't be pushed around by the fears in your mind.
