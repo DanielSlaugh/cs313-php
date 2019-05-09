@@ -9,13 +9,13 @@
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    <link href="shopping.css" rel="stylesheet">
-   <title></title>
+   <title>Shopping Cart</title>
 </head>
 
 <body>
    <header>
       <h1 style="padding-bottom: 5px; margin: 0px;">
-         <p>Daniel Slaugh</p>
+         <p>Shopping Cart</p>
       </h1>
    </header>
    <ul style="width: 100%">
