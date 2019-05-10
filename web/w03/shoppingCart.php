@@ -22,14 +22,14 @@
     <title>Shopping Cart</title>
 
     <script>
-       // function addItem() {
-       //    var checkbox = document.getElementById("check01")
-       //    if (checkbox.checked) {
-       //       alert();
-       //       // $itemOne = $_SESSION["checklist[0]"] = $_POST["checklist[0]"];
-       //       // echo $itemOne;
-       //    }
-       // }
+       function addItem() {
+          var checkbox = document.getElementById("check01")
+          if (checkbox.checked) {
+             alert(<?php echo "Setty set set"?>);
+             // $itemOne = $_SESSION["checklist[0]"] = $_POST["checklist[0]"];
+             // echo $itemOne;
+          }
+       }
     </script>
 
  </head>
