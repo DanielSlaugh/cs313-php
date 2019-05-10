@@ -38,7 +38,7 @@
       <input type="image" name="canta" src="canta.jpg" alt="cant" style="width:15%;">
       <input type="image" name="life" src="life.jpg" alt="life" style="width:15%;">
       <input type="image" name="petunia" src="petunia.jpg" alt="pet" style="width:15%;">
-      <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:15%;">
+      <input type="image" name="scooter" src="scooter.png" alt="scoot" style="height:15%;">
       <input type="image" name="wrench" src="wrench.jpg" alt="wrench" style="width:15%;">
    </div>
 
