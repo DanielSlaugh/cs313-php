@@ -30,7 +30,7 @@
          <p>Shopping Cart</p>
       </h1>
    </header>
-   <ul style="width: 100%">
+   <ul style="width: 100%" class="navbar-default">
       <li><a id="Top" href="https://polar-plateau-20469.herokuapp.com/home.php">Home</a></li>
       <li><a href="https://polar-plateau-20469.herokuapp.com/index.php">More Websites</a></li>
       <li><a href="https://www.tripadvisor.com/Restaurants-g35583-Rexburg_Idaho.html">Food</a></li>
