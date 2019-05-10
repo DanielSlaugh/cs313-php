@@ -33,12 +33,12 @@
       ?>
    </nav>
    <div class="top-right">
-      <input type="image" name="broccoli" src="broccoli.jpg" alt="" style="width:22%; height: 22%;">
-      <img src="canta.jpg" alt="" style="width:22%; height: 22%;">
-      <img src="life.jpg" alt="" style="width:22%; height: 22%;">
-      <img src="petunia.jpg" alt="" style="width:22%; height: 22%;">
-      <img src="scooter.png" alt="" style="width:22%; height: 20%;">
-      <img src="wrench.jpg" alt="" style="width:22%; height: 22%;">
+      <input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:22%; height: 22%;">
+      <input type="image" name="canta" src="canta.jpg" alt="cant" style="width:22%; height: 22%;">
+      <input type="image" name="life" src="life.jpg" alt="life" style="width:22%; height: 22%;">
+      <input type="image" name="petunia" src="petunia.jpg" alt="pet" style="width:22%; height: 22%;">
+      <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:22%; height: 22%;">
+      <input type="image" name="wrench" src="wrench.jpg" alt="wrench" style="width:22%; height: 22%;">
    </div>
 
    <footer class="bottom-left">
