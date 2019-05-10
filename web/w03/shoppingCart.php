@@ -5,7 +5,6 @@
 
  <!doctype html>
  <html lang="en">
-<script>var i = 3;</script>
     <head>
        <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -25,9 +24,10 @@
        function addItem() {
           var checkbox = document.getElementById("check01")
           if (checkbox.checked) {
-             alert("<?php
+             var i = "<?php
                      $_SESSION["broccoli"] = "broccoli";
-                     echo 'Setty set set'; ?>");
+                     echo 'Setty set set'; ?>";
+            alert(i);
              // $itemOne = $_SESSION["checklist[0]"] = $_POST["checklist[0]"];
              // echo $itemOne;
           }
