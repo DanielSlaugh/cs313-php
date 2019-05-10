@@ -41,28 +41,32 @@
          </tr>
          <br>
          <tr>
-            <input type="image" name="canta" src="canta.jpg" alt="cant" style="width:15%;">
-            <td><input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
+            <td><input type="image" name="canta" src="canta.jpg" alt="cant" style="width:15%;">
+            <input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
          </tr>
          <br>
          <tr>
+            <td>
             <input type="image" name="life" src="life.jpg" alt="life" style="width:15%;">
-            <td><input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
+               <input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
          </tr>
          <br>
          <tr>
+            <td>
             <input type="image" name="petunia" src="petunia.jpg" alt="pet" style="width:15%;">
-            <td><input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
+               <input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
          </tr>
          <br>
          <tr>
+            <td>
             <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:10%;">
-            <td><input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
+               <input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
          </tr>
          <br>
          <tr>
+            <td>
             <input type="image" name="wrench" src="wrench.jpg" alt="wrench" style="width:15%;">
-            <td><input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
+               <input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
          </tr>
       </table>
    </div>
