@@ -29,8 +29,6 @@
                         $_SESSION["broccoli"] = "broccoli";
                         echo 'Setty set set'; ?>";
              alert(i);
-             // $itemOne = $_SESSION["checklist[0]"] = $_POST["checklist[0]"];
-             // echo $itemOne;
           }
        }
     </script>
@@ -98,8 +96,16 @@
       // Set session variables
       $_SESSION["favcolor"] = "green";
       $_SESSION["favanimal"] = "cat";
-      echo "Session variables are: " . $_SESSION["broccoli"];
-      echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
+      echo "Session variables are: " . ".<br>";
+      // echo $_SESSION["broccoli"]     . ".<br>";
+      // echo $_SESSION["broccoli"]     . ".<br>";
+      // echo $_SESSION["broccoli"]     . ".<br>";
+      // echo $_SESSION["broccoli"]     . ".<br>";
+      // echo $_SESSION["broccoli"]     . ".<br>";
+      // echo $_SESSION["broccoli"]     . ".<br>";
+      foreach ($_SESSION as $key => $val)
+         echo $key . " " . $val . "<br/>";
+      // echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
 
 
 
