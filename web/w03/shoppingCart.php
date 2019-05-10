@@ -37,7 +37,7 @@
       <img src="canta.jpg" alt="" style="width:22%; height: 22%;">
       <img src="life.jpg" alt="" style="width:22%; height: 22%;">
       <img src="petunia.jpg" alt="" style="width:22%; height: 22%;">
-      <img src="scooter.png" alt="" style="width:22%; height: 22%;">
+      <img src="scooter.png" alt="" style="width:22%; height: 20%;">
       <img src="wrench.jpg" alt="" style="width:22%; height: 22%;">
    </div>
 
