@@ -20,11 +20,11 @@
       function addItem() {
          var checkbox = document.getElementById("check01")
          if (checkbox.checked) {
-            <?php
+            alert(<?php
             // $itemOne = $_SESSION["checklist[0]"] = $_POST["checklist[0]"];
             // echo $itemOne;
             echo "Item added";
-            ?>
+            ?>);
          }
       }
    </script>
