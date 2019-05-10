@@ -25,9 +25,11 @@
        function addItem() {
           var checkbox = document.getElementById("check01")
           if (checkbox.checked) {
-             alert("<?php
+             var i = "<?php
                      $_SESSION["broccoli"] = "Broccoli";
-                     echo 'Setty set set'; ?>");
+                     echo 'Setty set set';
+                      ?>";
+             print i;
              // $itemOne = $_SESSION["checklist[0]"] = $_POST["checklist[0]"];
              // echo $itemOne;
           }
