@@ -34,12 +34,12 @@
    </ul>
 
    <div class="top-right">
-      <input type="checkbox" name="broccoli" src="broccoli.jpg" alt="broc" style="width:20%; height: 22%;">
-      <input type="image" name="canta" src="canta.jpg" alt="cant" style="width:20%; height: 22%;">
-      <input type="image" name="life" src="life.jpg" alt="life" style="width:20%; height: 22%;">
-      <input type="image" name="petunia" src="petunia.jpg" alt="pet" style="width:20%; height: 22%;">
-      <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:20%; height: 22%;">
-      <input type="image" name="wrench" src="wrench.jpg" alt="wrench" style="width:20%; height: 22%;">
+      <input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;">
+      <input type="image" name="canta" src="canta.jpg" alt="cant" style="width:15%;">
+      <input type="image" name="life" src="life.jpg" alt="life" style="width:15%;">
+      <input type="image" name="petunia" src="petunia.jpg" alt="pet" style="width:15%;">
+      <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:15%;">
+      <input type="image" name="wrench" src="wrench.jpg" alt="wrench" style="width:15%;">
    </div>
 
    <footer class="bottom-left">
