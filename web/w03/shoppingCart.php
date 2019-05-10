@@ -17,7 +17,8 @@
    <title>Shopping Cart</title>
 
    <script>
-      function addItem(checkbox) {
+      function addItem() {
+        var checkbox = document.getElementById("check01")
          if (checkbox.checked) {
             alert("Item added");
          }
@@ -44,8 +45,8 @@
       <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
          <table>
             <tr>
-               <td><input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;" onclick="addItem(document.getElementById(" check01"))">
-                  <input id="check01" type="checkbox" name="checklist[]" value="broccoli" onclick="addItem(document.getElementById(" check01"))">
+               <td><input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;">
+                  <input id="check01" type="checkbox" name="checklist[]" value="broccoli" onclick="addItem()">
                </td>
             </tr> <br>
             <tr>
