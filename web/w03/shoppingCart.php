@@ -44,9 +44,9 @@
       <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
          <table>
             <tr>
-               <td><input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;">
-                  <input id="check01" type="checkbox" name="checklist[]" value="broccoli" onclick="addItem(document.getElementById("check01"))">
-                </td>
+               <td><input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;" onclick="addItem(document.getElementById(" check01"))">
+                  <input id="check01" type="checkbox" name="checklist[]" value="broccoli" onclick="addItem(document.getElementById(" check01"))">
+               </td>
             </tr> <br>
             <tr>
                <td><input type="image" name="canta" src="canta.jpg" alt="cant" style="width:15%;">
