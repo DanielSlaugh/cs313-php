@@ -17,15 +17,24 @@
    <title>Shopping Cart</title>
 
    <script>
-      function addItem(item) {
-         if ($(this).is(":checked")) {
-            alert("Checkbox is checked.");
-         }
-         else if ($(this).is(":not(:checked)")){
-            alert("Checkbox is unchecked.");
-         }
-         alert("Item added");
-      }
+      // function addItem(item) {
+      //    if ($(this).is(":checked")) {
+      //       alert("Checkbox is checked.");
+      //    }
+      //    else if ($(this).is(":not(:checked)")){
+      //       alert("Checkbox is unchecked.");
+      //    }
+      //    alert("Item added");
+      // }
+      $(document).ready(function() {
+         $('input[type="checkbox"]').click(function() {
+            if ($(this).is(":checked")) {
+               alert("Checkbox is checked.");
+            } else if ($(this).is(":not(:checked)")) {
+               alert("Checkbox is unchecked.");
+            }
+         });
+      });
    </script>
 
 </head>
