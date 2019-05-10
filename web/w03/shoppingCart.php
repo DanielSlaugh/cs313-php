@@ -18,7 +18,7 @@
 
    <script>
       function addItem(item) {
-
+         alert("Item added");
       }
    </script>
 
@@ -43,7 +43,7 @@
          <table>
             <tr>
                <td><input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;">
-                  <input id="north america" type="checkbox" name="checklist[]" value="broccoli"></td>
+                  <input id="north america" type="checkbox" name="checklist[]" value="broccoli" onclick="addItem();"</td>
             </tr>
             <br>
             <tr>
