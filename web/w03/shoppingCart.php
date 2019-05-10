@@ -30,7 +30,7 @@
                         echo 'Setty set set'; ?>";
              alert(i);
           }
-          elseif(!checkbox.checked) {
+          else {
              var i = "<?php
                         unset($_SESSION["broccoli"]);
                         echo 'UN-Setty set set'; ?>";
