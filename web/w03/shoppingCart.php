@@ -116,9 +116,9 @@
       foreach ($items as $item) {
          $item_clean = htmlspecialchars($item);
          echo $item_clean;
-         $_SESSION["$item"] = $item_clean;
+         // $_SESSION["$item"] = $item_clean;
          echo "<br>";
-         echo $_SESSION["$item"];
+         // echo $_SESSION["$item"];
          echo "<br>";
       }
 
