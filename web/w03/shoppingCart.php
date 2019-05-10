@@ -29,14 +29,16 @@
                            //                   $_SESSION["broccoli"] = "broccoli";
                            //                   $broc = true;
 
-                           ?>";
+                           ?
+                           > ";
        //        alert(i);
        //     }
        //     else {
-       //        var i = "<?php
+       //        var i = " < ? php
                            //                   unset($_SESSION["broccoli"]);
 
-                           ?>";
+                           ?
+                           > ";
        //        alert(i);
 
        //     }
@@ -47,20 +49,22 @@
 
  <body>
     <header>
-       <h1 style="padding-bottom: 5px; margin: 0px;">
+       <h1 style=" padding - bottom: 5 px;
+                           margin: 0 px;
+                           ">
           <p>Shopping Cart</p>
        </h1>
     </header>
-    <ul style="width: 100%">
-       <li><a id="Top" href="https://polar-plateau-20469.herokuapp.com/home.php">Home</a></li>
-       <li><a href="https://polar-plateau-20469.herokuapp.com/index.php">More Websites</a></li>
-       <li><a href="https://www.tripadvisor.com/Restaurants-g35583-Rexburg_Idaho.html">Food</a></li>
-       <li><a href="http://www.byui.edu/canvas-authentication">Canvas</a></li>
-       <li><a href="http://www.byui.edu/">BYUI Home</a></li>
-    </ul>
+    <ul style=" width: 100 % ">
+       <li><a id=" Top " href=" https: //polar-plateau-20469.herokuapp.com/home.php">Home</a></li>
+                           < li > < a hre f ="https://polar-plateau-20469.herokuapp.com/index.php " >More Websit e s < / a > </ li>
+                               < l i ><a h r ef="https://www.tripadvisor.com/Restaurants-g35583-Rexburg_Idaho.ht m l">F o o d < / a >< /li>
+                                < l i><a  h ref="http://www.byui.edu/canvas-authenticat i on">Ca n v a s < / a> </li>
+                                 < li><a   href="http://www.byui. e du/">BYU I   H o m e </ a></li>
+                                </ul>
 
-    <div class="top-right">
-       <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                              <di v  class="top -right">
+                               <form   method="post"   action="<?php echo htmlspecia lchars($ _SERVER["P HP_SELF"]); ?>">
           <table>
              <tr>
                 <td><input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;">
@@ -108,10 +112,13 @@
       $_SESSION["favanimal"] = "cat";
 
 
-      $items = $_SESSION["checklist"] = $_POST["checklist"];
+      $items =  $_POST["checklist"];
       foreach ($items as $item) {
          $item_clean = htmlspecialchars($item);
          echo $item_clean;
+         $_SESSION["$item"] = $item_clean;
+         echo "<br>";
+         echo $_SESSION["$item"];
          echo "<br>";
       }
 
