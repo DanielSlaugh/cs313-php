@@ -36,8 +36,8 @@
    <div class="top-right">
       <table>
          <tr>
-            <td><input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;"></td>
-            <td><input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
+            <td><input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;">
+            <input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
          </tr>
          <br>
          <tr>
