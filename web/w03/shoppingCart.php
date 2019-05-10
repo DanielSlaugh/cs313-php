@@ -22,27 +22,7 @@
     <title>Shopping Cart</title>
 
     <script>
-       //  function addItem() {
-       //     var checkbox = document.getElementById("check01")
-       //     if (checkbox.checked) {
-       //        var i = "<?php
-                           //                   $_SESSION["broccoli"] = "broccoli";
-                           //                   $broc = true;
 
-                           ?
-                           > ";
-       //        alert(i);
-       //     }
-       //     else {
-       //        var i = " < ? php
-                           //                   unset($_SESSION["broccoli"]);
-
-                           ?
-                           > ";
-       //        alert(i);
-
-       //     }
-       //  }
     </script>
 
  </head>
