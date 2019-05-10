@@ -5,9 +5,9 @@
 
  <!doctype html>
  <html lang="en">
-
- <head>
-    <!-- Required meta tags -->
+<script>var i = 3;</script>
+    <head>
+       <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -25,11 +25,9 @@
        function addItem() {
           var checkbox = document.getElementById("check01")
           if (checkbox.checked) {
-             var i = "<?php
-                     $_SESSION["broccoli"] = "Broccoli";
-                     echo 'Setty set set';
-                      ?>";
-             print i;
+             alert("<?php
+                     $_SESSION["broccoli"] = "broccoli";
+                     echo 'Setty set set'; ?>");
              // $itemOne = $_SESSION["checklist[0]"] = $_POST["checklist[0]"];
              // echo $itemOne;
           }
@@ -99,7 +97,9 @@
       // Set session variables
       $_SESSION["favcolor"] = "green";
       $_SESSION["favanimal"] = "cat";
-      echo "Session variables are set.";
+      if (i == 3) {
+         echo "Session variables are set.";
+      }
 
 
       //  $items = $_SESSION["checklist"] = $_POST["checklist"];
