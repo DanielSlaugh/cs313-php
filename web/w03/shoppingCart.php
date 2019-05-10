@@ -60,7 +60,7 @@
             <br>
             <tr>
                <td>
-                  <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:10%;">
+                  <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:15%;">
                   <input id="north america" type="checkbox" name="checklist[]" value="scooter"></td>
             </tr>
             <br>
