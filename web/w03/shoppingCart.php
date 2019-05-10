@@ -25,7 +25,9 @@
        function addItem() {
           var checkbox = document.getElementById("check01")
           if (checkbox.checked) {
-             alert("<?php echo 'Setty set set'?>");
+             alert("<?php
+                     $_SESSION["broccoli"] = "Broccoli";
+                     echo 'Setty set set'; ?>");
              // $itemOne = $_SESSION["checklist[0]"] = $_POST["checklist[0]"];
              // echo $itemOne;
           }
@@ -93,19 +95,19 @@
 
     <?php
       // Set session variables
-      $_SESSION ["favcolor"] = "green";
+      $_SESSION["favcolor"] = "green";
       $_SESSION["favanimal"] = "cat";
       echo "Session variables are set.";
 
 
-   //  $items = $_SESSION["checklist"] = $_POST["checklist"];
-   //  foreach ($items as $item) {
-   //  $item_clean = htmlspecialchars($item);
-   //  echo $item_clean;
-   //  echo "<br>";
-   //  }
+      //  $items = $_SESSION["checklist"] = $_POST["checklist"];
+      //  foreach ($items as $item) {
+      //  $item_clean = htmlspecialchars($item);
+      //  echo $item_clean;
+      //  echo "<br>";
+      //  }
 
-    ?>
+      ?>
 
 
     <!-- Optional JavaScript -->
