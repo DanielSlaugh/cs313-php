@@ -21,8 +21,8 @@
          var checkbox = document.getElementById("check01")
          if (checkbox.checked) {
             <?php
-            $itemOne = $_SESSION["checklist[0]"] = $_POST["checklist[0]"];
-            echo $itemOne;
+            // $itemOne = $_SESSION["checklist[0]"] = $_POST["checklist[0]"];
+            // echo $itemOne;
             echo "Item added";
             ?>
          }
