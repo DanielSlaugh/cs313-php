@@ -33,12 +33,12 @@
       ?>
    </nav>
    <div class="top-right">
-      <img src="broccoli.jpg" alt="" style="width:20%;">
-      <img src="canta.jpg" alt="" style="width:20%;">
-      <img src="life.jpg" alt="" style="width:20%;">
-      <img src="petunia.jpg" alt="" style="width:20%;">
-      <img src="scooter.png" alt="" style="width:20%;">
-      <img src="wrench.jpg" alt="" style="width:20%;">
+      <img src="broccoli.jpg" alt="" style="width:25%;">
+      <img src="canta.jpg" alt="" style="width:25%;">
+      <img src="life.jpg" alt="" style="width:25%;">
+      <img src="petunia.jpg" alt="" style="width:25%;">
+      <img src="scooter.png" alt="" style="width:25%;">
+      <img src="wrench.jpg" alt="" style="width:25%;">
    </div>
 
    <footer class="bottom-left">
