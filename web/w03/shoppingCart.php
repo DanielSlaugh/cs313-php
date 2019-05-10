@@ -18,8 +18,12 @@
 
    <script>
       function addItem() {
-        var checkbox = document.getElementById("check01")
+         var checkbox = document.getElementById("check01")
          if (checkbox.checked) {
+            <?php
+            $itemOne = $_SESSION["checklist[0]"] = $_POST["checklist[0]"];
+            echo $itemOne;
+            ?>
             alert("Item added");
          }
       }
@@ -46,36 +50,36 @@
          <table>
             <tr>
                <td><input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;">
-                  <input id="check01" type="checkbox" name="checklist[]" value="broccoli" onclick="addItem()">
+                  <input id="check01" type="checkbox" name="checklist[0]" value="broccoli" onclick="addItem()">
                </td>
             </tr> <br>
             <tr>
                <td><input type="image" name="canta" src="canta.jpg" alt="cant" style="width:15%;">
-                  <input id="check02" type="checkbox" name="checklist[]" value="cantalope"></td>
+                  <input id="check02" type="checkbox" name="checklist[1]" value="cantalope"></td>
             </tr>
             <br>
             <tr>
                <td>
                   <input type="image" name="life" src="life.jpg" alt="life" style="width:15%;">
-                  <input id="check03" type="checkbox" name="checklist[]" value="life"></td>
+                  <input id="check03" type="checkbox" name="checklist[2]" value="life"></td>
             </tr>
             <br>
             <tr>
                <td>
                   <input type="image" name="petunia" src="petunia.jpg" alt="pet" style="width:15%;">
-                  <input id="check04" type="checkbox" name="checklist[]" value="petunia"></td>
+                  <input id="check04" type="checkbox" name="checklist[3]" value="petunia"></td>
             </tr>
             <br>
             <tr>
                <td>
                   <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:15%;">
-                  <input id="check05" type="checkbox" name="checklist[]" value="scooter"></td>
+                  <input id="check05" type="checkbox" name="checklist[4]" value="scooter"></td>
             </tr>
             <br>
             <tr>
                <td>
                   <input type="image" name="wrench" src="wrench.jpg" alt="wrench" style="width:15%;">
-                  <input id="check06" type="checkbox" name="checklist[]" value="wrench"></td>
+                  <input id="check06" type="checkbox" name="checklist[5]" value="wrench"></td>
             </tr>
          </table>
          <input type="submit" value="Add to Cart" name="submit">
