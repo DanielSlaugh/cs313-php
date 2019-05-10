@@ -45,7 +45,9 @@
          <table>
             <tr>
                <td><input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;">
-                  <input id="check01" type="checkbox" name="checklist[]" value="broccoli" onclick="addItem(document.getElementById("check01"));" </td> </tr> <br>
+                  <input id="check01" type="checkbox" name="checklist[]" value="broccoli" onclick="addItem(document.getElementById("check01"))">
+                </td>
+            </tr> <br>
             <tr>
                <td><input type="image" name="canta" src="canta.jpg" alt="cant" style="width:15%;">
                   <input id="check02" type="checkbox" name="checklist[]" value="cantalope"></td>
