@@ -38,47 +38,6 @@
       <li><a href="http://www.byui.edu/">BYUI Home</a></li>
    </ul>
 
-   <div class="top-right">
-      <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-         <table>
-            <tr>
-               <td><input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;">
-                  <input id="north america" type="checkbox" name="checklist[]" value="broccoli"></td>
-            </tr>
-            <br>
-            <tr>
-               <td><input type="image" name="canta" src="canta.jpg" alt="cant" style="width:15%;">
-                  <input id="north america" type="checkbox" name="checklist[]" value="cantalope"></td>
-            </tr>
-            <br>
-            <tr>
-               <td>
-                  <input type="image" name="life" src="life.jpg" alt="life" style="width:15%;">
-                  <input id="north america" type="checkbox" name="checklist[]" value="life"></td>
-            </tr>
-            <br>
-            <tr>
-               <td>
-                  <input type="image" name="petunia" src="petunia.jpg" alt="pet" style="width:15%;">
-                  <input id="north america" type="checkbox" name="checklist[]" value="petunia"></td>
-            </tr>
-            <br>
-            <tr>
-               <td>
-                  <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:15%;">
-                  <input id="north america" type="checkbox" name="checklist[]" value="scooter"></td>
-            </tr>
-            <br>
-            <tr>
-               <td>
-                  <input type="image" name="wrench" src="wrench.jpg" alt="wrench" style="width:15%;">
-                  <input id="north america" type="checkbox" name="checklist[]" value="wrench"></td>
-            </tr>
-         </table>
-         <input type="submit" value="Add to Cart" name="submit">
-      </form>
-   </div>
-
    <input type="button" name="cart" value="View Cart" on click="">
 
    <?php
@@ -103,3 +62,14 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+<!-- if(isset($_SESSION["lastname"])){
+unset($_SESSION["lastname"]);
+} -->
