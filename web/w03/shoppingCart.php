@@ -33,7 +33,7 @@
       ?>
    </nav>
    <div class="top-right">
-      <img src="broccoli.jpg" alt="" style="width:22%; height: 22%;">
+      <input type="image" name="broccoli" src="broccoli.jpg" alt="" style="width:22%; height: 22%;">
       <img src="canta.jpg" alt="" style="width:22%; height: 22%;">
       <img src="life.jpg" alt="" style="width:22%; height: 22%;">
       <img src="petunia.jpg" alt="" style="width:22%; height: 22%;">
