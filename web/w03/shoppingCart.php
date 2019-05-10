@@ -79,6 +79,7 @@
    foreach ($items as $item) {
       $item_clean = htmlspecialchars($item);
       echo $item_clean;
+      echo "<br>";
    }
 
    ?>
