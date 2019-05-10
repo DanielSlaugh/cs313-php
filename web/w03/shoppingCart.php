@@ -26,12 +26,6 @@
       <li><a href="http://www.byui.edu/">BYUI Home</a></li>
    </ul>
 
-   <nav class="top-left">
-      <?php
-      print "<p>“Don't be pushed around by the fears in your mind.
-               Be lead by the dreams in your heart.” <br> ― Roy T. Bennett</p>"
-      ?>
-   </nav>
    <div class="top-right">
       <input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:22%; height: 22%;">
       <input type="image" name="canta" src="canta.jpg" alt="cant" style="width:22%; height: 22%;">
