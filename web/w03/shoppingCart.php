@@ -12,7 +12,7 @@
    <link href="style.css" rel="stylesheet">
    <link href="animate.css" rel="stylesheet">
    <link href="bootstrap.min.css" rel="stylesheet">
-   <link href="font-awesome.min.css" rel="stylesheet">
+   <link href="font-awesome.css" rel="stylesheet">
 
    <title>Shopping Cart</title>
 
@@ -25,20 +25,18 @@
 </head>
 
 <body>
-   <header class="main-header">
+   <header>
       <h1 style="padding-bottom: 5px; margin: 0px;">
          <p>Shopping Cart</p>
       </h1>
    </header>
-   <div class="navbar-default">
-      <ul style="width: 100%" class="active">
-         <li><a id="Top" href="https://polar-plateau-20469.herokuapp.com/home.php">Home</a></li>
-         <li><a href="https://polar-plateau-20469.herokuapp.com/index.php">More Websites</a></li>
-         <li><a href="https://www.tripadvisor.com/Restaurants-g35583-Rexburg_Idaho.html">Food</a></li>
-         <li><a href="http://www.byui.edu/canvas-authentication">Canvas</a></li>
-         <li><a href="http://www.byui.edu/">BYUI Home</a></li>
-      </ul>
-   </div>
+   <ul style="width: 100%">
+      <li><a id="Top" href="https://polar-plateau-20469.herokuapp.com/home.php">Home</a></li>
+      <li><a href="https://polar-plateau-20469.herokuapp.com/index.php">More Websites</a></li>
+      <li><a href="https://www.tripadvisor.com/Restaurants-g35583-Rexburg_Idaho.html">Food</a></li>
+      <li><a href="http://www.byui.edu/canvas-authentication">Canvas</a></li>
+      <li><a href="http://www.byui.edu/">BYUI Home</a></li>
+   </ul>
 
    <div class="top-right">
       <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
