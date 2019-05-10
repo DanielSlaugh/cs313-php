@@ -23,8 +23,8 @@
             <?php
             $itemOne = $_SESSION["checklist[0]"] = $_POST["checklist[0]"];
             echo $itemOne;
+            echo "Item added";
             ?>
-            alert("Item added");
          }
       }
    </script>
