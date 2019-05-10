@@ -26,12 +26,20 @@
       <li><a href="http://www.byui.edu/">BYUI Home</a></li>
    </ul>
 
-   <nav class="top-left" style="color: black;">
+   <nav class="top-left">
       <?php
       print "<p>“Don't be pushed around by the fears in your mind.
                Be lead by the dreams in your heart.” <br> ― Roy T. Bennett</p>"
       ?>
    </nav>
+   <div class="top-right">
+      <img src="broccoli.jpg" alt="" style="width:20%;">
+      <img src="canta.jpg" alt="" style="width:20%;">
+      <img src="life.jpg" alt="" style="width:20%;">
+      <img src="petunia.jpg" alt="" style="width:20%;">
+      <img src="scooter.jpg" alt="" style="width:20%;">
+      <img src="wrench.jpg" alt="" style="width:20%;">
+   </div>
 
    <footer class="bottom-left">
       <p>Daniel Slaugh</p>
