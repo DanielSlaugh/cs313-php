@@ -83,7 +83,7 @@
    session_start();
    // $_SESSION["firstname"] = "Peter";
 
-   $items = $_SESSION["checklist"];
+   $items = $_SESSION["checklist"] = $_POST["checklist"];
    foreach ($items as $item) {
       $item_clean = htmlspecialchars($item);
       echo $item_clean;
