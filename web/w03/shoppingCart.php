@@ -28,9 +28,9 @@
       // }
       $(document).ready(function() {
          $('input[type="checkbox"]').click(function() {
-            if ($(this).is(":checked")) {
+            if ($(this).prop("checked") == true) {
                alert("Checkbox is checked.");
-            } else if ($(this).is(":not(:checked)")) {
+            } else if ($(this).prop("checked") == false) {
                alert("Checkbox is unchecked.");
             }
          });
