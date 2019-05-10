@@ -34,7 +34,7 @@
    </ul>
 
    <div class="top-right">
-      <input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:20%; height: 22%;">
+      <input type="checkbox" name="broccoli" src="broccoli.jpg" alt="broc" style="width:20%; height: 22%;">
       <input type="image" name="canta" src="canta.jpg" alt="cant" style="width:20%; height: 22%;">
       <input type="image" name="life" src="life.jpg" alt="life" style="width:20%; height: 22%;">
       <input type="image" name="petunia" src="petunia.jpg" alt="pet" style="width:20%; height: 22%;">
