@@ -34,17 +34,28 @@
    </ul>
 
    <div class="top-right">
-      <input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;">
-      <br>
-      <input type="image" name="canta" src="canta.jpg" alt="cant" style="width:15%;">
-      <br>
-      <input type="image" name="life" src="life.jpg" alt="life" style="width:15%;">
-      <br>
-      <input type="image" name="petunia" src="petunia.jpg" alt="pet" style="width:15%;">
-      <br>
-      <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:10%;">
-      <br>
-      <input type="image" name="wrench" src="wrench.jpg" alt="wrench" style="width:15%;">
+      <table>
+         <tr>
+            <td><input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;"></td>
+            <td><input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
+         </tr>
+         <tr>
+            <input type="image" name="canta" src="canta.jpg" alt="cant" style="width:15%;">
+            <td><input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
+         </tr>
+         <tr>
+            <input type="image" name="life" src="life.jpg" alt="life" style="width:15%;">
+            <td><input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
+         <tr>
+            <input type="image" name="petunia" src="petunia.jpg" alt="pet" style="width:15%;">
+            <td><input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
+         <tr>
+            <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:10%;">
+            <td><input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
+         <tr>
+            <input type="image" name="wrench" src="wrench.jpg" alt="wrench" style="width:15%;">
+            <td><input id="north america" type="checkbox" name="checklist[]" value="North America"></td>
+      </table>
    </div>
 
    <!-- Optional JavaScript -->
