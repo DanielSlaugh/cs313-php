@@ -17,7 +17,7 @@ session_start();
 
 <body>
    <h5>Here are your items:</h5>
-   <h5><?php foreach ($_SESSION as $key => $val){echo $key . " " . $val . "<br/>";} ?></h5>
+   <h5><?php foreach ($_SESSION as $key => $val){echo $val . "<br/>";} ?></h5>
 </body>
 
 </html>

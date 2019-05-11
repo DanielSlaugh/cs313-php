@@ -87,14 +87,12 @@
 
     <?php
       // Set session variables
-      $_SESSION["favcolor"] = "green";
-      $_SESSION["favanimal"] = "cat";
+
       echo "Session variables are: " . ".<br>";
 
       $items =  $_POST["checklist"];
       foreach ($items as $item) {
          $item_clean = htmlspecialchars($item);
-         echo $item_clean;
          $_SESSION["$item"] = $item_clean;
          echo "<br>";
       }
