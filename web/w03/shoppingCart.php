@@ -1,7 +1,7 @@
  <?php
    session_start();
    // $_SESSION["firstname" ] = "Peter";
-   header('Location: viewcart.php');
+   // header('Location: viewcart.php');
    ?>
 
  <!doctype html>
@@ -83,7 +83,7 @@
        </form>
     </div>
 
-    <input type="button" name="cart" value="View Cart" on click="">
+    <a href="viewcart.php" input type="button" name="cart" value="View Cart"></a>
 
     <?php
       // Set session variables
