@@ -17,7 +17,13 @@ session_start();
 
 <body>
    <h5>Here are your items:</h5>
-   <h5><?php foreach ($_SESSION as $key => $val){echo $val . "<br/>";} ?></h5>
+   <h5><?php foreach ($_SESSION as $key => $val) {
+            echo $val . "<br/>";
+         } ?></h5>
+
+   <a href="shoppingCart.php"><input type="button" name="cart" value="Continue Shopping" on click=""></a>
+   <a href="checkout.php"><input type="button" name="cart" value="Proceed to Checkout" on click=""></a>
+
 </body>
 
 </html>
