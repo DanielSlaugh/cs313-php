@@ -49,30 +49,30 @@
                 <td><input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;">
                    <input id="check01" type="checkbox" name="checklist[]" value="broccoli" onclick="">
                 </td>
-             </tr> <br>
+             </tr>
              <tr>
                 <td><input type="image" name="canta" src="canta.jpg" alt="cant" style="width:15%;">
                    <input id="check02" type="checkbox" name="checklist[]" value="cantalope"></td>
              </tr>
-             <br>
+
              <tr>
                 <td>
                    <input type="image" name="life" src="life.jpg" alt="life" style="width:15%;">
                    <input id="check03" type="checkbox" name="checklist[]" value="life"></td>
              </tr>
-             <br>
+
              <tr>
                 <td>
                    <input type="image" name="petunia" src="petunia.jpg" alt="pet" style="width:15%;">
                    <input id="check04" type="checkbox" name="checklist[]" value="petunia"></td>
              </tr>
-             <br>
+
              <tr>
                 <td>
                    <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:15%;">
                    <input id="check05" type="checkbox" name="checklist[]" value="scooter"></td>
              </tr>
-             <br>
+
              <tr>
                 <td>
                    <input type="image" name="wrench" src="wrench.jpg" alt="wrench" style="width:15%;">
