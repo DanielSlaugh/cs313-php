@@ -20,23 +20,49 @@ session_start();
    <h5><?php foreach ($_SESSION as $key => $val) {
             echo $val . "<br/>";
          } ?></h5>
-   <h5>Remove items?</h5><br>
-   <label>broccoli</label>
-   <input id="check05" type="checkbox" name="checklist[]" value="broccoli"></td>
-   <label>Cantalope</label>
-   <input id="check05" type="checkbox" name="checklist[]" value="cantalope"></td>
-   <label>Life</label>
-   <input id="check05" type="checkbox" name="checklist[]" value="life"></td>
-   <label>Petunia</label>
-   <input id="check05" type="checkbox" name="checklist[]" value="petunia"></td>
-   <label>Scooter</label>
-   <input id="check05" type="checkbox" name="checklist[]" value="scooter"></td>
-   <label>Wrench</label>
-   <input id="check05" type="checkbox" name="checklist[]" value="wrench"></td>
-
+   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+      <h5>Remove items?</h5><br>
+      <br>
+      <label>broccoli</label>
+      <input id="check05" type="checkbox" name="checklist[]" value="broccoli"></td>
+      <br>
+      <label>Cantalope</label>
+      <input id="check05" type="checkbox" name="checklist[]" value="cantalope"></td>
+      <br>
+      <label>Life</label>
+      <input id="check05" type="checkbox" name="checklist[]" value="life"></td>
+      <br>
+      <label>Petunia</label>
+      <input id="check05" type="checkbox" name="checklist[]" value="petunia"></td>
+      <br>
+      <label>Scooter</label>
+      <input id="check05" type="checkbox" name="checklist[]" value="scooter"></td>
+      <br>
+      <label>Wrench</label>
+      <input id="check05" type="checkbox" name="checklist[]" value="wrench"></td>
+      <br>
+      <input type="submit" value="Confirm Removal" name="submit">
+   </form>
    <a href="shoppingCart.php"><input type="button" name="cart" value="Continue Shopping" on click=""></a>
    <a href="checkout.php"><input type="button" name="cart" value="Proceed to Checkout" on click=""></a>
 
+
+   <?php
+
+   $items =  $_POST["checklist"];
+   foreach ($items as $item) {
+      $item_clean = htmlspecialchars($item);
+      if ($_SESSION["$item"] == $item_clean) {
+         unset($_SESSION["$item"]);
+      }
+      echo "<br>";
+   }
+
+   // foreach ($_SESSION as $key => $val) {
+   //    echo $val . "<br/>";
+   // }
+
+   ?>
 </body>
 
 </html>

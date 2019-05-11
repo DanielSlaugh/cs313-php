@@ -98,7 +98,7 @@
       }
       // echo $_SESSION["broccoli"]     . ".<br>";
       foreach ($_SESSION as $key => $val)
-         echo $key . " " . $val . "<br/>";
+         echo $val . "<br/>";
       // echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
 
 
