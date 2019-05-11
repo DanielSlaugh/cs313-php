@@ -1,6 +1,7 @@
  <?php
    session_start();
    // $_SESSION["firstname" ] = "Peter";
+   header('Location: viewcart.php');
    ?>
 
  <!doctype html>
