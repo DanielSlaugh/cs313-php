@@ -3,15 +3,12 @@
    // $_SESSION["firstname" ] = "Peter";
    // header('Location: viewcart.php');
    ?>
-
  <!doctype html>
  <html lang="en">
-
  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="shopping.css" rel="stylesheet">
@@ -19,15 +16,8 @@
    <link href="animate.css" rel="stylesheet">
    <link href="bootstrap.min.css" rel="stylesheet">
    <link href="font-awesome.css" rel="stylesheet"> -->
-
     <title>Shopping Cart</title>
-
-    <script>
-
-    </script>
-
  </head>
-
  <body>
     <header>
        <h1 style="padding-bottom: 5px; margin: 0px;">
@@ -49,30 +39,22 @@
                 <td><input type="image" name="broccoli" src="broccoli.jpg" alt="broc" style="width:15%;">
                    <input id="check01" type="checkbox" name="checklist[]" value="broccoli" onclick="">
                 </td>
-             </tr>
-             <tr>
+
                 <td><input type="image" name="canta" src="canta.jpg" alt="cant" style="width:15%;">
                    <input id="check02" type="checkbox" name="checklist[]" value="cantalope"></td>
-             </tr>
 
-             <tr>
                 <td>
                    <input type="image" name="life" src="life.jpg" alt="life" style="width:15%;">
                    <input id="check03" type="checkbox" name="checklist[]" value="life"></td>
-             </tr>
 
-             <tr>
                 <td>
                    <input type="image" name="petunia" src="petunia.jpg" alt="pet" style="width:15%;">
                    <input id="check04" type="checkbox" name="checklist[]" value="petunia"></td>
-             </tr>
 
-             <tr>
                 <td>
                    <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:15%;">
                    <input id="check05" type="checkbox" name="checklist[]" value="scooter"></td>
-             </tr>
-             <tr>
+
                 <td>
                    <input type="image" name="wrench" src="wrench.jpg" alt="wrench" style="width:15%;">
                    <input id="check06" type="checkbox" name="checklist[]" value="wrench"></td>
