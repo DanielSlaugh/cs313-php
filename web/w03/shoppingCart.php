@@ -96,7 +96,9 @@
          echo "<br>";
       }
       foreach ($_SESSION as $key => $val)
-         echo $val . "<br/>";
+         if ($val != ""){
+            echo $val . "<br/>";
+         }
       ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
