@@ -57,7 +57,9 @@ session_start();
       }
       echo "<br>";
    }
-
+   if (isset($_POST['submit'])) {
+      header("Location: viewcart.php");
+   }
    // foreach ($_SESSION as $key => $val) {
    //    echo $val . "<br/>";
    // }
