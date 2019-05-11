@@ -69,13 +69,11 @@
 
     <?php
       // Set session variables
-      echo "Session variables are: " . ".<br>";
-
       $items =  $_POST["checklist"];
       foreach ($items as $item) {
          $item_clean = htmlspecialchars($item);
          $_SESSION["$item"] = $item_clean;
-         echo "<br>";
+         echo ", ";
       }
       foreach ($_SESSION as $key => $val)
          if ($val != ""){
