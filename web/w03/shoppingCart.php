@@ -72,7 +72,6 @@
                    <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:15%;">
                    <input id="check05" type="checkbox" name="checklist[]" value="scooter"></td>
              </tr>
-
              <tr>
                 <td>
                    <input type="image" name="wrench" src="wrench.jpg" alt="wrench" style="width:15%;">
