@@ -20,6 +20,19 @@ session_start();
    <h5><?php foreach ($_SESSION as $key => $val) {
             echo $val . "<br/>";
          } ?></h5>
+   <h5>Remove items?</h5><br>
+   <label>broccoli</label>
+   <input id="check05" type="checkbox" name="checklist[]" value="broccoli"></td>
+   <label>Cantalope</label>
+   <input id="check05" type="checkbox" name="checklist[]" value="cantalope"></td>
+   <label>Life</label>
+   <input id="check05" type="checkbox" name="checklist[]" value="life"></td>
+   <label>Petunia</label>
+   <input id="check05" type="checkbox" name="checklist[]" value="petunia"></td>
+   <label>Scooter</label>
+   <input id="check05" type="checkbox" name="checklist[]" value="scooter"></td>
+   <label>Wrench</label>
+   <input id="check05" type="checkbox" name="checklist[]" value="wrench"></td>
 
    <a href="shoppingCart.php"><input type="button" name="cart" value="Continue Shopping" on click=""></a>
    <a href="checkout.php"><input type="button" name="cart" value="Proceed to Checkout" on click=""></a>
