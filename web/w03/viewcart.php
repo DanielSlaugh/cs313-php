@@ -1,8 +1,5 @@
 <?php
-session_start();
-
-// $broccoli = $_SESSION["broccoli"];
-
+   session_start();
 ?>
 
 <!DOCTYPE html>
@@ -60,20 +57,11 @@ session_start();
    if (isset($_POST['submit'])) {
       header("Location: viewcart.php");
    }
-   // foreach ($_SESSION as $key => $val) {
-   //    echo $val . "<br/>";
-   // }
 
    ?>
 </body>
 
 </html>
-
-
-
-
-
-
 
 <!-- if(isset($_SESSION["lastname"])){
 unset($_SESSION["lastname"]);
