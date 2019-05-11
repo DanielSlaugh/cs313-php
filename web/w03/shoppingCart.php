@@ -46,6 +46,8 @@
                 <td>
                    <input type="image" name="life" src="life.jpg" alt="life" style="width:15%;">
                    <input id="check03" type="checkbox" name="checklist[]" value="life"></td>
+               </tr>
+               <tr>
 
                 <td>
                    <input type="image" name="petunia" src="petunia.jpg" alt="pet" style="width:15%;">
@@ -54,7 +56,6 @@
                 <td>
                    <input type="image" name="scooter" src="scooter.png" alt="scoot" style="width:15%;">
                    <input id="check05" type="checkbox" name="checklist[]" value="scooter"></td>
-
                 <td>
                    <input type="image" name="wrench" src="wrench.jpg" alt="wrench" style="width:15%;">
                    <input id="check06" type="checkbox" name="checklist[]" value="wrench"></td>
