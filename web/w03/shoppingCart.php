@@ -83,7 +83,7 @@
        </form>
     </div>
 
-    <a href="viewcart.php" input type="button" name="cart" value="View Cart"></a>
+    <a href="viewcart.php"><input type="button" name="cart" value="View Cart" on click=""></a>
 
     <?php
       // Set session variables
