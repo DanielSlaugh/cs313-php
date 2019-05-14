@@ -1,0 +1,25 @@
+table{
+   width: 100%;
+   border-collapse: collapse;
+}
+
+tr:nth-of-type(3) td{
+   border-bottom-color: transparent;
+}
+
+td{
+   border: 1px solid black;
+   border-top: transparent;
+   text-align: center;
+   font-size: 5em;
+   height: 33vw;
+   width: 33vw;
+
+}
+td:nth-of-type(3){
+   border-right-color: transparent;
+}
+
+td:first-of-type{
+   border-left: hidden;
+}
