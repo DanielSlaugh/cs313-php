@@ -1,7 +1,5 @@
 CREATE DATABASE social_media;
 
-\c social_media
-
 
 CREATE TABLE public.user(
 	id SERIAL NOT NULL PRIMARY KEY,
@@ -12,6 +10,12 @@ CREATE TABLE public.user(
 
 CREATE TABLE public.message(
    id SERIAL NOT NULL PRIMARY KEY,
-   username INT NOT NULL REFERENCES public.user(username),
+   user_id INT NOT NULL REFERENCES public.user(id),
    message_text TEXT NOT NULL
 );
+
+-- More Useful commands:
+
+-- heroku pg:psql
+-- insert into public.user values(1, 'DanielSlaugh', '12', '12345', 'Daniel');
+-- select * from public.user

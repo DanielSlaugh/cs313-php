@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: "crowd.jpg" bottom center;
+  background: url('crowd.jpg');
   background-size: cover;
 }
 
