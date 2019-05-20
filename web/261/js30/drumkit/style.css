@@ -24,7 +24,7 @@ body,html {
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
-  transition: all .07s ease;
+  transition: all .07s ease;          /*Takes .07 seconds to transition when playing is added*/
   width: 10rem;
   text-align: center;
   color: white;
@@ -32,8 +32,9 @@ body,html {
   text-shadow: 0 0 .5rem black;
 }
 
+/* Playing will be appended to the key class and override the color and size */
 .playing {
-  transform: scale(1.1);
+  transform: scale(1.1);              /*Makes it bigger when class is added*/
   border-color: #ffc600;
   box-shadow: 0 0 1rem #ffc600;
 }

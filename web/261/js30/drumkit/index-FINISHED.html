@@ -59,22 +59,30 @@
 
 <script>
   function removeTransition(e) {
+    // event. PropertyName comes from the list of variables on the debugger
     if (e.propertyName !== 'transform') return;
+    // every even has a target and every target has a classList
     e.target.classList.remove('playing');
   }
 
   function playSound(e) {
+    // use attribute selecter [] to get whatever element is playing
+    // Template strings and JS provided .keycode make the assigned number
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
     const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
     if (!audio) return;
-
+    // add the class "playing" wherever there's a data-key
     key.classList.add('playing');
+    // Rewind to the start to prevent lag
     audio.currentTime = 0;
     audio.play();
   }
 
+  // Get everything of class key
   const keys = Array.from(document.querySelectorAll('.key'));
+  // If anything has transitioned, remove the transition class added
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+  // call playsound any time a key is pressed
   window.addEventListener('keydown', playSound);
 </script>
 
