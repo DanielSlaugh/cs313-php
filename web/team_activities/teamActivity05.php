@@ -46,7 +46,12 @@ try {
 }
 
 if (!isnull($GET['search'])) {
-   foreach ($db->query('SELECT book, chapter, verse, content FROM scripture WHERE book = "$GET["search"]"') as $scripture) {
+   $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scripture WHERE book=:book');
+   $stmt->execute(array(':book' => $book));
+   $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+
+   foreach ($rows as $scripture) {
       echo "<b>" . $scripture['book'] . " " . $scripture['chapter'] . ": " . $scripture['verse'] . "</b> - " . $scripture['content'];
       echo '<br/>';
    }
