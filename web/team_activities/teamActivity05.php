@@ -17,7 +17,8 @@
 
 <script>
    function search(text) {
-      alert(text);
+      let url = "teamActivity05.php?search=" + text;
+      window.location = url;
    }
 </script>
 
