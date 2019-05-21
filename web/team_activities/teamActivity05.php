@@ -45,7 +45,7 @@ try {
    die();
 }
 
-if (!isnull($GET['search'])) {
+if (!isset($GET['search'])) {
    $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scripture WHERE book=:book');
    $stmt->execute(array(':book' => $book));
    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
