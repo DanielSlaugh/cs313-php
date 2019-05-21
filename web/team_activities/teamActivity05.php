@@ -12,6 +12,15 @@
    <h1>Scripture Resources</h1>
 </body>
 
+<textarea name="" id="searchbar" cols="30" rows="10"></textarea>
+<button onclick="search(document.getElementById('searchbar').value)"></button>
+
+<script>
+   function search(text) {
+      alert(text);
+   }
+</script>
+
 </html>
 
 
