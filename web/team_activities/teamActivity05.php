@@ -45,7 +45,7 @@ try {
    die();
 }
 
-if (isset($GET['search'])) {
+if (!isnull($GET['search'])) {
    foreach ($db->query('SELECT book, chapter, verse, content FROM scripture WHERE book = $GET["search"]') as $scripture) {
       echo "<b>" . $scripture['book'] . " " . $scripture['chapter'] . ": " . $scripture['verse'] . "</b> - " . $scripture['content'];
       echo '<br/>';
