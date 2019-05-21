@@ -45,10 +45,16 @@ try {
    die();
 }
 
-
-foreach ($db->query('SELECT book, chapter, verse, content FROM scripture') as $scripture) {
-   echo "<b>" . $scripture['book'] . " " . $scripture['chapter'] . ": " . $scripture['verse'] . "</b> - " . $scripture['content'];
-   echo '<br/>';
+if (isset($GET['search'])) {
+   foreach ($db->query('SELECT book, chapter, verse, content FROM scripture WHERE book = $GET['search']') as $scripture) {
+      echo "<b>" . $scripture['book'] . " " . $scripture['chapter'] . ": " . $scripture['verse'] . "</b> - " . $scripture['content'];
+      echo '<br/>';
+   }
+} else {
+   foreach ($db->query('SELECT book, chapter, verse, content FROM scripture') as $scripture) {
+      echo "<b>" . $scripture['book'] . " " . $scripture['chapter'] . ": " . $scripture['verse'] . "</b> - " . $scripture['content'];
+      echo '<br/>';
+   }
 }
 
 ?>
