@@ -1,12 +1,64 @@
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Document</title>
-   </head>
-   <body>
+<!DOCTYPE html>
+<html lang="en">
 
-   </body>
-   </html>
+<head>
+   <meta charset="UTF-8">
+   <title>FlexBox Nav</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="style-ANSWER.css">
+</head>
+
+<body>
+
+   <div class="app-wrap">
+
+      <header class="app-header">
+         <a href="#" class="button">
+            <i class="fa fa-arrow-left"></i>
+            Back
+         </a>
+
+         <h1>FlexBox App Layout</h1>
+
+         <a href="#" class="button">
+            <i class="fa fa-cog"></i>
+         </a>
+      </header>
+
+      <div class="content">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, beatae?</p>
+
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque deserunt quisquam repellendus quia autem saepe culpa fugit nulla distinctio hic, beatae cum, perspiciatis iusto natus nesciunt itaque quaerat, earum ex.</p>
+
+         <img src="https://pbs.twimg.com/profile_images/623184294521929728/LUJ4qL8n.jpg">
+
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quo ipsa excepturi sunt, quibusdam, quos!
+
+         <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. accusantium cum unde animi, obcaecati, minima odio.</p>
+      </div>
+
+      <div class="icon-bar">
+         <a href="#">
+            <i class="fa fa-home"></i>
+            Home
+         </a>
+         <a href="#">
+            <i class="fa fa-bell"></i>
+            Notifications
+         </a>
+         <a href="#">
+            <i class="fa fa-envelope"></i>
+            Messages
+         </a>
+         <a href="#">
+            <i class="fa fa-user"></i>
+            Me
+         </a>
+      </div>
+
+
+   </div>
+
+</body>
+
+</html>
