@@ -40,7 +40,7 @@
             <i>What's on your mind? </i>
          </a>
 
-         <a href="#" class="button">
+         <a href="#" class="button" onclick="add_content()">
             <i class="fa fa-cog"></i>
          </a>
       </header>
