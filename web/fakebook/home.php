@@ -45,7 +45,9 @@
          </a>
       </header>
 
-      <div class="message">No Messages yet :(</div>
+      <div class="message">
+     <p>No messages yet :(</p>
+      </div>
 
    </div>
 

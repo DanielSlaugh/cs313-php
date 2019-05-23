@@ -56,14 +56,14 @@ a.fbutton {
 }
 
 
-.content {
+.message {
   padding:20px;
   background:white;
   box-shadow:inset 0 5px 0 rgba(0,0,0,0.1);
   line-height: 1.6;
 }
 
-.content img {
+.message img {
   max-width:50%;
   float:left;
   margin-right: 10px;
