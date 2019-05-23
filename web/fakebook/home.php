@@ -86,7 +86,7 @@
       parent.appendChild(node);
       var element = document.getElementById("content_parent");
       element.appendChild(parent);
-      parent.setAttribute('id', content);
+      parent.setAttribute('id', "content");
 
       // // Adds an element to the document
       // var parent = document.getElementById("content_parent");
@@ -94,7 +94,7 @@
       // newElement.setAttribute('id', content);
       // // newElement.innerHTML = html;
       // parent.appendChild(newElement);
-      // console.log("a child is born");
+      console.log("a child is born");
    }
 </script>
 
