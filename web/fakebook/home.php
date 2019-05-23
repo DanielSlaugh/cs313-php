@@ -78,7 +78,7 @@
    function add_content() {
       // Adds an element to the document
       var parent = document.getElementById("content_parent");
-      var newElement = document.createElement(p);
+      var newElement = document.createElement("p");
       newElement.setAttribute('id', content);
       // newElement.innerHTML = html;
       parent.appendChild(newElement);
