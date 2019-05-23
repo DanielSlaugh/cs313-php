@@ -36,7 +36,7 @@
             <i>back</i>
          </a>
 
-         <a href="#" class="fbutton">
+         <a href="#" class="button">
             <i>What's on your mind? </i>
          </a>
 
@@ -45,8 +45,14 @@
          </a>
       </header>
 
-      <div class="message">
-     <p>No messages yet :(</p>
+      <div class="content">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, beatae?</p>
+
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque deserunt quisquam repellendus quia autem saepe culpa fugit nulla distinctio hic, beatae cum, perspiciatis iusto natus nesciunt itaque quaerat, earum ex.</p>
+
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quo ipsa excepturi sunt, quibusdam, quos!
+
+         <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. accusantium cum unde animi, obcaecati, minima odio.</p>
       </div>
 
    </div>
