@@ -36,7 +36,7 @@
             <i>back</i>
          </a>
 
-         <a href="#" class="post_button" id="main_head" onclick="destroy_content()">
+         <a href="#" class="post_button" id="main_head" onclick="destroy_content();  create_message_page()">
             <i>What's on your mind? </i>
          </a>
 
@@ -48,7 +48,7 @@
       <div class="content">
          <div id="content_parent">
             <p id="content">No content yet :( </p>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+            <form id="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                <textarea class="textarea" id="searchbar" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
                <input class="submit" type="submit" value="Post">
             </form>
@@ -67,7 +67,8 @@
    console.log("in the script");
 
    function load_page() {
-
+      var x = document.getElementById("form");
+      x.style.display = "none";
    }
 
    function search(text) {
@@ -83,10 +84,11 @@
       var element2 = document.getElementById("main_head");
       element2.parentNode.removeChild(element2);
       console.log("Should have gone for the head");
+   }
 
-      //Create Textarea
-
-
+   function create_message_page() {
+      var x = document.getElementById("form");
+      x.style.display = "block";
    }
 
    function add_content() {
