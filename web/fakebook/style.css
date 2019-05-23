@@ -35,6 +35,14 @@ a.button {
   border-radius: 45%;
 }
 
+a.fbutton {
+  background:#ffffff;
+  border: solid lightgrey;
+  color: black;
+  padding:1.5rem 3rem;
+  border-radius:4px;
+  border-radius: 45%;
+}
 
 .app-wrap {
   width:100vw;
