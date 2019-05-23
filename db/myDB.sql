@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS public.users(
 CREATE TABLE IF NOT EXISTS public.message(
    id SERIAL NOT NULL PRIMARY KEY,
    user_id INT NOT NULL REFERENCES public.users(id),
-   time TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT now(),
+   message_time TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT now(),
    message_text TEXT NOT NULL
 );
 

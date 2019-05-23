@@ -8,12 +8,12 @@
    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="load_page()">
 
    <div class="app-wrap">
 
       <div class="icon-bar">
-         <a href="#">
+         <a href="https://polar-plateau-20469.herokuapp.com/fakebook/home.php">
             <i class="fa fa-home"></i>
             Home
          </a>
@@ -45,7 +45,7 @@
          </a>
       </header>
 
-      <div class="content">
+      <div class="content" id="content">
          <p>No content yet :(
             <br><br><br><br><br><br><br><br><br><br><br><br>
             <br><br><br><br><br><br><br><br><br><br><br><br>
@@ -58,8 +58,12 @@
 </body>
 
 <script>
+   function load_page() {
+
+   }
+
    function search(text) {
-      let url = "teamActivity05.php?search=" + text;
+      let url = "home.php?search=" + text;
       window.location = url;
    }
 </script>
@@ -87,13 +91,13 @@ try {
 }
 
 if (isset($_GET['search'])) {
-   $stmt = $db->prepare('SELECT book, chapter, verse, content FROM message WHERE book=:book');
+   $stmt = $db->prepare('SELECT user_id, message_time, message_text FROM message WHERE book=:book');
    $stmt->execute(array(':book' => $_GET['search']));
    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
    foreach ($rows as $message) {
-      echo "<b>" . $message['book'] . " " . $message['chapter'] . ": " . $message['verse'] . "</b> - " . $message['content'];
+      echo "<b>" . $message['message_time'] . "<br>" . $message['message_text'] . "</b> - ";
       echo '<br/>';
    }
 } else {
