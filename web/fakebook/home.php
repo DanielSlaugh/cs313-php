@@ -36,7 +36,7 @@
             <i>back</i>
          </a>
 
-         <a href="#" class="post_button">
+         <a href="#" class="post_button" onclick="destroy_content()">
             <i>What's on your mind? </i>
          </a>
 
@@ -69,7 +69,7 @@
       window.location = url;
    }
 
-   $(document).ready(function() {
+   function destroy_content() {
       console.log("Enter Thanos");
       $("post_button").click(function() {
          $("#content").empty();
