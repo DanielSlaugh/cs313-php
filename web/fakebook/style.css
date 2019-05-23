@@ -28,8 +28,9 @@ a {
 
 a.button {
   background:#06619e;
-  padding:2rem 2.5rem;
+  padding:3rem 3rem;
   border-radius:4px;
+  border-radius: 50%;
 }
 
 

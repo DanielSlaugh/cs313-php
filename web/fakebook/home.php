@@ -37,7 +37,9 @@
             Back
          </a>
 
-         <h1>Fakebook</h1>
+         <a href="#" class="button">
+            <i>Fakebook</i>
+         </a>
 
          <a href="#" class="button">
             <i class="fa fa-cog"></i>
