@@ -45,16 +45,11 @@
          </a>
       </header>
 
-      <div class="content" id="content">
-         <p>No content yet :( </p>
-      </div>
-
       <div class="content">
-         <p>
+         <p id="content">No content yet :( </p>
             <br><br><br><br><br><br><br><br><br><br><br><br>
             <br><br><br><br><br><br><br><br><br><br><br><br>
             <br><br><br><br><br><br><br><br><br><br><br><br>
-         </p>
       </div>
 
    </div>
