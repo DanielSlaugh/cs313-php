@@ -31,7 +31,7 @@
          </a>
       </div>
 
-      <header class="app-header">
+      <header class="app-header" id="main_head">
          <a href="#" class="button" id="main_head">
             <i>back</i>
          </a>
@@ -48,12 +48,16 @@
       <div class="content">
          <div id="content_parent">
             <p id="content">No content yet :( </p>
-            <textarea name="" id="searchbar" cols="30" rows="10" placeholder="Describe yourself here..."></textarea>
-         </div> <br><br><br><br><br><br><br><br><br><br><br><br>
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+               <textarea id="searchbar" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+               <input type="submit" value="Post">
+            </form>
+         </div>
+
+         <br><br><br><br><br><br><br><br><br><br><br><br>
          <br><br><br><br><br><br><br><br><br><br><br><br>
          <br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
-
 
    </div>
 
