@@ -47,12 +47,7 @@
 
       <div class="content">
          <p>No content yet :(</p>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
-         <br>
+         <br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
 
    </div>
