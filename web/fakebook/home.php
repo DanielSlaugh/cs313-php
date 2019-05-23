@@ -45,11 +45,11 @@
          </a>
       </header>
 
-      <div class="content">
+      <div class="content" id="content_parent">
          <p id="content">No content yet :( </p>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
 
    </div>
@@ -73,6 +73,15 @@
       var element = document.getElementById("content");
       element.parentNode.removeChild(element);
       console.log("Code name: Thanos");
+   }
+
+   function add_content() {
+      // Adds an element to the document
+      var parent = document.getElementById("content_parent");
+      var newElement = document.createElement(p);
+      newElement.setAttribute('id', content);
+      // newElement.innerHTML = html;
+      parent.appendChild(newElement);
    }
 </script>
 
