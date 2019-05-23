@@ -41,7 +41,8 @@ a.fbutton {
   color: black;
   padding:1.5rem 3rem;
   border-radius:4px;
-  border-radius: 45%;
+  border-radius: 80px;
+  width: 50vw;
 }
 
 .app-wrap {
