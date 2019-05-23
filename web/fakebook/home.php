@@ -46,8 +46,9 @@
       </header>
 
       <div class="content">
-         <p>No content yet :(</p>
-         <br><br><br><br><br><br><br><br><br><br><br><br>
+         <p>No content yet :(
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+         </p>
       </div>
 
    </div>
