@@ -70,6 +70,7 @@
    $(document).ready(function() {
       $("post_button").click(function() {
          $("#content").empty();
+         console.log("Code name: Thanos");
       });
    });
 </script>
