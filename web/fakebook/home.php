@@ -33,7 +33,7 @@
 
       <header class="app-header">
          <a href="#" class="button">
-               <img src="../whitney.jpg">
+               <img class="content img" src="../whitney.jpg">
          </a>
 
          <a href="#" class="button">
