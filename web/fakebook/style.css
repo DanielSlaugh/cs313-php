@@ -8,7 +8,7 @@ html {
 }
 
 html {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 body {
@@ -24,18 +24,18 @@ a {
 }
 
 a.button {
-  background:rgba(0,0,0,0.1);
-  padding:1rem 1.5rem;
+  background:#06619e;
+  padding:2rem 2.5rem;
   border-radius:4px;
 }
 
 
 .app-wrap {
-  max-width:540px;
-  height: 90vh;
-  margin: 5vh auto 5vh auto;
+  width:100vw;
+  height: 100vh;
+/*   margin: vh auto vh auto; */
   border:10px solid rgba(0,0,0,0.8);
-  border-bottom-width: 70px;
+/*   border-bottom-width: 70px; */
   border-radius:10px;
   box-shadow:0 0 50px  rgba(0,0,0,0.3);
 }
@@ -57,9 +57,10 @@ a.button {
 
 .icon-bar a {
   text-align: center;
+  color: white;
   padding:1.5rem;
   border-left:1px solid rgba(0,0,0,0.1);
-  background:#EFCA51;
+  background:#3950b1;
   color:rgba(0,0,0,0.5);
 }
 
@@ -84,24 +85,15 @@ a.button {
 }
 
 .app-header {
-  background:#F0CB45;
+  background:#3950b1;
   color:rgba(0,0,0,0.5);
   padding:1rem;
 }
 
 
 /*
-  Everything So far is Cosmetic styling 
-
-  Flexbox + Important CSS Starts Here
-
+  Begin Flexbox + Important CSS Starts Here
 */
-
-
-/*
-  Overall Layout
-*/
-
 
 .app-wrap {
   display:flex;
@@ -132,7 +124,7 @@ a.button {
 }
 
 /*
-  Icon Bar 
+  Icon Bar
 */
 
 .icon-bar {
@@ -142,3 +134,4 @@ a.button {
 .icon-bar a {
   flex:1;
 }
+
