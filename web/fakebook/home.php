@@ -45,12 +45,15 @@
          </a>
       </header>
 
-      <div class="content" id="content_parent">
-         <p id="content">No content yet :( </p>
+      <div class="content">
+         <div id="content_parent">
+            <p id="content">No content yet :( </p>
+         </div>
          <br><br><br><br><br><br><br><br><br><br><br><br>
          <br><br><br><br><br><br><br><br><br><br><br><br>
          <br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
+
 
    </div>
 
@@ -80,6 +83,7 @@
    function add_content() {
       var parent = document.createElement("p");
       var node = document.createTextNode("This is new.");
+      parent.setAttribute('id', content);
       parent.appendChild(node);
       var element = document.getElementById("content_parent");
       element.appendChild(parent);
