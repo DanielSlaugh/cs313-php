@@ -49,8 +49,8 @@
          <div id="content_parent">
             <p id="content">No content yet :( </p>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-               <textarea id="searchbar" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
-               <input type="submit" value="Post">
+               <textarea class="textarea" id="searchbar" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+               <input class="submit" type="submit" value="Post">
             </form>
          </div>
 
