@@ -59,6 +59,7 @@
 
 <script>
    console.log("in the script");
+
    function load_page() {
 
    }
@@ -69,6 +70,7 @@
    }
 
    $(document).ready(function() {
+      console.log("Enter Thanos");
       $("post_button").click(function() {
          $("#content").empty();
          console.log("Code name: Thanos");
