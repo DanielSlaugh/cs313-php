@@ -32,17 +32,19 @@
       </div>
 
       <header class="app-header">
-         <a href="#" class="button">
-            <i>back</i>
-         </a>
+         <div id="main_head">
+            <a href="#" class="button">
+               <i>back</i>
+            </a>
 
-         <a href="#" class="post_button" onclick="destroy_content()">
-            <i>What's on your mind? </i>
-         </a>
+            <a href="#" class="post_button" onclick="destroy_content()">
+                  <i>What's on your mind? </i>
+               </a>
 
-         <a href="#" class="button" onclick="add_content()">
-            <i class="fa fa-cog"></i>
-         </a>
+               <a href="#" class="button" onclick="add_content()">
+                     <i class="fa fa-cog"></i>
+                  </a>
+         </div>
       </header>
 
       <div class="content" id="content_parent">
@@ -72,6 +74,8 @@
       console.log("Enter Thanos");
       var element = document.getElementById("content");
       element.parentNode.removeChild(element);
+      var element2 = document.getElementById("main_head");
+      element2.parentNode.removeChild(element2);
       console.log("Code name: Thanos");
    }
 
