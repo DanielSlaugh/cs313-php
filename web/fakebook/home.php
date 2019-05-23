@@ -82,6 +82,7 @@
       newElement.setAttribute('id', content);
       // newElement.innerHTML = html;
       parent.appendChild(newElement);
+      console.log("a child is born");
    }
 </script>
 
