@@ -1,4 +1,7 @@
-/* Some CSS Setup - nothing to do with flexbox */
+/*
+  Some CSS Setup
+  The frame of the styling is from the JavaScript30 course
+*/
 html {
   box-sizing: border-box;
 }
