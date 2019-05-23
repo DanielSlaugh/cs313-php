@@ -27,10 +27,12 @@ a {
 }
 
 a.button {
-  background:#06619e;
-  padding:3rem 3rem;
+  background:#ffffff;
+  border: solid lightgrey;
+  color: black;
+  padding:1.5rem 3rem;
   border-radius:4px;
-  border-radius: 50%;
+  border-radius: 45%;
 }
 
 
