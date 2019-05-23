@@ -3,7 +3,7 @@
 
 <head>
    <meta charset="UTF-8">
-   <title>FlexBox Nav</title>
+   <title>Fakebook</title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="style-ANSWER.css">
 </head>
@@ -30,7 +30,7 @@
 
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque deserunt quisquam repellendus quia autem saepe culpa fugit nulla distinctio hic, beatae cum, perspiciatis iusto natus nesciunt itaque quaerat, earum ex.</p>
 
-         <img src="https://pbs.twimg.com/profile_images/623184294521929728/LUJ4qL8n.jpg">
+         <img src="./whitney.jpg">
 
          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quo ipsa excepturi sunt, quibusdam, quos!
 
