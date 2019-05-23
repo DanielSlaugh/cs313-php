@@ -36,7 +36,7 @@
             <i>back</i>
          </a>
 
-         <a href="#" class="fbutton">
+         <a href="#" class="post_button">
             <i>What's on your mind? </i>
          </a>
 
@@ -66,6 +66,12 @@
       let url = "home.php?search=" + text;
       window.location = url;
    }
+
+   $(document).ready(function() {
+      $("post_button").click(function() {
+         $("#content").empty();
+      });
+   });
 </script>
 
 </html>
