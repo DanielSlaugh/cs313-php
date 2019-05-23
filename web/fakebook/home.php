@@ -36,9 +36,9 @@
             <i>back</i>
          </a>
 
-         <a href="#" class="post_button">
+         <button href="#" class="post_button">
             <i>What's on your mind? </i>
-         </a>
+         </button>
 
          <a href="#" class="button">
             <i class="fa fa-cog"></i>
