@@ -32,17 +32,17 @@
       </div>
 
       <header class="app-header">
-            <a href="#" class="button" id="main_head">
-               <i>back</i>
-            </a>
+         <a href="#" class="button" id="main_head">
+            <i>back</i>
+         </a>
 
-            <a href="#" class="post_button" id="main_head" onclick="destroy_content()">
-               <i>What's on your mind? </i>
-            </a>
+         <a href="#" class="post_button" id="main_head" onclick="destroy_content()">
+            <i>What's on your mind? </i>
+         </a>
 
-            <a href="#" class="button" id="main_head" onclick="add_content()">
-               <i class="fa fa-cog"></i>
-            </a>
+         <a href="#" class="button" id="main_head" onclick="add_content()">
+            <i class="fa fa-cog"></i>
+         </a>
       </header>
 
       <div class="content" id="content_parent">
@@ -78,13 +78,19 @@
    }
 
    function add_content() {
-      // Adds an element to the document
-      var parent = document.getElementById("content_parent");
-      var newElement = document.createElement("p");
-      newElement.setAttribute('id', content);
-      // newElement.innerHTML = html;
-      parent.appendChild(newElement);
-      console.log("a child is born");
+      var parent = document.createElement("p");
+      var node = document.createTextNode("This is new.");
+      parent.appendChild(node);
+      var element = document.getElementById("content_parent");
+      element.appendChild(parent);
+
+      // // Adds an element to the document
+      // var parent = document.getElementById("content_parent");
+      // var newElement = document.createElement("p");
+      // newElement.setAttribute('id', content);
+      // // newElement.innerHTML = html;
+      // parent.appendChild(newElement);
+      // console.log("a child is born");
    }
 </script>
 
