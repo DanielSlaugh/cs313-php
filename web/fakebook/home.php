@@ -3,7 +3,7 @@
 
 <head>
    <meta charset="UTF-8">
-   <title>What's on your mind?         </title>
+   <title>Fakebook</title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="style.css">
 </head>
@@ -33,11 +33,11 @@
 
       <header class="app-header">
          <a href="#" class="button">
-               <i>back</i>
+            <i>back</i>
          </a>
 
          <a href="#" class="button">
-            <i>Fakebook</i>
+            <i>What's on your mind?            </i>
          </a>
 
          <a href="#" class="button">
