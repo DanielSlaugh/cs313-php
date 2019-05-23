@@ -58,6 +58,7 @@
 </body>
 
 <script>
+   console.log("in the script");
    function load_page() {
 
    }
