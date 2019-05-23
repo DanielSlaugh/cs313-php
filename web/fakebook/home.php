@@ -36,7 +36,7 @@
             <i>back</i>
          </a>
 
-         <button href="#" class="post_button">
+         <button class="post_button">
             <i>What's on your mind? </i>
          </button>
 
