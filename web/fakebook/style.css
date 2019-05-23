@@ -45,6 +45,21 @@ a.post_button {
   width: 50vw;
 }
 
+.textarea{
+  font-size:1.3em;
+  width: 100%;
+  height: 20vh;
+  font-family:inherit;
+}
+
+.submit{
+  width: 100%;
+  height: 7vh;
+  font-size: 1.2em;
+  background:#2e7ffd;
+  color: white;
+}
+
 .app-wrap {
   width:100vw;
   height: 100vh;
