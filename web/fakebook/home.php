@@ -36,9 +36,9 @@
             <i>back</i>
          </a>
 
-         <button class="post_button">
+         <a href="#" class="post_button">
             <i>What's on your mind? </i>
-         </button>
+         </a>
 
          <a href="#" class="button">
             <i class="fa fa-cog"></i>
@@ -56,7 +56,7 @@
    </div>
 
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 <script>
    function load_page() {
 
