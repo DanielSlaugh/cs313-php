@@ -32,19 +32,17 @@
       </div>
 
       <header class="app-header">
-         <div id="main_head">
-            <a href="#" class="button">
+            <a href="#" class="button" id="main_head">
                <i>back</i>
             </a>
 
-            <a href="#" class="post_button" onclick="destroy_content()">
-                  <i>What's on your mind? </i>
-               </a>
+            <a href="#" class="post_button" id="main_head" onclick="destroy_content()">
+               <i>What's on your mind? </i>
+            </a>
 
-               <a href="#" class="button" onclick="add_content()">
-                     <i class="fa fa-cog"></i>
-                  </a>
-         </div>
+            <a href="#" class="button" id="main_head" onclick="add_content()">
+               <i class="fa fa-cog"></i>
+            </a>
       </header>
 
       <div class="content" id="content_parent">
