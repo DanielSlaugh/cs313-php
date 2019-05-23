@@ -83,10 +83,10 @@
    function add_content() {
       var parent = document.createElement("p");
       var node = document.createTextNode("This is new.");
-      parent.setAttribute('id', content);
       parent.appendChild(node);
       var element = document.getElementById("content_parent");
       element.appendChild(parent);
+      parent.setAttribute('id', content);
 
       // // Adds an element to the document
       // var parent = document.getElementById("content_parent");
