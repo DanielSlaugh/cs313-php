@@ -48,8 +48,8 @@
       <div class="content">
          <div id="content_parent">
             <p id="content">No content yet :( </p>
-         </div>
-         <br><br><br><br><br><br><br><br><br><br><br><br>
+            <textarea name="" id="searchbar" cols="30" rows="10" placeholder="Describe yourself here..."></textarea>
+         </div> <br><br><br><br><br><br><br><br><br><br><br><br>
          <br><br><br><br><br><br><br><br><br><br><br><br>
          <br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
@@ -72,12 +72,17 @@
    }
 
    function destroy_content() {
+      // Destroy half of what's on the page
       console.log("Enter Thanos");
       var element = document.getElementById("content");
       element.parentNode.removeChild(element);
       var element2 = document.getElementById("main_head");
       element2.parentNode.removeChild(element2);
-      console.log("Code name: Thanos");
+      console.log("Should have gone for the head");
+
+      //Create Textarea
+
+
    }
 
    function add_content() {
