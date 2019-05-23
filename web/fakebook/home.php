@@ -71,7 +71,8 @@
 
    function destroy_content() {
       console.log("Enter Thanos");
-      $("#content").empty();
+      var element = document.getElementById("content");
+      element.parentNode.removeChild(element);
       console.log("Code name: Thanos");
    }
 </script>
