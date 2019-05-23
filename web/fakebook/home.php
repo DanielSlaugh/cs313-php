@@ -33,8 +33,7 @@
 
       <header class="app-header">
          <a href="#" class="button">
-            <i class="fa fa-arrow-left"></i>
-            Back
+               <img src="../whitney.jpg">
          </a>
 
          <a href="#" class="button">
@@ -51,7 +50,6 @@
 
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque deserunt quisquam repellendus quia autem saepe culpa fugit nulla distinctio hic, beatae cum, perspiciatis iusto natus nesciunt itaque quaerat, earum ex.</p>
 
-         <img src="../whitney.jpg">
 
          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quo ipsa excepturi sunt, quibusdam, quos!
 
