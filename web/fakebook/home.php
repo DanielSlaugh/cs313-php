@@ -12,6 +12,25 @@
 
    <div class="app-wrap">
 
+      <div class="icon-bar">
+         <a href="#">
+            <i class="fa fa-home"></i>
+            Home
+         </a>
+         <a href="#">
+            <i class="fa fa-bell"></i>
+            Notifications
+         </a>
+         <a href="#">
+            <i class="fa fa-envelope"></i>
+            Messages
+         </a>
+         <a href="#">
+            <i class="fa fa-user"></i>
+            Me
+         </a>
+      </div>
+
       <header class="app-header">
          <a href="#" class="button">
             <i class="fa fa-arrow-left"></i>
@@ -37,24 +56,7 @@
          <p>lorem ipsum dolor sit amet, consectetur adipisicing elit. accusantium cum unde animi, obcaecati, minima odio.</p>
       </div>
 
-      <div class="icon-bar">
-         <a href="#">
-            <i class="fa fa-home"></i>
-            Home
-         </a>
-         <a href="#">
-            <i class="fa fa-bell"></i>
-            Notifications
-         </a>
-         <a href="#">
-            <i class="fa fa-envelope"></i>
-            Messages
-         </a>
-         <a href="#">
-            <i class="fa fa-user"></i>
-            Me
-         </a>
-      </div>
+
 
 
    </div>
