@@ -36,7 +36,7 @@
             <i>back</i>
          </a>
 
-         <a href="#" class="post_button" id="main_head" onclick="destroy_content();  create_message_page()">
+         <a href="#" class="post_button" id="main_head" onclick="destroy_content()">
             <i>What's on your mind? </i>
          </a>
 
@@ -84,6 +84,8 @@
       var element2 = document.getElementById("main_head");
       element2.parentNode.removeChild(element2);
       console.log("Should have gone for the head");
+
+      create_message_page()
    }
 
    function create_message_page() {
