@@ -71,11 +71,9 @@
 
    function destroy_content() {
       console.log("Enter Thanos");
-      $("post_button").click(function() {
-         $("#content").empty();
-         console.log("Code name: Thanos");
-      });
-   });
+      $("#content").empty();
+      console.log("Code name: Thanos");
+   }
 </script>
 
 </html>
