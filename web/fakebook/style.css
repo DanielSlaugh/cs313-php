@@ -132,7 +132,7 @@ a.fbutton {
   Content
 */
 
-.content {
+.message {
   overflow-y:scroll;
   -webkit-overflow-scrolling:touch;
 }
