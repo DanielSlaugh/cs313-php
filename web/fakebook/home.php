@@ -156,12 +156,13 @@ $result = $db->query($sql);
 echo "Made it this far <br>";
 
 // if ($result->num_rows > 0) {
-
+echo $result;
+$row = $result;
 // output data of each row
-while ($row = $result->fetch_assoc()) {
+// while ($row = $result->fetch_assoc()) {
    echo "in the loop <br>";
    echo "<br> id: " . $row["id"] . "<br> User_id: " . $row["user_id"] .  "<br> time: " . $row["message_time"] . " - Message: " . $row["message_text"] . "<br>";
-}
+// }
 // } else {
 //    echo "0 results";
 // }
