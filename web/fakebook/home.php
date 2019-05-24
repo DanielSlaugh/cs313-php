@@ -153,16 +153,17 @@ echo "PHP: Starting";
 $sql = "SELECT * FROM message";
 $result = $db->query($sql);
 
-echo "Made it this far";
+echo "Made it this far <br>";
 
 
 // if ($result->num_rows > 0) {
-   echo "PHP: In the if";
+   echo "PHP: In the if <br>";
 
    // output data of each row
    while ($row = $result->fetch_assoc()) {
-      echo "in the loop";
-      echo "<br> id: " . $row["id"] . " - Message: " . $row["message_text"] . "<br>";
+      echo "in the loop <br>";
+      echo "<br> id: " . $row["id"];
+      //  . " - Message: " . $row["message_text"] . "<br>";
    }
 // } else {
 //    echo "0 results";
