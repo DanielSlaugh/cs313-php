@@ -158,6 +158,7 @@ echo "Made it this far <br>";
 // if ($result->num_rows > 0) {
 
    // output data of each row
+   $row = $result->fetch_assoc();
    // while ($row = $result->fetch_assoc()) {
       echo "in the loop <br>";
       echo "<br> id: " . $row["id"];
