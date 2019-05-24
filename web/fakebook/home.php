@@ -157,7 +157,7 @@ echo "Made it this far";
 
 
 if ($result->num_rows > 0) {
-   echo "PHP: Made it this far";
+   echo "PHP: In the if";
 
    // output data of each row
    while ($row = $result->fetch_assoc()) {
