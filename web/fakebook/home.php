@@ -70,39 +70,6 @@
       var x = document.getElementById("form");
       x.style.display = "none";
 
-      <?php
-      try {
-         $dbUrl = getenv('DATABASE_URL');
-
-         $dbOpts = parse_url($dbUrl);
-
-         $dbHost = $dbOpts["host"];
-         $dbPort = $dbOpts["port"];
-         $dbUser = $dbOpts["user"];
-         $dbPassword = $dbOpts["pass"];
-         $dbName = ltrim($dbOpts["path"], '/');
-
-         $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      } catch (PDOException $ex) {
-         echo 'Error!: ' . $ex->getMessage();
-         die();
-      }
-
-      $sql = "SELECT * FROM message";
-      $result = $db->query($sql);
-
-      if ($result->num_rows > 0) {
-         // output data of each row
-         while ($row = $result->fetch_assoc()) {
-            echo "<br> id: " . $row["id"] . " - Message: " . $row["message_text"] . "<br>";
-         }
-      } else {
-         echo "0 results";
-      }
-      $db->close();
-      ?>
       // if (window.XMLHttpRequest) {
       //    // code for IE7+, Firefox, Chrome, Opera, Safari
       //    xmlhttp = new XMLHttpRequest();
@@ -161,3 +128,37 @@
 </script>
 
 </html>
+
+<?php
+try {
+   $dbUrl = getenv('DATABASE_URL');
+
+   $dbOpts = parse_url($dbUrl);
+
+   $dbHost = $dbOpts["host"];
+   $dbPort = $dbOpts["port"];
+   $dbUser = $dbOpts["user"];
+   $dbPassword = $dbOpts["pass"];
+   $dbName = ltrim($dbOpts["path"], '/');
+
+   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $ex) {
+   echo 'Error!: ' . $ex->getMessage();
+   die();
+}
+
+$sql = "SELECT * FROM message";
+$result = $db->query($sql);
+
+if ($result->num_rows > 0) {
+   // output data of each row
+   while ($row = $result->fetch_assoc()) {
+      echo "<br> id: " . $row["id"] . " - Message: " . $row["message_text"] . "<br>";
+   }
+} else {
+   echo "0 results";
+}
+$db->close();
+?>
