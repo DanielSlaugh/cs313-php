@@ -148,11 +148,17 @@ try {
    echo 'Error!: ' . $ex->getMessage();
    die();
 }
+echo "PHP: Starting";
 
 $sql = "SELECT * FROM message";
 $result = $db->query($sql);
 
+echo "Made it this far";
+
+
 if ($result->num_rows > 0) {
+   echo "PHP: Made it this far";
+
    // output data of each row
    while ($row = $result->fetch_assoc()) {
       echo "<br> id: " . $row["id"] . " - Message: " . $row["message_text"] . "<br>";
