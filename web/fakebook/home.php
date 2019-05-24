@@ -156,16 +156,16 @@ $result = $db->query($sql);
 echo "Made it this far";
 
 
-if ($result->num_rows > 0) {
+// if ($result->num_rows > 0) {
    echo "PHP: In the if";
 
    // output data of each row
    while ($row = $result->fetch_assoc()) {
-      echo "<br> id: " . $row["id"] . " - Message: " . $row["message_text"] . "<br>";
       echo "in the loop";
+      echo "<br> id: " . $row["id"] . " - Message: " . $row["message_text"] . "<br>";
    }
-} else {
-   echo "0 results";
-}
+// } else {
+//    echo "0 results";
+// }
 $db->close();
 ?>
