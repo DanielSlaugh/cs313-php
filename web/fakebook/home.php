@@ -47,19 +47,9 @@
 
       <div class="content">
          <div id="content_parent">
-            <p id="content">No content yet :( </p>
-            <form id="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-               <textarea class="textarea" id="searchbar" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
-               <input class="submit" type="submit" value="Post">
-            </form>
-         </div>
+            <p id="content">No content yet :(
 
-         <br><br><br><br><br><br><br><br><br><br><br><br>
-         <br><br><br><br><br><br><br><br><br><br><br><br>
-         <br><br><br><br><br><br><br><br><br><br><br><br>
-      </div>
 
-   </div>
 
 <?php
 echo "<table style='border: solid 1px black;'>";
@@ -117,6 +107,23 @@ try {
 $conn = null;
 echo "</table>";
 ?>
+
+
+
+            </p>
+            <form id="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+               <textarea class="textarea" id="searchbar" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+               <input class="submit" type="submit" value="Post">
+            </form>
+         </div>
+
+         <br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
+
+   </div>
+
 </body>
 
 <script>
