@@ -69,6 +69,55 @@
    function load_page() {
       var x = document.getElementById("form");
       x.style.display = "none";
+
+      <?php
+      try {
+         $dbUrl = getenv('DATABASE_URL');
+
+         $dbOpts = parse_url($dbUrl);
+
+         $dbHost = $dbOpts["host"];
+         $dbPort = $dbOpts["port"];
+         $dbUser = $dbOpts["user"];
+         $dbPassword = $dbOpts["pass"];
+         $dbName = ltrim($dbOpts["path"], '/');
+
+         $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+      } catch (PDOException $ex) {
+         echo 'Error!: ' . $ex->getMessage();
+         die();
+      }
+
+      $sql = "SELECT * FROM message";
+      $result = $db->query($sql);
+
+      if ($result->num_rows > 0) {
+         // output data of each row
+         while ($row = $result->fetch_assoc()) {
+            echo "<br> id: " . $row["id"] . " - Message: " . $row["message_text"] . "<br>";
+         }
+      } else {
+         echo "0 results";
+      }
+      $db->close();
+      ?>
+      // if (window.XMLHttpRequest) {
+      //    // code for IE7+, Firefox, Chrome, Opera, Safari
+      //    xmlhttp = new XMLHttpRequest();
+      // } else {
+      //    // code for IE6, IE5
+      //    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      // }
+      // xmlhttp.onreadystatechange = function() {
+      //    if (this.readyState == 4 && this.status == 200) {
+      //       document.getElementById("content").innerHTML = this.responseText;
+      //    }
+      // };
+      // xmlhttp.open("GET", "home.php?", true);
+      // xmlhttp.send();
+
    }
 
    function search(text) {
@@ -112,42 +161,3 @@
 </script>
 
 </html>
-
-<?php
-try {
-   $dbUrl = getenv('DATABASE_URL');
-
-   $dbOpts = parse_url($dbUrl);
-
-   $dbHost = $dbOpts["host"];
-   $dbPort = $dbOpts["port"];
-   $dbUser = $dbOpts["user"];
-   $dbPassword = $dbOpts["pass"];
-   $dbName = ltrim($dbOpts["path"], '/');
-
-   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $ex) {
-   echo 'Error!: ' . $ex->getMessage();
-   die();
-}
-
-if (isset($_GET['search'])) {
-   $stmt = $db->prepare('SELECT user_id, message_time, message_text FROM message WHERE book=:book');
-   $stmt->execute(array(':book' => $_GET['search']));
-   $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-
-   foreach ($rows as $message) {
-      echo "<b>" . $message['message_time'] . "<br>" . $message['message_text'] . "</b> - ";
-      echo '<br/>';
-   }
-} else {
-   foreach ($db->query('SELECT book, chapter, verse, content FROM message') as $message) {
-      echo "<b>" . $message['book'] . " " . $message['chapter'] . ": " . $message['verse'] . "</b> - " . $message['content'];
-      echo '<br/>';
-   }
-}
-
-?>

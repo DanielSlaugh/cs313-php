@@ -9,26 +9,34 @@ CREATE DATABASE IF NOT EXISTS social_media
     CONNECTION LIMIT = -1;
 
 
-CREATE TABLE IF NOT EXISTS public.users(
+CREATE TABLE public.users(
 	id SERIAL NOT NULL PRIMARY KEY,
-	username VARCHAR(100) NOT NULL UNIQUE,
+	username VARCHAR(100) NOT NULL,
 	password VARCHAR(100) NOT NULL,
 	display_name VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS public.message(
+INSERT INTO users (username, password, display_name) VALUES ('DanielSlaugh', 'qwertyuiop0987654321', 'Daniel Slaugh');
+
+
+CREATE TABLE public.message(
    id SERIAL NOT NULL PRIMARY KEY,
    user_id INT NOT NULL REFERENCES public.users(id),
    message_time TIMESTAMP WITHOUT TIME ZONE NOT NULL DEFAULT now(),
    message_text TEXT NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS public.comment(
+INSERT INTO message (user_id, message_text) VALUES (1, 'And the light shineth in darkness; and the darkness comprehended it not.');
+
+
+CREATE TABLE public.comment(
    id SERIAL NOT NULL PRIMARY KEY,
    message_id INT NOT NULL REFERENCES public.message(id),
    user_id INT NOT NULL REFERENCES public.users(id),
    comment_text TEXT NOT NULL
 );
+
+INSERT INTO comment (message_id, user_id, comment_text) VALUES (1, 1, 'Cool Script. LOL.');
 
 
 
