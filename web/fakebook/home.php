@@ -69,7 +69,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                   $user_id = $post[user_id];
                   $time = $post[message_time];
                   $message = $post[message_text];
-                  echo $user_id;
+                  echo $time . " " . $user_id . " " . $message;
                }
                ?>
 
