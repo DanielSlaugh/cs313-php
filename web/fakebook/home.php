@@ -82,10 +82,6 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
 
                <?php
-                  $display_name = $post[u.display_name];
-                  $user_id = $post[user_id];
-                  $time = $post[message_time];
-                  $message = $post[message_text];
                foreach ($posts as $post) {
                      echo '<li class="post">
                      <div class="post__title">
@@ -103,6 +99,9 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                      <div class="post_content">Only Happy Trees</div>
                      <a href="#" class="post_comment"><i>comment</i></a>
                      </li>';
+                     $user_id = $post[user_id];
+                     $time = $post[message_time];
+                     $message = $post[message_text];
                      echo $time . " " . $user_id . " " . $message;
                   }
                   ?>
