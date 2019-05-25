@@ -39,6 +39,76 @@ $db->close();
 ?>
 
 
+
+=======================WORKING=============================
+
+
+<?php
+echo "<table style='border: solid 1px black;'>";
+echo "<tr><th>User_id</th><th>Time</th><th>Message</th></tr>";
+
+class TableRows extends RecursiveIteratorIterator
+{
+   function __construct($it)
+   {
+      parent::__construct($it, self::LEAVES_ONLY);
+   }
+
+   function current()
+   {
+      return "<td style='width: 150px; border: 1px solid black;'>" . parent::current() . "</td>";
+   }
+
+   function beginChildren()
+   {
+      echo "<tr>";
+   }
+
+   function endChildren()
+   {
+      echo "</tr>" . "\n";
+   }
+}
+
+$dbUrl = getenv('DATABASE_URL');
+
+$dbOpts = parse_url($dbUrl);
+
+$dbHost = $dbOpts["host"];
+$dbPort = $dbOpts["port"];
+$dbUser = $dbOpts["user"];
+$dbPassword = $dbOpts["pass"];
+$dbName = ltrim($dbOpts["path"], '/');
+
+
+try {
+   $conn = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+   $stmt = $conn->prepare("SELECT user_id, message_time, message_text FROM message");
+   $stmt->execute();
+
+   // set the resulting array to associative
+   $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+   foreach (new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k => $v) {
+      echo $v;
+   }
+} catch (PDOException $e) {
+   echo "Error: " . $e->getMessage();
+}
+$conn = null;
+echo "</table>";
+?>
+
+
+
+
+
+
+
+
+
+
 // $result = mysqli_query($db, $sql);
 
 // while ($row = mysqli_fetch_array($result)) {
