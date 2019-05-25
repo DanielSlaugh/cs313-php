@@ -80,30 +80,20 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                      <a href="#" class="post_comment"><i>comment</i></a>
                   </li> -->
 
-
                   <?php
                   foreach ($posts as $post) {
                      $dispay_name = $post[display_name];
                      $user_id = $post[user_id];
                      $time = $post[message_time];
                      $message = $post[message_text];
+
                      echo '<li class="post">
                      <div class="post__title">
                      <h3>' . $dispay_name . '</h3>
                      <p>' . $time . '</p>
                      </div>
                      <div class="post_content">' . $message . '</div>
-                     <a href="#" class="post_comment"><i>comment</i></a>
-                     </li>
-                     <li class="post">
-                     <div class="post__title">
-                     <h3>Bob Ross</h3>
-                     <p>May 26, 2019</p>
-                     </div>
-                     <div class="post_content">Only Happy Trees</div>
-                     <a href="#" class="post_comment"><i>comment</i></a>
-                     </li>';
-                     // echo $time . " " . $user_id . " " . $message;
+                     <a href="#" class="post_comment"><i>comment</i></a>';
                   }
                   ?>
 
