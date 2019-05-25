@@ -63,7 +63,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
          <div id="content_parent">
             <p id="content">
                <ul class="posts">
-                  <li class="post">
+                  <!-- <li class="post">
                      <div class="post__title">
                         <h3>Daniel Slaugh</h3>
                         <p>May 25, 2019</p>
@@ -78,7 +78,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                      </div>
                      <div class="post_content">Only Happy Trees</div>
                      <a href="#" class="post_comment"><i>comment</i></a>
-                  </li>
+                  </li> -->
 
 
                   <?php
