@@ -27,6 +27,7 @@ CREATE TABLE public.message(
 );
 
 INSERT INTO message (user_id, message_text) VALUES (1, 'And the light shineth in darkness; and the darkness comprehended it not.');
+INSERT INTO message (user_id, message_text) VALUES (1, 'This is my second message');
 
 
 CREATE TABLE public.comment(

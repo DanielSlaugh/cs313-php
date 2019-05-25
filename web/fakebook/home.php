@@ -47,7 +47,7 @@
 
       <div class="content">
          <div id="content_parent">
-            <p id="content">No content yet :(
+            <p id="content">
 
 
 
