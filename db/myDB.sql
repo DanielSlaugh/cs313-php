@@ -17,6 +17,7 @@ CREATE TABLE public.users(
 );
 
 INSERT INTO users (username, password, display_name) VALUES ('DanielSlaugh', 'qwertyuiop0987654321', 'Daniel Slaugh');
+select u.display_name, m.message_text, m.message_time from users u join message m on u.id = m.user_id;
 
 
 CREATE TABLE public.message(
