@@ -62,37 +62,37 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
       <div class="content">
          <div id="content_parent">
             <p id="content">
-            <ul class="posts">
-               <li class="post">
-                  <div class="post__title">
-                     <h3>Daniel Slaugh</h3>
-                     <p>May 25, 2019</p>
-                  </div>
-                  <div class="post_content">And the light shineth in darkness; and the darkness comprehended it not.</div>
-                  <a href="#" class="post_comment"><i>comment</i></a>
-               </li>
-               <li class="post">
-                  <div class="post__title">
-                     <h3>Bob Ross</h3>
-                     <p>May 26, 2019</p>
-                  </div>
-                  <div class="post_content">Only Happy Trees</div>
-                  <a href="#" class="post_comment"><i>comment</i></a>
-               </li>
+               <ul class="posts">
+                  <li class="post">
+                     <div class="post__title">
+                        <h3>Daniel Slaugh</h3>
+                        <p>May 25, 2019</p>
+                     </div>
+                     <div class="post_content">And the light shineth in darkness; and the darkness comprehended it not.</div>
+                     <a href="#" class="post_comment"><i>comment</i></a>
+                  </li>
+                  <li class="post">
+                     <div class="post__title">
+                        <h3>Bob Ross</h3>
+                        <p>May 26, 2019</p>
+                     </div>
+                     <div class="post_content">Only Happy Trees</div>
+                     <a href="#" class="post_comment"><i>comment</i></a>
+                  </li>
 
 
-               <?php
-               foreach ($posts as $post) {
+                  <?php
+                  foreach ($posts as $post) {
                      $dispay_name = $post[display_name];
                      $user_id = $post[user_id];
                      $time = $post[message_time];
                      $message = $post[message_text];
                      echo '<li class="post">
                      <div class="post__title">
-                     <h3>'.$dispay_name.'</h3>
-                     <p>May 25, 2019</p>
+                     <h3>' . $dispay_name . '</h3>
+                     <p>' . $time . '</p>
                      </div>
-                     <div class="post_content">And the light shineth in darkness; and the darkness comprehended it not.</div>
+                     <div class="post_content">' . $message . '</div>
                      <a href="#" class="post_comment"><i>comment</i></a>
                      </li>
                      <li class="post">
@@ -107,7 +107,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                   }
                   ?>
 
-</ul>
+               </ul>
             </p>
             <form id="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                <textarea class="textarea" id="searchbar" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
