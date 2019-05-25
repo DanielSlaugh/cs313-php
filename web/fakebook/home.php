@@ -75,6 +75,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                      <p>May 26, 2019</p>
                   </div>
                   <div class="post_content">Only Happy Trees</div>
+                  <a href="#" class="post_comment"><i>comment</i></a>
                </li>
             </ul>
 
