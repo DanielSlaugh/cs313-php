@@ -1,5 +1,5 @@
 <?php
-require('dbConnect.php')
+require('dbConnect.php');
 $db = get_db();
 
 $query = 'SELECT user_id, message_time, message_text FROM message';
