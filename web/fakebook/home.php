@@ -79,18 +79,34 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                   <div class="post_content">Only Happy Trees</div>
                   <a href="#" class="post_comment"><i>comment</i></a>
                </li>
-            </ul>
 
 
                <?php
                foreach ($posts as $post) {
-                  $user_id = $post[user_id];
-                  $time = $post[message_time];
-                  $message = $post[message_text];
-                  echo $time . " " . $user_id . " " . $message;
-               }
-               ?>
+                         `<li class="post">
+                  <div class="post__title">
+                     <h3>Daniel Slaugh</h3>
+                     <p>May 25, 2019</p>
+                     </div>
+                     <div class="post_content">And the light shineth in darkness; and the darkness comprehended it not.</div>
+                     <a href="#" class="post_comment"><i>comment</i></a>
+                     </li>
+                     <li class="post">
+                     <div class="post__title">
+                     <h3>Bob Ross</h3>
+                     <p>May 26, 2019</p>
+                     </div>
+                     <div class="post_content">Only Happy Trees</div>
+                     <a href="#" class="post_comment"><i>comment</i></a>
+                     </li>`
+                     $user_id = $post[user_id];
+                     $time = $post[message_time];
+                     $message = $post[message_text];
+                     echo $time . " " . $user_id . " " . $message;
+                  }
+                  ?>
 
+</ul>
             </p>
             <form id="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                <textarea class="textarea" id="searchbar" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
