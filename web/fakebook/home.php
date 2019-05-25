@@ -61,6 +61,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
       <div class="content">
          <div id="content_parent">
+            <p id="content">
             <ul class="posts">
                <li class="post">
                   <div class="post__title">
@@ -80,7 +81,6 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                </li>
             </ul>
 
-            <p id="content">
 
                <?php
                foreach ($posts as $post) {
