@@ -82,7 +82,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
 
                <?php
-                  $display_name = $post[display_name];
+                  $display_name = $post[u.display_name];
                   $user_id = $post[user_id];
                   $time = $post[message_time];
                   $message = $post[message_text];
