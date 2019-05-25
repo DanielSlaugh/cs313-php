@@ -68,6 +68,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                      <p>May 25, 2019</p>
                   </div>
                   <div class="post_content">And the light shineth in darkness; and the darkness comprehended it not.</div>
+                  <a href="#" class="post_comment"><i>comment</i></a>
                </li>
                <li class="post">
                   <div class="post__title">
