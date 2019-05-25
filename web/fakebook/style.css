@@ -50,8 +50,14 @@ a {
   margin-top: 0px;
 }
 
-.post_comment{
-
+.post_comment i{
+  color: black;
+  font-size: .38em;
+  padding-left:50vw;
+  padding-right: 50vw;
+  padding-bottom: 2vh;
+  padding-top: 1vh;
+  border-top: solid lightgrey;
 }
 
 
