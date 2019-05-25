@@ -61,7 +61,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
       <div class="content">
          <div id="content_parent">
-            <ul>
+            <ul class="posts">
                <li class="post">
                   <div class="post__title">
                      <h3>Daniel Slaugh</h3>
