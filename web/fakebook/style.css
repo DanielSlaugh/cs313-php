@@ -26,22 +26,34 @@ a {
   text-decoration: none;
 }
 
+
 .posts{
   list-style-type: none;
-  border: 1px solid black;
+  background: #e0e0e0;
+  margin: 0px;
+  padding: 0px;
 }
 
 .post{
-
+ background: white;
+ margin-top: 2vh;
 }
 
-.post_title{
+.post h3{
+  margin: 0px;
+  margin-top: 2vw;
+  font-size: .8em;
+}
 
+.post p {
+  font-size: .38em;
+  margin-top: 0px;
 }
 
 .post_comment{
 
 }
+
 
 a.button {
   background:#ffffff;
