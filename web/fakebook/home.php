@@ -89,7 +89,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                foreach ($posts as $post) {
                      echo '<li class="post">
                      <div class="post__title">
-                     <h3>' . ' $display_name '.'</h3>
+                     <h3>' .  $display_name .'</h3>
                      <p>May 25, 2019</p>
                      </div>
                      <div class="post_content">And the light shineth in darkness; and the darkness comprehended it not.</div>
