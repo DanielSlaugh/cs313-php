@@ -103,7 +103,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                      <div class="post_content">Only Happy Trees</div>
                      <a href="#" class="post_comment"><i>comment</i></a>
                      </li>';
-                     echo $time . " " . $user_id . " " . $message;
+                     // echo $time . " " . $user_id . " " . $message;
                   }
                   ?>
 
