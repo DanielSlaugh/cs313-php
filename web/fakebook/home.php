@@ -12,7 +12,6 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,6 +61,23 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
       <div class="content">
          <div id="content_parent">
+            <ul>
+               <li class="post">
+                  <div class="post__title">
+                     <h3>Daniel Slaugh</h3>
+                     <p>May 25, 2019</p>
+                  </div>
+                  <div class="post_content">And the light shineth in darkness; and the darkness comprehended it not.</div>
+               </li>
+               <li class="post">
+                  <div class="post__title">
+                     <h3>Bob Ross</h3>
+                     <p>May 26, 2019</p>
+                  </div>
+                  <div class="post_content">Only Happy Trees</div>
+               </li>
+            </ul>
+
             <p id="content">
 
                <?php
@@ -95,22 +111,6 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
    function load_page() {
       var x = document.getElementById("form");
       x.style.display = "none";
-
-      // if (window.XMLHttpRequest) {
-      //    // code for IE7+, Firefox, Chrome, Opera, Safari
-      //    xmlhttp = new XMLHttpRequest();
-      // } else {
-      //    // code for IE6, IE5
-      //    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-      // }
-      // xmlhttp.onreadystatechange = function() {
-      //    if (this.readyState == 4 && this.status == 200) {
-      //       document.getElementById("content").innerHTML = this.responseText;
-      //    }
-      // };
-      // xmlhttp.open("GET", "home.php?", true);
-      // xmlhttp.send();
-
    }
 
    function search(text) {
@@ -143,12 +143,6 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
       element.appendChild(parent);
       parent.setAttribute('id', "content");
 
-      // // Adds an element to the document
-      // var parent = document.getElementById("content_parent");
-      // var newElement = document.createElement("p");
-      // newElement.setAttribute('id', content);
-      // // newElement.innerHTML = html;
-      // parent.appendChild(newElement);
       console.log("a child is born");
    }
 </script>

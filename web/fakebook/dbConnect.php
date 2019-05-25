@@ -1,4 +1,7 @@
-
+<!--
+   Author: Dainel Slaugh
+   Code: From CS 313 online demo
+ -->
 
 <?php
 
