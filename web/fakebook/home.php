@@ -1,8 +1,8 @@
 <?php
 require('dbConnect.php');
 $db = get_db();
-// $query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
-$query = 'SELECT user_id, message_time, message_text FROM message';
+$query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
+// $query = 'SELECT user_id, message_time, message_text FROM message';
 $stmt = $db->prepare($query);
 $stmt->execute();
 $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
