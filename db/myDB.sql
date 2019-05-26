@@ -17,6 +17,9 @@ CREATE TABLE public.users(
 );
 
 INSERT INTO users (username, password, display_name) VALUES ('DanielSlaugh', 'qwertyuiop0987654321', 'Daniel Slaugh');
+INSERT INTO users (username, password, display_name) VALUES ('BobbyRozz', 'PaintersRC00l', 'Bob Ross');
+
+
 select u.display_name, m.message_text, m.message_time from users u join message m on u.id = m.user_id;
 
 
@@ -29,6 +32,7 @@ CREATE TABLE public.message(
 
 INSERT INTO message (user_id, message_text) VALUES (1, 'And the light shineth in darkness; and the darkness comprehended it not.');
 INSERT INTO message (user_id, message_text) VALUES (1, 'This is my second message');
+INSERT INTO message (user_id, message_text) VALUES (2, 'Only Happy Trees');
 
 
 CREATE TABLE public.comment(
