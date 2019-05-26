@@ -118,6 +118,23 @@ echo "</table>";
 // xmlhttp.send();
 
 
+==========================Hard Coded List=========================================
+<!-- <li class="post">
+                     <div class="post__title">
+                        <h3>Daniel Slaugh</h3>
+                        <p>May 25, 2019</p>
+                     </div>
+                     <div class="post_content">And the light shineth in darkness; and the darkness comprehended it not.</div>
+                     <a href="#" class="post_comment"><i>comment</i></a>
+                  </li>
+                  <li class="post">
+                     <div class="post__title">
+                        <h3>Bob Ross</h3>
+                        <p>May 26, 2019</p>
+                     </div>
+                     <div class="post_content">Only Happy Trees</div>
+                     <a href="#" class="post_comment"><i>comment</i></a>
+                  </li> -->
 
 
 

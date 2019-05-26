@@ -63,22 +63,6 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
          <div id="content_parent">
             <p id="content">
                <ul class="posts" id="content">
-                  <!-- <li class="post">
-                     <div class="post__title">
-                        <h3>Daniel Slaugh</h3>
-                        <p>May 25, 2019</p>
-                     </div>
-                     <div class="post_content">And the light shineth in darkness; and the darkness comprehended it not.</div>
-                     <a href="#" class="post_comment"><i>comment</i></a>
-                  </li>
-                  <li class="post">
-                     <div class="post__title">
-                        <h3>Bob Ross</h3>
-                        <p>May 26, 2019</p>
-                     </div>
-                     <div class="post_content">Only Happy Trees</div>
-                     <a href="#" class="post_comment"><i>comment</i></a>
-                  </li> -->
 
                   <?php
                   foreach ($posts as $post) {
@@ -87,7 +71,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                      $time = $post[message_time];
                      $message = $post[message_text];
 
-                     echo '<li class="post" id="content">
+                     echo '<li class="post">
                      <div class="post__title">
                      <h3>' . $dispay_name . '</h3>
                      <p>' . $time . '</p>
