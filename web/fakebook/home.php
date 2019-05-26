@@ -87,13 +87,14 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                      $time = $post[message_time];
                      $message = $post[message_text];
 
-                     echo '<li class="post">
+                     echo '<li class="post" id="content">
                      <div class="post__title">
                      <h3>' . $dispay_name . '</h3>
                      <p>' . $time . '</p>
                      </div>
                      <div class="post_content">' . $message . '</div>
-                     <a href="#" class="post_comment"><i>comment</i></a>';
+                     <a href="#" class="post_comment"><i>comment</i></a>
+                     </li>';
                   }
                   ?>
 
