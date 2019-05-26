@@ -90,9 +90,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
             </form>
          </div>
 
-         <br><br><br><br><br><br><br><br><br><br><br><br>
-         <br><br><br><br><br><br><br><br><br><br><br><br>
-         <br><br><br><br><br><br><br><br><br><br><br><br>
+         <br>
       </div>
 
    </div>
