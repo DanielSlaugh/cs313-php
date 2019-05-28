@@ -73,13 +73,13 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                   $time_month = substr($post[message_time], 5, 2);
                   $time_year = substr($post[message_time], 0, 4);
                   $month_array = [January, February, March, April, May, June, July, August, September, October, November, December];
-                  echo $month_array[$time_month];
+                  echo $month_array[intval($time_month)];
                   $message = $post[message_text];
 
                   echo '<li class="post">
                      <div class="post__title">
                      <h3>' . $dispay_name . '</h3>
-                     <p>' . $time_month . ' ' . $time_day . ', ' . $time_year . '</p>
+                     <p>' . $month_array[intval($time_month)] . ' ' . $time_day . ', ' . $time_year . '</p>
                      </div>
                      <div class="post_content">' . $message . '</div>
                      <a href="#" class="post_comment"><i>comment</i></a>
