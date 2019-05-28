@@ -114,9 +114,10 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
       // Destroy half of what's on the page
       console.log("Enter Thanos");
       var element = document.getElementById("content");
-      element.parentNode.removeChild(element);
-      var element2 = document.getElementById("main_head");
-      element2.parentNode.removeChild(element2);
+      element.innerHTML = "";
+      // element.parentNode.removeChild(element);
+      // var element2 = document.getElementById("main_head");
+      // element2.parentNode.removeChild(element2);
       console.log("Should have gone for the head");
 
       create_message_page()
