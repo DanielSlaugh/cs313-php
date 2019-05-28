@@ -68,8 +68,8 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                foreach ($posts as $post) {
                   $dispay_name = $post[display_name];
                   $user_id = $post[user_id];
-                  $time_day = substr($post[message_time], 8, 10);
-                  $time_month = substr($post[message_time], 5, 6);
+                  $time_day = substr($post[message_time], 8, 2);
+                  $time_month = substr($post[message_time], 5, 2);
                   $time_year = substr($post[message_time], 0, 4);
                   $message = $post[message_text];
 
