@@ -68,7 +68,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                foreach ($posts as $post) {
                   $dispay_name = $post[display_name];
                   $user_id = $post[user_id];
-                  $time = $post[message_time];
+                  $time = substr($post[message_time], 0, 9);
                   $message = $post[message_text];
 
                   echo '<li class="post">
