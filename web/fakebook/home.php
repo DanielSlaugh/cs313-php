@@ -7,8 +7,7 @@ $stmt = $db->prepare($query);
 $stmt->execute();
 $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-// set the resulting array to associative
-$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+// $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
 ?>
 
