@@ -62,16 +62,16 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
       <div class="content">
          <div id="content_parent">
 
-               <ul class="posts" id="content">
+            <ul class="posts" id="content">
 
-                  <?php
-                  foreach ($posts as $post) {
-                     $dispay_name = $post[display_name];
-                     $user_id = $post[user_id];
-                     $time = $post[message_time];
-                     $message = $post[message_text];
+               <?php
+               foreach ($posts as $post) {
+                  $dispay_name = $post[display_name];
+                  $user_id = $post[user_id];
+                  $time = $post[message_time];
+                  $message = $post[message_text];
 
-                     echo '<li class="post">
+                  echo '<li class="post">
                      <div class="post__title">
                      <h3>' . $dispay_name . '</h3>
                      <p>' . $time . '</p>
@@ -79,10 +79,10 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                      <div class="post_content">' . $message . '</div>
                      <a href="#" class="post_comment"><i>comment</i></a>
                      </li>';
-                  }
-                  ?>
+               }
+               ?>
 
-               </ul>
+            </ul>
 
             <form id="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                <textarea class="textarea" id="searchbar" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
@@ -117,7 +117,8 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
       // element.innerHTML = "";
       element.parentNode.removeChild(element);
       var element2 = document.getElementById("main_head");
-      element2.parentNode.removeChild(element2);
+      // element2.parentNode.removeChild(element2);
+      element2.innerHTML = "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
       console.log("Should have gone for the head");
 
       create_message_page()
