@@ -61,7 +61,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
       <div class="content">
          <div id="content_parent">
-            <p id="content">
+
                <ul class="posts" id="content">
 
                   <?php
@@ -83,7 +83,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                   ?>
 
                </ul>
-            </p>
+
             <form id="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                <textarea class="textarea" id="searchbar" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
                <input class="submit" type="submit" value="Post">
