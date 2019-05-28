@@ -90,7 +90,7 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
             </form>
          </div>
 
-         <br>
+         <section id="spacing"></section>
       </div>
 
    </div>
@@ -114,12 +114,15 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
       // Destroy half of what's on the page
       console.log("Enter Thanos");
       var element = document.getElementById("content");
-      element.innerHTML = "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
+      // element.innerHTML = "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
       // element.innerHTML = "";
-      // element.parentNode.removeChild(element);
+      element.parentNode.removeChild(element);
       var element2 = document.getElementById("main_head");
       element2.parentNode.removeChild(element2);
+
       console.log("Should have gone for the head");
+      var element3 = document.getElementById("spacing");
+      element3.innerHTML = "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
 
       create_message_page()
    }
