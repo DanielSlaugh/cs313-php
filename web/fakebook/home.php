@@ -68,9 +68,12 @@ $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
                foreach ($posts as $post) {
                   $dispay_name = $post[display_name];
                   $user_id = $post[user_id];
+
                   $time_day = substr($post[message_time], 8, 2);
                   $time_month = substr($post[message_time], 5, 2);
                   $time_year = substr($post[message_time], 0, 4);
+                  $month_array = [January, February, March, April, May, June, July, August, September, October, November, December];
+                  echo $month_array[$time_month];
                   $message = $post[message_text];
 
                   echo '<li class="post">
