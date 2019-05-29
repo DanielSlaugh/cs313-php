@@ -99,7 +99,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                <input class="full_width" type="password" placeholder="Enter Password" name="psw" required><br>
                <button class="auth_button" type="submit">Login</button>
                <p class="full_width">or</p>
-               <button class="auth_button2" type="button">sign-up</button>
+               <button class="auth_button2" type="button">Sign-up</button>
             </form>
 
          </div>
