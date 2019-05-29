@@ -92,26 +92,22 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                <input class="submit" type="submit" value="Post">
             </form>
 
+            <form id="login_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+               <label for="uname"><b>Username</b></label>
+               <input type="text" placeholder="Enter Username" name="uname" required>
+               <label for="psw"><b>Password</b></label>
+               <input type="password" placeholder="Enter Password" name="psw" required>
+               <button type="submit">Login</button>
+            </form>
 
-
-               <form id="login_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-                  <label for="uname"><b>Username</b></label>
-                  <input type="text" placeholder="Enter Username" name="uname" required>
-
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" required>
-
-                  <button type="submit">Login</button>
-               </form>
-
-            </div>
-            <br><br><br><br><br><br><br><br><br><br>
-            <br><br>
-
-            <section id="spacing"></section>
          </div>
+         <br><br><br><br><br><br><br><br><br><br>
+         <br><br>
 
+         <section id="spacing"></section>
       </div>
+
+   </div>
 
 </body>
 
@@ -127,6 +123,9 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
       var x = document.getElementById("main_head");
       x.style.display = "flex";
+
+      var x = document.getElementById("login_form");
+      x.style.display = "none";
    }
 
    function load_comment_page() {
@@ -137,6 +136,9 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
       x.style.display = "none";
 
       var x = document.getElementById("main_head");
+      x.style.display = "none";
+
+      var x = document.getElementById("login_form");
       x.style.display = "none";
    }
 
@@ -149,6 +151,9 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
       var x = document.getElementById("main_head");
       x.style.display = "none";
+
+      var x = document.getElementById("login_form");
+      x.style.display = "flex";
    }
 
    function search(text) {
