@@ -91,14 +91,27 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                <textarea class="textarea" id="searchbar" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
                <input class="submit" type="submit" value="Post">
             </form>
+
+
+
+               <form id="login_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                  <button type="submit">Login</button>
+               </form>
+
+            </div>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br>
+
+            <section id="spacing"></section>
          </div>
-         <br><br><br><br><br><br><br><br><br><br>
-         <br><br>
 
-         <section id="spacing"></section>
       </div>
-
-   </div>
 
 </body>
 
