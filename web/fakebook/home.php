@@ -111,7 +111,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
       x.style.display = "block";
 
       var x = document.getElementById("main_head");
-      x.style.display = "block";
+      x.style.display = "flex";
    }
 
    function load_comment_page() {
