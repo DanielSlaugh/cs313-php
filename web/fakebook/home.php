@@ -92,6 +92,8 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                <input class="submit" type="submit" value="Post">
             </form>
          </div>
+         <br><br><br><br><br><br><br><br><br><br>
+         <br><br><br><br><br><br><br><br><br><br>
 
          <section id="spacing"></section>
       </div>
