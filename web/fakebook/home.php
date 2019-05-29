@@ -118,8 +118,8 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
       console.log("Enter Thanos");
       var element = document.getElementById("content");
       // element.innerHTML = "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
-      // element.innerHTML = "";
-      element.parentNode.removeChild(element);
+      element.innerHTML = "";
+      // element.parentNode.removeChild(element);
       var element2 = document.getElementById("main_head");
       element2.parentNode.removeChild(element2);
 
