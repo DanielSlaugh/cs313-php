@@ -49,7 +49,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <i>back</i>
          </a>
 
-         <a href="#" class="post_button" id="main_head" onclick="destroy_content(); create_message_page();">
+         <a href="#" class="post_button" id="main_head" onclick="load_comment_page();">
             <i>What's on your mind? </i>
          </a>
 
@@ -108,6 +108,14 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
       x.style.display = "none";
    }
 
+   function load_comment_page() {
+      var x = document.getElementById("form");
+      x.style.display = "block";
+
+      var x = document.getElementById("content");
+      x.style.display = "none";
+   }
+
    function search(text) {
       let url = "home.php?search=" + text;
       window.location = url;
@@ -116,13 +124,10 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
    function destroy_content() {
       // Destroy half of what's on the page
       console.log("Enter Thanos");
-      if (document.getElementById("content").innerHTML != "") {
-          var element = document.getElementById("content");
-          element.innerHTML = "";
-      }
+      var element = document.getElementById("content");
       // element.innerHTML = "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
-      // element.parentNode.removeChild(element);
-
+      // element.innerHTML = "";
+      element.parentNode.removeChild(element);
       var element2 = document.getElementById("main_head");
       element2.parentNode.removeChild(element2);
 
