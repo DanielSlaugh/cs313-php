@@ -172,6 +172,13 @@ Login Page
   font-size: 1.5em;
 }
 
+p.full_width{
+  text-align: center;
+  border: 0px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
 /* Set a style for all buttons */
 .auth_button, .auth_button2 {
   color: white;
