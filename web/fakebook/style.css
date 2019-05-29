@@ -158,6 +158,35 @@ a.post_button {
 }
 
 /*
+Login Page
+*/
+
+/* Full-width input fields */
+.full_width {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.auth_button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.auth_button:hover {
+  opacity: 0.8;
+}
+
+/*
   Begin Flexbox + Important CSS Starts Here
 */
 
