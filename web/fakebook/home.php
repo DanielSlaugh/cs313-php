@@ -98,6 +98,8 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                <label for="psw"><b>Password</b></label><br>
                <input class="full_width" type="password" placeholder="Enter Password" name="psw" required><br>
                <button class="auth_button" type="submit">Login</button>
+               <p>or</p><br>
+               <button class="auth_button2" type="button">sign-up</button>
             </form>
 
          </div>
