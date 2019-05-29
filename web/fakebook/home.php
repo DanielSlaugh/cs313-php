@@ -99,7 +99,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                <input class="full_width" type="password" placeholder="Enter Password" name="psw" required><br>
                <button class="auth_button" type="submit">Login</button>
                <p class="full_width">or</p>
-               <button class="auth_button2" type="button">Sign-up</button>
+               <button class="auth_button2" type="button" onclick="load_sign_up_page()">Sign-up</button>
             </form>
 
             <form class="full_width" id="sign_up_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
@@ -109,8 +109,8 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                <input class="full_width" type="password" placeholder="Enter Password" name="psw" required><br>
                <label for="dname"><b>Display Name</b></label><br>
                <input class="full_width" type="text" placeholder="Enter Name" name="dname" required><br>
-               <button class="auth_button" type="submit">Sign-up</button>
                <p class="full_width">or</p>
+               <button class="auth_button" type="submit">Sign-up</button>
             </form>
 
          </div>
@@ -178,7 +178,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
       x.style.display = "none";
    }
 
-   function load_profile_page() {
+   function load_sign_up_page() {
       var x = document.getElementById("form");
       x.style.display = "none";
 
