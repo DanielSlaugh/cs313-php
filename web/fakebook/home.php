@@ -93,7 +93,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </form>
          </div>
          <br><br><br><br><br><br><br><br><br><br>
-         <br><br><br><br><br><br><br><br><br><br>
+         <br><br>
 
          <section id="spacing"></section>
       </div>
