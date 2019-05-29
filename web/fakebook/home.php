@@ -39,7 +39,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
             Messages
          </a>
          <a href="#">
-            <i class="fa fa-user"></i>
+            <i class="fa fa-user" onclick="destroy_content()"></i>
             Me
          </a>
       </div>
