@@ -93,10 +93,10 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </form>
 
             <form class="full_width" id="login_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-               <label for="uname"><b>Username</b></label>
+               <label for="uname"><b>Username</b></label><br>
                <input type="text" placeholder="Enter Username" name="uname" required>
-               <label for="psw"><b>Password</b></label>
-               <input type="password" placeholder="Enter Password" name="psw" required>
+               <label for="psw"><b>Password</b></label><br>
+               <input type="password" placeholder="Enter Password" name="psw" required><br>
                <button class="auth_button" type="submit">Login</button>
             </form>
 
