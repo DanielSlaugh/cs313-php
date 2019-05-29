@@ -169,18 +169,22 @@ Login Page
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  font-size: 1.5em;
 }
 
 /* Set a style for all buttons */
 .auth_button {
-  background-color: #4CAF50;
+  background-color: #018ce0;
   color: white;
-  padding: 14px 20px;
+  padding: 18px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
+  font-size: 1.5em;
+  margin-top: 2vh;
 }
+
 
 .auth_button:hover {
   opacity: 0.8;
