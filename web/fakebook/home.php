@@ -39,7 +39,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
             Messages
          </a>
          <a href="#">
-            <i class="fa fa-user" onclick="destroy_content()"></i>
+            <i class="fa fa-user" onclick="load_profile_page()"></i>
             Me
          </a>
       </div>
@@ -111,6 +111,14 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
    function load_comment_page() {
       var x = document.getElementById("form");
       x.style.display = "block";
+
+      var x = document.getElementById("content");
+      x.style.display = "none";
+   }
+
+   function load_profile_page() {
+      var x = document.getElementById("form");
+      x.style.display = "none";
 
       var x = document.getElementById("content");
       x.style.display = "none";
