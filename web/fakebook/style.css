@@ -173,8 +173,7 @@ Login Page
 }
 
 /* Set a style for all buttons */
-.auth_button {
-  background-color: #018ce0;
+.auth_button, .auth_button2 {
   color: white;
   padding: 18px 20px;
   margin: 8px 0;
@@ -184,6 +183,9 @@ Login Page
   font-size: 1.5em;
   margin-top: 2vh;
 }
+
+.auth_button  {background-color: #3950b1;}
+.auth_button2 {background-color: #0da921;}
 
 
 .auth_button:hover {
