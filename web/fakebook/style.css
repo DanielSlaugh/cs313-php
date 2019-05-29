@@ -195,7 +195,7 @@ p.full_width{
 .auth_button2 {background-color: #0da921;}
 
 
-.auth_button:hover {
+button:hover {
   opacity: 0.8;
 }
 
