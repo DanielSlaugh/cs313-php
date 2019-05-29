@@ -49,7 +49,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <i>back</i>
          </a>
 
-         <a href="#" class="post_button" id="main_head" onclick="destroy_content()">
+         <a href="#" class="post_button" id="main_head" onclick="destroy_content(); create_message_page();">
             <i>What's on your mind? </i>
          </a>
 
@@ -127,7 +127,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
       var element3 = document.getElementById("spacing");
       element3.innerHTML = "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
 
-      create_message_page()
+
    }
 
    function create_message_page() {
