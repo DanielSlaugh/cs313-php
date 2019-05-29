@@ -153,7 +153,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
       x.style.display = "none";
 
       var x = document.getElementById("login_form");
-      x.style.display = "flex";
+      x.style.display = "inline-block";
    }
 
    function search(text) {
