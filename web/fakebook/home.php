@@ -21,13 +21,13 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
    <link rel="stylesheet" href="style.css">
 </head>
 
-<body onload="load_page()">
+<body onload="load_home_page()">
 
    <div class="app-wrap">
 
       <div class="icon-bar">
          <a href="https://polar-plateau-20469.herokuapp.com/fakebook/home.php">
-            <i class="fa fa-home"></i>
+            <i class="fa fa-home" onclick="load_home_page()"></i>
             Home
          </a>
          <a href="#">
@@ -103,9 +103,15 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <script>
    console.log("in the script");
 
-   function load_page() {
+   function load_home_page() {
       var x = document.getElementById("form");
       x.style.display = "none";
+
+      var x = document.getElementById("content");
+      x.style.display = "block";
+
+      var x = document.getElementById("main_head");
+      x.style.display = "block";
    }
 
    function load_comment_page() {
@@ -114,6 +120,9 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
       var x = document.getElementById("content");
       x.style.display = "none";
+
+      var x = document.getElementById("main_head");
+      x.style.display = "none";
    }
 
    function load_profile_page() {
@@ -121,6 +130,9 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
       x.style.display = "none";
 
       var x = document.getElementById("content");
+      x.style.display = "none";
+
+      var x = document.getElementById("main_head");
       x.style.display = "none";
    }
 
