@@ -2,13 +2,9 @@
 require('dbConnect.php');
 $db = get_db();
 $query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
-// $query = 'SELECT user_id, message_time, message_text FROM message';
 $stmt = $db->prepare($query);
 $stmt->execute();
 $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-// $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-
 ?>
 
 <!DOCTYPE html>
@@ -26,41 +22,20 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
    <div class="app-wrap">
 
       <div class="icon-bar">
-         <a href="https://polar-plateau-20469.herokuapp.com/fakebook/home.php">
-            <i class="fa fa-home" onclick="load_home_page()"></i>
-            Home
-         </a>
-         <a href="#">
-            <i class="fa fa-bell"></i>
-            Notifications
-         </a>
-         <a href="#">
-            <i class="fa fa-envelope"></i>
-            Messages
-         </a>
-         <a href="#">
-            <i class="fa fa-user" onclick="load_profile_page()"></i>
-            Me
-         </a>
+         <a href="https://polar-plateau-20469.herokuapp.com/fakebook/home.php"><i class="fa fa-home" onclick="load_home_page()"></i>Home</a>
+         <a href="#"><i class="fa fa-bell"></i>Notifications</a>
+         <a href="#"><i class="fa fa-envelope"></i>Messages</a>
+         <a href="#"><i class="fa fa-user" onclick="load_profile_page()"></i>Me</a>
       </div>
 
       <header class="app-header" id="main_head">
-         <a href="#" class="button" id="main_head">
-            <i>back</i>
-         </a>
-
-         <a href="#" class="post_button" id="main_head" onclick="load_comment_page();">
-            <i>What's on your mind? </i>
-         </a>
-
-         <a href="#" class="button" id="main_head" onclick="add_content()">
-            <i class="fa fa-cog"></i>
-         </a>
+         <a href="#" class="button" id="main_head"><i>back</i></a>
+         <a href="#" class="post_button" id="main_head" onclick="load_comment_page();"><i>What's on your mind? </i></a>
+         <a href="#" class="button" id="main_head" onclick="add_content()"><i class="fa fa-cog"></i></a>
       </header>
 
       <div class="content">
          <div id="content_parent">
-
             <ul class="posts" id="content">
 
                <?php
@@ -84,7 +59,6 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                      </li>';
                }
                ?>
-
             </ul>
 
             <form id="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
@@ -112,20 +86,13 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                <button class="auth_button" type="submit">Sign-up</button>
                <p class="full_width">or</p>
                <button class="auth_button2" type="button" onclick="load_profile_page()">Login</button>
-
             </form>
-
          </div>
          <br><br><br><br><br><br><br><br><br><br>
          <br><br>
-
          <section id="spacing"></section>
       </div>
-
    </div>
-
 </body>
-
 <script src="fakebook.js"></script>
-
 </html>
