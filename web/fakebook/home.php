@@ -109,8 +109,10 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                <input class="full_width" type="password" placeholder="Enter Password" name="psw" required><br>
                <label for="dname"><b>Display Name</b></label><br>
                <input class="full_width" type="text" placeholder="Enter Name" name="dname" required><br>
-               <p class="full_width">or</p>
                <button class="auth_button" type="submit">Sign-up</button>
+               <p class="full_width">or</p>
+               <button class="auth_button2" type="button" onclick="load_profile_page()">Login</button>
+
             </form>
 
          </div>
