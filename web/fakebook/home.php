@@ -116,10 +116,13 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
    function destroy_content() {
       // Destroy half of what's on the page
       console.log("Enter Thanos");
-      var element = document.getElementById("content");
+      if (document.getElementById("content").innerHTML != "") {
+          var element = document.getElementById("content");
+          element.innerHTML = "";
+      }
       // element.innerHTML = "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
-      element.innerHTML = "";
       // element.parentNode.removeChild(element);
+
       var element2 = document.getElementById("main_head");
       element2.parentNode.removeChild(element2);
 
