@@ -102,6 +102,15 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                <button class="auth_button2" type="button">Sign-up</button>
             </form>
 
+            <form class="full_width" id="sign_up_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+               <label for="uname"><b>Username</b></label><br>
+               <input class="full_width" type="text" placeholder="Enter Username" name="uname" required><br>
+               <label for="psw"><b>Password</b></label><br>
+               <input class="full_width" type="password" placeholder="Enter Password" name="psw" required><br>
+               <button class="auth_button" type="submit">Sign-up</button>
+               <p class="full_width">or</p>
+            </form>
+
          </div>
          <br><br><br><br><br><br><br><br><br><br>
          <br><br>
@@ -128,6 +137,9 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
       var x = document.getElementById("login_form");
       x.style.display = "none";
+
+      var x = document.getElementById("sign_up_form");
+      x.style.display = "none";
    }
 
    function load_comment_page() {
@@ -142,6 +154,9 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
       var x = document.getElementById("login_form");
       x.style.display = "none";
+
+      var x = document.getElementById("sign_up_form");
+      x.style.display = "none";
    }
 
    function load_profile_page() {
@@ -155,6 +170,26 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
       x.style.display = "none";
 
       var x = document.getElementById("login_form");
+      x.style.display = "inline-block";
+
+      var x = document.getElementById("sign_up_form");
+      x.style.display = "none";
+   }
+
+   function load_profile_page() {
+      var x = document.getElementById("form");
+      x.style.display = "none";
+
+      var x = document.getElementById("content");
+      x.style.display = "none";
+
+      var x = document.getElementById("main_head");
+      x.style.display = "none";
+
+      var x = document.getElementById("login_form");
+      x.style.display = "none";
+
+      var x = document.getElementById("sign_up_form");
       x.style.display = "inline-block";
    }
 
