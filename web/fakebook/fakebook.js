@@ -1,6 +1,14 @@
 console.log("in the script");
 
 function load_home_page() {
+   var val = "<?php echo $valid_user ?>";
+   if (val == 1) {
+      alert("Signed in");
+   }
+   if (val == 0) {
+      alert("Not Signed in");
+   }
+
 
    var x = document.getElementById("form");
    x.style.display = "none";
