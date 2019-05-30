@@ -13,14 +13,11 @@ if ($username != "") {
    echo $username;
    echo "<br>";
    echo $user_password;
-}
-else {
-
-}
+} else { }
 // if we don't have a login, go to the log in page
 // else if we do, ,
-   // if the username and password are real, load the page with variables
-   // else, go to the login page and display error message
+// if the username and password are real, load the page with variables
+// else, go to the login page and display error message
 
 ?>
 
@@ -116,5 +113,9 @@ else {
    </div>
 </body>
 <script src="fakebook.js"></script>
+<script>
+   var y = <?php $username ?>;
+   console.log(y);
+</script>
 
 </html>
