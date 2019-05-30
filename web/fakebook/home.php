@@ -13,8 +13,10 @@ $user_password = htmlspecialchars($_POST['psw']);
 
 
 $stmt = $db->prepare('SELECT u.username, u.password FROM users u WHERE u.username=$username AND u.password=$user_password');
-$stmt->execute();
-$current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
+echo $stmt;
+// $stmt->execute();
+// $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 
 
 // foreach ($posts as $post) {
