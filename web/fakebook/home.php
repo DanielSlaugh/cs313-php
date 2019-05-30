@@ -16,9 +16,11 @@ $user_password = "";
 
 if (isset($_POST['uname'])) {
    $username = htmlspecialchars($_POST['uname']);
+   echo $username;
 }
 if (isset($_POST['psw'])) {
    $user_password = htmlspecialchars($_POST['psw']);
+   echo $user_password;
    try {
       $stmt = $db->prepare("SELECT u.username, u.password FROM users u WHERE u.username=$username AND u.password=$user_password");
       $stmt->execute();
