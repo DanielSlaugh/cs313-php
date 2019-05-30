@@ -9,9 +9,9 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $username = htmlspecialchars($_POST['uname']);
 $user_password = htmlspecialchars($_POST['psw']);
 
-// $query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
+$query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
 
-$query = 'SELECT u.display_name, FROM users u';
+// $query = 'SELECT u.display_name, FROM users u';
 // --  WHERE username=$username AND password=$user_password';
 // $query = 'SELECT display_name, FROM users WHERE username=$username';
 $stmt = $db->prepare($query);
