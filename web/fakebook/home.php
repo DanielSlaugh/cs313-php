@@ -1,7 +1,8 @@
 <?php
 require('dbConnect.php');
 $db = get_db();
-$query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
+$query = 'SELECT u.password, u.username, u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
+// $query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
 $stmt = $db->prepare($query);
 $stmt->execute();
 $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -9,15 +10,19 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $username = htmlspecialchars($_POST['uname']);
 $user_password = htmlspecialchars($_POST['psw']);
 
-$query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
+// $query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
 
-// $query = 'SELECT u.display_name, FROM users u';
-// --  WHERE username=$username AND password=$user_password';
-// $query = 'SELECT display_name, FROM users WHERE username=$username';
-$stmt = $db->prepare($query);
-$stmt->execute();
-$current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+// // $query = 'SELECT u.display_name, FROM users u';
+// // --  WHERE username=$username AND password=$user_password';
+// // $query = 'SELECT display_name, FROM users WHERE username=$username';
+// $stmt = $db->prepare($query);
+// $stmt->execute();
+// $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
+foreach ($posts as $post) {
+   $password = $post[password];
+   echo $password;
+   echo "<br>";
+}
 
 if ($username != "") {
    $dispay_name = $current_user[display_name];
