@@ -31,8 +31,8 @@ if (isset($_POST['psw'])) {
       echo $e->getMessage();
    }
 }
-foreach ($posts as $post) {
-   $current_name = $current_user['display_name'];
+foreach ($current_user as $user) {
+   $current_name = $user['display_name'];
    echo "welcome, ";
    echo $current_name;
 }
