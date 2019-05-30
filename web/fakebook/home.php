@@ -25,7 +25,7 @@ if (isset($_POST['psw'])) {
    try {
       // $stmt = $db->prepare("SELECT u.username, u.password FROM users u WHERE u.username=$username AND u.password=$user_password");
       $stmt = $db->prepare("SELECT u.display_name, u.username, u.password FROM users u WHERE u.username='$username' AND u.password='$user_password'");
-      if(!$stmt->execute()){
+      if(!$stmt){
          echo "Not logged in";
       }
       else {
