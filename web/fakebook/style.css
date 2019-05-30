@@ -199,6 +199,10 @@ button:hover {
   opacity: 0.8;
 }
 
+#new_user_message{
+  font-size:1.3em;
+}
+
 /*
   Begin Flexbox + Important CSS Starts Here
 */

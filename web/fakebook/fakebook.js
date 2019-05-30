@@ -29,7 +29,7 @@ function load_home_page() {
       x.style.display = "none";
 
       var x = document.getElementById("login_form");
-      x.style.display = "inline-block";
+      x.style.display = "none";
 
       var x = document.getElementById("new_user_message");
       x.style.display = "inline-block";
