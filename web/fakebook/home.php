@@ -30,11 +30,11 @@ if (isset($_POST['psw'])) {
    } catch (PDOException $e) {
       echo $e->getMessage();
    }
-}
-foreach ($current_user as $user) {
-   $current_name = $user['display_name'];
-   echo "welcome, ";
-   echo $current_name;
+   foreach ($current_user as $user) {
+      $current_name = $user['display_name'];
+      echo "welcome, ";
+      echo $current_name;
+   }
 }
 
    // foreach ($posts as $post) {
