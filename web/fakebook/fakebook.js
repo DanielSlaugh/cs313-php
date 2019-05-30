@@ -4,10 +4,10 @@ function load_home_page() {
    var val = "<?php echo $valid_user ?>";
    alert(val);
    console.log("in load_home");
-   if (val == true) {
+   if (val == "1") {
       alert("Signed in");
    }
-   if (val == false) {
+   if (val == "") {
       alert("Not Signed in");
    }
 
