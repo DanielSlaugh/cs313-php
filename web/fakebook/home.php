@@ -9,9 +9,9 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $username = htmlspecialchars($_POST['uname']);
 $user_password = htmlspecialchars($_POST['psw']);
 
-$query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
+// $query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
 
-// $query = 'SELECT u.display_name, FROM users u';
+$query = 'SELECT u.display_name, FROM users u';
 // --  WHERE username=$username AND password=$user_password';
 // $query = 'SELECT display_name, FROM users WHERE username=$username';
 $stmt = $db->prepare($query);
@@ -19,17 +19,17 @@ $stmt->execute();
 $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
-if ($username != "") {
-   $dispay_name = $current_user[display_name];
-   $user_id = $current_user[user_id];
+// if ($username != "") {
+//    $dispay_name = $current_user[display_name];
+//    $user_id = $current_user[user_id];
 
-   echo "Test <br>";
-   echo $dispay_name;
-   echo $user_id;
-   echo $username;
-   echo "<br>";
-   echo $user_password;
-}
+//    echo "Test <br>";
+//    echo $dispay_name;
+//    echo $user_id;
+//    echo $username;
+//    echo "<br>";
+//    echo $user_password;
+// }
 // if we don't have a login, go to the log in page
 // else if we do, ,
 // if the username and password are real, load the page with variables
