@@ -10,7 +10,7 @@ $username = htmlspecialchars($_POST['uname']);
 $user_password = htmlspecialchars($_POST['psw']);
 
 $query = 'SELECT u.username, u.password, u.display_name, m.message_text, m.message_time, FROM users u JOIN message m ON u.id = m.user_id WHERE username=$fusername AND password=$user_password';
-// $stmt = $db->prepare($query);
+$stmt = $db->prepare($query);
 // $stmt->execute();
 // $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -25,7 +25,7 @@ if ($username != "") {
    echo $username;
    echo "<br>";
    echo $user_password;
-} else { }
+}
 // if we don't have a login, go to the log in page
 // else if we do, ,
 // if the username and password are real, load the page with variables
