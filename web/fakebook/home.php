@@ -84,14 +84,16 @@ if (isset($_POST['psw'])) {
    <title>Fakebook</title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="style.css">
+ <script>var val = "<?php echo $valid_user; ?>";</script>
+ </script>
 </head>
 
-<body onload="load_home_page()">
+<body onload="load_home_page(val)">
 
    <div class="app-wrap">
 
       <div class="icon-bar">
-         <a href="https://polar-plateau-20469.herokuapp.com/fakebook/home.php"><i class="fa fa-home" onclick="load_home_page()"></i>Home</a>
+         <a href="https://polar-plateau-20469.herokuapp.com/fakebook/home.php"><i class="fa fa-home" onclick="load_home_page(val)"></i>Home</a>
          <a href="#"><i class="fa fa-bell"></i>Notifications</a>
          <a href="#"><i class="fa fa-envelope"></i>Messages</a>
          <a href="#"><i class="fa fa-user" onclick="load_profile_page()"></i>Me</a>
