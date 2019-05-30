@@ -1,10 +1,6 @@
 console.log("in the script");
 
 function load_home_page() {
-   var url = document.URL;
-   if (url.includes("set")) {
-      console.log("Everything totally works and daniel is smart");
-   }
 
    var x = document.getElementById("form");
    x.style.display = "none";
@@ -20,6 +16,24 @@ function load_home_page() {
 
    var x = document.getElementById("sign_up_form");
    x.style.display = "none";
+
+   // Hide all elements and display a congrats message for a successfully created account
+   var url = document.URL;
+   if (url.includes("set")) {
+      console.log("Everything totally works and Daniel is smart");
+
+      var x = document.getElementById("content");
+      x.style.display = "none";
+
+      var x = document.getElementById("main_head");
+      x.style.display = "none";
+
+      var x = document.getElementById("login_form");
+      x.style.display = "inline-block";
+
+      var x = document.getElementById("new_user_message");
+      x.style.display = "inline-block";
+   }
 }
 
 function load_comment_page() {
@@ -36,6 +50,9 @@ function load_comment_page() {
    x.style.display = "none";
 
    var x = document.getElementById("sign_up_form");
+   x.style.display = "none";
+
+   var x = document.getElementById("new_user_message");
    x.style.display = "none";
 }
 
@@ -54,6 +71,9 @@ function load_profile_page() {
 
    var x = document.getElementById("sign_up_form");
    x.style.display = "none";
+
+   var x = document.getElementById("new_user_message");
+   x.style.display = "none";
 }
 
 function load_sign_up_page() {
@@ -71,6 +91,9 @@ function load_sign_up_page() {
 
    var x = document.getElementById("sign_up_form");
    x.style.display = "inline-block";
+
+   var x = document.getElementById("new_user_message");
+   x.style.display = "none";
 }
 
 function search(text) {

@@ -87,6 +87,10 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                <p class="full_width">or</p>
                <button class="auth_button2" type="button" onclick="load_profile_page()">Login</button>
             </form>
+
+            <p id="new_user_message"><br>Congratulations! You've created a new account. <br>
+            Go ahead and log in so you can have fun with your friends!</p>
+
          </div>
          <br><br><br><br><br><br><br><br><br><br>
          <br><br>
