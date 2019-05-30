@@ -13,6 +13,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $stmt = "";
 $username = "";
 $user_password = "";
+$one = 1;
 
 if (isset($_POST['uname'])) {
    $username = htmlspecialchars($_POST['uname']);
@@ -22,7 +23,8 @@ if (isset($_POST['psw'])) {
    $user_password = htmlspecialchars($_POST['psw']);
    echo $user_password;
    try {
-      $stmt = $db->prepare("SELECT u.username, u.password FROM users u WHERE u.username=$username AND u.password=$user_password");
+      // $stmt = $db->prepare("SELECT u.username, u.password FROM users u WHERE u.username=$username AND u.password=$user_password");
+      $stmt = $db->prepare("SELECT u.username, u.password FROM users u WHERE u.id=$one");
       $stmt->execute();
       $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
    } catch (PDOException $e) {
