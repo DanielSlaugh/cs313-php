@@ -44,8 +44,6 @@ CREATE TABLE public.comment(
 
 INSERT INTO comment (message_id, user_id, comment_text) VALUES (1, 1, 'Cool Script. LOL.');
 
-
-
 -- Useful commands:
 
 -- SELECT * FROM pg_stat_activity;
