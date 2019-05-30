@@ -95,4 +95,5 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
    </div>
 </body>
 <script src="fakebook.js"></script>
+
 </html>

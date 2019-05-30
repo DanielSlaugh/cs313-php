@@ -1,6 +1,11 @@
 console.log("in the script");
 
 function load_home_page() {
+   var url = document.URL;
+   if (url.includes("set")) {
+      console.log("Everything totally works and daniel is smart");
+   }
+
    var x = document.getElementById("form");
    x.style.display = "none";
 
