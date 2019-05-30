@@ -25,7 +25,12 @@ if (isset($_POST['psw'])) {
    try {
       // $stmt = $db->prepare("SELECT u.username, u.password FROM users u WHERE u.username=$username AND u.password=$user_password");
       $stmt = $db->prepare("SELECT u.display_name, u.username, u.password FROM users u WHERE u.username='$username' AND u.password='$user_password'");
-      $stmt->execute();
+      if($stmt->execute()){
+         echo "Works";
+      }
+      else {
+         echo "Not logged in";
+      }
       $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
    } catch (PDOException $e) {
       echo $e->getMessage();
