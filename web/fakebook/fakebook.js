@@ -2,6 +2,7 @@ console.log("in the script");
 
 function load_home_page() {
    var val = "<?php echo $valid_user ?>";
+   console.log("in load_home");
    if (val == 1) {
       alert("Signed in");
    }
