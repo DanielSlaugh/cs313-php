@@ -9,9 +9,11 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $username = htmlspecialchars($_POST['uname']);
 $user_password = htmlspecialchars($_POST['psw']);
 
-echo $username;
-echo "<br>";
-echo $user_password;
+if ($username != "") {
+   echo $username;
+   echo "<br>";
+   echo $user_password;
+}
 
 ?>
 
