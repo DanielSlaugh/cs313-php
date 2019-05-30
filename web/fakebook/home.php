@@ -5,6 +5,14 @@ $query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOI
 $stmt = $db->prepare($query);
 $stmt->execute();
 $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$username = htmlspecialchars($_POST['uname']);
+$user_password = htmlspecialchars($_POST['psw']);
+
+echo $username;
+echo "<br>";
+echo $user_password;
+
 ?>
 
 <!DOCTYPE html>
@@ -89,7 +97,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </form>
 
             <p id="new_user_message"><br>Congratulations! You've created a new account. <br>
-            Go ahead and log in so you can have fun with your friends!</p>
+               Go ahead and log in so you can have fun with your friends!</p>
 
          </div>
          <br><br><br><br><br><br><br><br><br><br>
