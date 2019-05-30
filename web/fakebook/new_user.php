@@ -10,7 +10,7 @@ echo $display_name;
 echo "-1";
 echo "<br>";
 
-require('dbconnect.php');
+require('dbConnect.php');
 $db = get_db();
 echo "0";
 echo "<br>";
