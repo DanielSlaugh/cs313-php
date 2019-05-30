@@ -10,7 +10,7 @@ $username = htmlspecialchars($_POST['uname']);
 $user_password = htmlspecialchars($_POST['psw']);
 
 // $query = 'SELECT password, display_name, FROM users WHERE username=$fusername AND u.password=$user_password';
-$query = 'SELECT display_name, FROM users WHERE username=$fusername';
+$query = 'SELECT display_name, FROM users WHERE username=$username';
 $stmt = $db->prepare($query);
 $stmt->execute();
 $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
