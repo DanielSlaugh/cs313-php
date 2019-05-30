@@ -18,10 +18,9 @@ if (isset($_POST['uname'])) {
 if (isset($_POST['psw'])) {
    $user_password = htmlspecialchars($_POST['psw']);
    $stmt = $db->prepare("SELECT u.username, u.password FROM users u WHERE u.username=$username AND u.password=$user_password");
-   echo $stmt;
+   $stmt->execute();
+   $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
-   // $stmt->execute();
-   // $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 
