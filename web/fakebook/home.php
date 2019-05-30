@@ -11,10 +11,10 @@ $username = htmlspecialchars($_POST['uname']);
 $user_password = htmlspecialchars($_POST['psw']);
 
 
-// // $query = 'SELECT u.username, u.password FROM users u WHERE username=$username AND password=$user_password';
-// $stmt = $db->prepare($query);
-// $stmt->execute();
-// $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$stmt = $db->prepare('SELECT u.username, u.password FROM users u WHERE username=$username AND password=$user_password');
+$stmt->execute();
+$current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
 // foreach ($posts as $post) {
