@@ -1,13 +1,10 @@
 console.log("in the script");
 
-function load_home_page(val) {
-
-   alert(val);
-   console.log("in load_home");
-   if (val == "1") {
+function load_home_page(valid_user) {
+   if (valid_user == "1") {
       alert("Signed in");
    }
-   if (val == "") {
+   if (valid_user == "") {
       alert("Not Signed in");
    }
 
