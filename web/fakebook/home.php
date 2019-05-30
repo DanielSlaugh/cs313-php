@@ -1,8 +1,8 @@
 <?php
 require('dbConnect.php');
 $db = get_db();
-$query = 'SELECT u.password, u.username, u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
-// $query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
+// $query = 'SELECT u.password, u.username, u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
+$query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
 $stmt = $db->prepare($query);
 $stmt->execute();
 $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -10,31 +10,32 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $username = htmlspecialchars($_POST['uname']);
 $user_password = htmlspecialchars($_POST['psw']);
 
-// $query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
 
-// // $query = 'SELECT u.display_name, FROM users u';
-// // --  WHERE username=$username AND password=$user_password';
-// // $query = 'SELECT display_name, FROM users WHERE username=$username';
+// // $query = 'SELECT u.username, u.password FROM users u WHERE username=$username AND password=$user_password';
 // $stmt = $db->prepare($query);
 // $stmt->execute();
 // $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
-foreach ($posts as $post) {
-   $password = $post[password];
-   echo $password;
-   echo "<br>";
-}
 
-if ($username != "") {
-   $dispay_name = $current_user[display_name];
-   $user_id = $current_user[user_id];
 
-   echo "Test <br>";
-   echo $dispay_name;
-   echo $user_id;
-   echo $username;
-   echo "<br>";
-   echo $user_password;
-}
+// foreach ($posts as $post) {
+//    $password = $post[password];
+//    echo $password;
+//    echo "<br>";
+//    $dispay_name = $current_user[display_name];
+//    $user_id = $current_user[user_id];
+// }
+
+// if ($username != "") {
+
+//    echo "Test <br>";
+//    echo $dispay_name;
+//    echo $user_id;
+//    echo $username;
+//    echo "<br>";
+//    echo $user_password;
+// }
+
+
 // if we don't have a login, go to the log in page
 // else if we do, ,
 // if the username and password are real, load the page with variables
