@@ -1,7 +1,7 @@
 console.log("in the script");
 
 function load_home_page() {
-   var val = "<?php echo $valid_user ?>";
+   var val = "<?php echo $valid_user; ?>";
    alert(val);
    console.log("in load_home");
    if (val == "1") {
