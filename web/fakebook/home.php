@@ -66,7 +66,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                <input class="submit" type="submit" value="Post">
             </form>
 
-            <form class="full_width" id="login_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+            <form class="full_width" id="login_form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
                <label for="uname"><b>Username</b></label><br>
                <input class="full_width" type="text" placeholder="Enter Username" name="uname" required><br>
                <label for="psw"><b>Password</b></label><br>
@@ -76,7 +76,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                <button class="auth_button2" type="button" onclick="load_sign_up_page()">Sign-up</button>
             </form>
 
-            <form class="full_width" id="sign_up_form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+            <form class="full_width" id="sign_up_form" method="post" action="new_user.php">
                <label for="uname"><b>Username</b></label><br>
                <input class="full_width" type="text" placeholder="Enter Username" name="uname" required><br>
                <label for="psw"><b>Password</b></label><br>
