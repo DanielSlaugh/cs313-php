@@ -7,9 +7,13 @@ $display_name = htmlspecialchars($_POST['dname']);
 echo $username;
 echo $user_password;
 echo $display_name;
+echo "-1";
+echo "<br>";
 
 require('dbconnect.php');
 $db = get_db();
+echo "0";
+echo "<br>";
 
 $stmt = $db->prepare('INSERT INTO users (username, password, display_name) VALUES (:username, :user_password, :display_name);');
 echo "1";
