@@ -15,8 +15,8 @@ $stmt = $db->prepare($query);
 $stmt->execute();
 $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$dispay_name = $post[display_name];
-$user_id = $post[user_id];
+$dispay_name = $current_user[display_name];
+$user_id = $current_user[user_id];
 
 echo "Test <br>";
 echo $dispay_name;
