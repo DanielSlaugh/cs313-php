@@ -24,7 +24,7 @@ if (isset($_POST['psw'])) {
    echo $user_password;
    try {
       // $stmt = $db->prepare("SELECT u.username, u.password FROM users u WHERE u.username=$username AND u.password=$user_password");
-      $stmt = $db->prepare("SELECT u.username, u.password FROM users u WHERE u.id=$one AND u.password=$user_password");
+      $stmt = $db->prepare("SELECT u.username, u.password FROM users u WHERE u.id='$one' AND u.password='$user_password'");
       $stmt->execute();
       $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
    } catch (PDOException $e) {
