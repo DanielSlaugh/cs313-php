@@ -30,14 +30,16 @@ if (isset($_POST['psw'])) {
    } catch (PDOException $e) {
       echo $e->getMessage();
    }
-   $count = 0;
+   $valid_user = false;
    foreach ($current_user as $user) {
-      $count = 1;
+      // This variable will only get set if we have a valid entry in the table
+      // A valid username and password!
+      $valid_user = true;
    }
-   if ($count == 1) {
+   if ($valid_user) {
       echo "Works";
    }
-   if ($count == 0) {
+   if (!$valid_user) {
       echo "Not Signed in";
    }
 
