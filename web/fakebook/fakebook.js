@@ -2,6 +2,9 @@ console.log("in the script");
 
 function load_home_page() {
 
+   var y = "<?php $username ?>";
+   console.log(y);
+
    var x = document.getElementById("form");
    x.style.display = "none";
 
