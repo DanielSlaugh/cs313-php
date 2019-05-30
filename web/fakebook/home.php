@@ -33,7 +33,8 @@ if (isset($_POST['psw'])) {
 }
 foreach ($posts as $post) {
    $current_name = $current_user['display_name'];
-   echo "welcome, " . $current_name;
+   echo "welcome, ";
+   echo $current_name;
 }
 
    // foreach ($posts as $post) {
