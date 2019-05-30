@@ -17,6 +17,9 @@ function load_home_page() {
    var x = document.getElementById("sign_up_form");
    x.style.display = "none";
 
+   var x = document.getElementById("new_user_message");
+   x.style.display = "none";
+
    // Hide all elements and display a congrats message for a successfully created account
    var url = document.URL;
    if (url.includes("set")) {
