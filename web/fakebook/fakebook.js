@@ -2,10 +2,10 @@ console.log("in the script");
 
 function load_home_page(valid_user) {
    if (valid_user == "1") {
-      alert("Signed in");
+      // alert("Signed in");
    }
    if (valid_user == "") {
-      alert("Not Signed in");
+      // alert("Not Signed in");
    }
 
 

@@ -37,17 +37,8 @@ if (isset($_POST['psw'])) {
       // A valid username and password!
       $valid_user = true;
    }
-   if ($valid_user) {
-      echo "Works";
-   }
-   if (!$valid_user) {
-      echo "Not Signed in";
-   }
 
    foreach ($current_user as $user) {
-      $current_name = $user['display_name'];
-      echo "welcome, ";
-      echo $current_name;
       $current_display_name = $user['display_name'];
    }
 }
