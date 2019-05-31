@@ -17,7 +17,7 @@ $current_display_name = "";
 
 if (isset($_POST['uname'])) {
    $username = htmlspecialchars($_POST['uname']);
-   echo $username;
+   // echo $username;
 }
 if (isset($_POST['psw']) ) {
    $user_password = htmlspecialchars($_POST['psw']);
