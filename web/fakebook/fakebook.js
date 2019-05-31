@@ -20,7 +20,7 @@ function load_home_page(valid_user) {
       return;
    }
    if (valid_user == "") {
-      // load_profile_page();
+      load_profile_page();
       // return;
    }
    else if (valid_user == "1") {
