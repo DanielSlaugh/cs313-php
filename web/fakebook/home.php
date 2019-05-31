@@ -19,11 +19,11 @@ if (isset($_POST['uname'])) {
    $username = htmlspecialchars($_POST['uname']);
    // echo $username;
 }
-if (isset($_POST['psw']) ) {
+if (isset($_POST['psw'])) {
    $user_password = htmlspecialchars($_POST['psw']);
    // echo $user_password;
    try {
-      $stmt = $db->prepare("SELECT u.display_name, u.username, u.password FROM users u WHERE u.username='$username' AND u.password='$user_password'");
+      $stmt = $db->prepare("SELECT u.id, u.display_name, u.username, u.password FROM users u WHERE u.username='$username' AND u.password='$user_password'");
       $stmt->execute();
       $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
    } catch (PDOException $e) {
@@ -37,6 +37,7 @@ if (isset($_POST['psw']) ) {
 
    foreach ($current_user as $user) {
       $current_display_name = $user['display_name'];
+      $current_id = $user['id'];
    }
 }
 
@@ -74,10 +75,10 @@ if (isset($_POST['psw']) ) {
 
       <header class="app-header" id="main_head">
          <a class="button" id="main_head"><i><?php if ($valid_user) {
-                                                         echo $current_display_name;
-                                                      } else {
-                                                         echo "Guest";
-                                                      } ?></i></a>
+                                                echo $current_display_name;
+                                             } else {
+                                                echo "Guest";
+                                             } ?></i></a>
          <a class="post_button" id="main_head" onclick="load_comment_page();"><i>What's on your mind? </i></a>
          <a class="button" id="main_head" onclick="add_content()"><i class="fa fa-cog"></i></a>
       </header>
@@ -109,8 +110,9 @@ if (isset($_POST['psw']) ) {
                ?>
             </ul>
 
-            <form id="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-               <textarea class="textarea" id="searchbar" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+            <form id="form" action="new_message.php">
+               <input type="hidden" name="current_id" value="<?php echo $current_id?>">
+               <textarea class="textarea" id="searchbar" cols="30" rows="10" placeholder="What's on your mind?" name="message_text"></textarea>
                <input class="submit" type="submit" value="Post">
             </form>
 
