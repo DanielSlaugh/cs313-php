@@ -105,7 +105,7 @@ if (isset($_POST['psw'])) {
 
       <header class="app-header" id="main_head">
          <a href="#" class="button" id="main_head"><i><?php if ($valid_user) {
-                                                         echo $current_dispay_name;
+                                                         echo $current_display_name;
                                                       } else {
                                                          echo "Guest";
                                                       } ?></i></a>
