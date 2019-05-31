@@ -30,7 +30,7 @@ echo "3";
 echo "<br>";
 
 $stmt->execute();
-echo "5";
+echo "4";
 echo "<br>";
 
 $new_page = "home.php?";
