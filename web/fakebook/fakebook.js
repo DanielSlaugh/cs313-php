@@ -11,7 +11,7 @@ function load_home_page(valid_user) {
       document.getElementById("login_form").style.display = "none";
       document.getElementById("new_user_message").style.display = "inline-block";
    }
-   if (valid_user == "") {
+   else if (valid_user == "") {
 
       load_profile_page();
    }
