@@ -12,7 +12,7 @@ $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $username = "";
 $user_password = "";
-if (!isset($valid_user) {
+if (!isset($valid_user)) {
    $valid_user = false;
 }
 $current_display_name = "";
