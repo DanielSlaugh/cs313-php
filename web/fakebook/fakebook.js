@@ -21,17 +21,13 @@ function load_home_page(valid_user) {
    }
    if (valid_user == "") {
       load_profile_page();
-      // return;
    }
    else if (valid_user == "1") {
-      // else if (valid_user == "1") {
-      // load_profile_page();
-      // return;
+
       var x = document.getElementById("form");
       x.style.display = "none";
 
-      var x = document.getElementById("content");
-      x.style.display = "block";
+      document.getElementById("content").style.display = "block";
 
       var x = document.getElementById("main_head");
       x.style.display = "flex";
