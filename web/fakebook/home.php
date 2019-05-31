@@ -15,6 +15,7 @@ $username = "";
 $user_password = "";
 $one = 1;
 $valid_user = false;
+$current_display_name = "";
 
 if (isset($_POST['uname'])) {
    $username = htmlspecialchars($_POST['uname']);
@@ -47,6 +48,7 @@ if (isset($_POST['psw'])) {
       $current_name = $user['display_name'];
       echo "welcome, ";
       echo $current_name;
+      $current_display_name = $user['display_name'];
    }
 }
 
@@ -102,7 +104,11 @@ if (isset($_POST['psw'])) {
       </div>
 
       <header class="app-header" id="main_head">
-         <a href="#" class="button" id="main_head"><i><?php if ($valid_user){echo $dispay_name;}else{echo "Guest";} ?></i></a>
+         <a href="#" class="button" id="main_head"><i><?php if ($valid_user) {
+                                                         echo $dispay_name;
+                                                      } else {
+                                                         echo "Guest";
+                                                      } ?></i></a>
          <a href="#" class="post_button" id="main_head" onclick="load_comment_page();"><i>What's on your mind? </i></a>
          <a href="#" class="button" id="main_head" onclick="add_content()"><i class="fa fa-cog"></i></a>
       </header>
