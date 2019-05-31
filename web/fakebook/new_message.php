@@ -30,8 +30,10 @@ echo "3";
 echo "<br>";
 
 $stmt->execute();
+echo "5";
+echo "<br>";
 
-$new_page = "home.php";
+$new_page = "home.php?";
 
 header("Location: $new_page");
 echo "5";
