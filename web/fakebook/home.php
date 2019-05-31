@@ -14,6 +14,7 @@ $stmt = "";
 $username = "";
 $user_password = "";
 $one = 1;
+$valid_user = false;
 
 if (isset($_POST['uname'])) {
    $username = htmlspecialchars($_POST['uname']);
@@ -30,7 +31,6 @@ if (isset($_POST['psw'])) {
    } catch (PDOException $e) {
       echo $e->getMessage();
    }
-   $valid_user = false;
    foreach ($current_user as $user) {
       // This variable will only get set if we have a valid entry in the table
       // A valid username and password!
@@ -102,10 +102,7 @@ if (isset($_POST['psw'])) {
       </div>
 
       <header class="app-header" id="main_head">
-         <a href="#" class="button" id="main_head"><i><?php if ($valid_user) {
-                                                         echo $dispay_name;
-                                                      }else{
-                                                      echo "Guest";} ?></i></a>
+         <a href="#" class="button" id="main_head"><i><?php if ($valid_user){echo $dispay_name;}else{echo "Guest";} ?></i></a>
          <a href="#" class="post_button" id="main_head" onclick="load_comment_page();"><i>What's on your mind? </i></a>
          <a href="#" class="button" id="main_head" onclick="add_content()"><i class="fa fa-cog"></i></a>
       </header>
