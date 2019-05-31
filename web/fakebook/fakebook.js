@@ -20,10 +20,10 @@ function load_home_page(valid_user) {
       return;
    }
    if (valid_user == "") {
-      load_profile_page();
-      return;
+      // load_profile_page();
+      // return;
    }
-   else if (valid_user == "1") {
+   // else if (valid_user == "1") {
 
 
       var x = document.getElementById("form");
@@ -44,7 +44,7 @@ function load_home_page(valid_user) {
       var x = document.getElementById("new_user_message");
       x.style.display = "none";
       return;
-   }
+   // }
 
 }
 
