@@ -15,15 +15,14 @@ $user_password = "";
 $valid_user = false;
 $current_display_name = "";
 
-if (isset($_POST['uname'])) {
-   $username = htmlspecialchars($_POST['uname']);
-   echo $username;
-}
-if (isset($_POST['psw'])) {
+// if (isset($_POST['uname'])) {
+//    $username = htmlspecialchars($_POST['uname']);
+//    echo $username;
+// }
+if (isset($_POST['psw']) ) {
    $user_password = htmlspecialchars($_POST['psw']);
-   echo $user_password;
+   // echo $user_password;
    try {
-      // $stmt = $db->prepare("SELECT u.username, u.password FROM users u WHERE u.username=$username AND u.password=$user_password");
       $stmt = $db->prepare("SELECT u.display_name, u.username, u.password FROM users u WHERE u.username='$username' AND u.password='$user_password'");
       $stmt->execute();
       $current_user = $stmt->fetchAll(PDO::FETCH_ASSOC);
