@@ -100,7 +100,7 @@ if (isset($_POST['psw'])) {
       </div>
 
       <header class="app-header" id="main_head">
-         <a href="#" class="button" id="main_head"><i>back</i></a>
+         <a href="#" class="button" id="main_head"><i>Daniel Slaugh</i></a>
          <a href="#" class="post_button" id="main_head" onclick="load_comment_page();"><i>What's on your mind? </i></a>
          <a href="#" class="button" id="main_head" onclick="add_content()"><i class="fa fa-cog"></i></a>
       </header>
