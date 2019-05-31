@@ -89,9 +89,9 @@ if (isset($_POST['psw'])) {
 
       <div class="icon-bar">
          <a href=""><i class="fa fa-home" onclick="load_home_page(val)"></i>Home</a>
-         <a href=""><i class="fa fa-bell"></i>Notifications</a>
-         <a href=""><i class="fa fa-envelope"></i>Messages</a>
-         <a href=""><i class="fa fa-user" onclick="load_profile_page()"></i>Me</a>
+         <a href="3"><i class="fa fa-bell"></i>Notifications</a>
+         <a href="#"><i class="fa fa-envelope"></i>Messages</a>
+         <a href="#"><i class="fa fa-user" onclick="load_profile_page()"></i>Me</a>
       </div>
 
       <header class="app-header" id="main_head">
