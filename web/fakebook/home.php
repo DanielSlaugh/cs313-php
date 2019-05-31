@@ -84,8 +84,10 @@ if (isset($_POST['psw'])) {
    <title>Fakebook</title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
    <link rel="stylesheet" href="style.css">
- <script>var val = "<?php echo $valid_user; ?>";</script>
- </script>
+   <script>
+      var val = "<?php echo $valid_user; ?>";
+   </script>
+   </script>
 </head>
 
 <body onload="load_home_page(val)">
@@ -100,7 +102,10 @@ if (isset($_POST['psw'])) {
       </div>
 
       <header class="app-header" id="main_head">
-         <a href="#" class="button" id="main_head"><i><?php echo "Daniel Slaugh";?></i></a>
+         <a href="#" class="button" id="main_head"><i><?php if ($valid_user) {
+                                                         echo $dispay_name;
+                                                      }else{
+                                                      echo "Guest";} ?></i></a>
          <a href="#" class="post_button" id="main_head" onclick="load_comment_page();"><i>What's on your mind? </i></a>
          <a href="#" class="button" id="main_head" onclick="add_content()"><i class="fa fa-cog"></i></a>
       </header>
