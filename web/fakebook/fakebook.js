@@ -1,32 +1,6 @@
 console.log("in the script");
 
 function load_home_page(valid_user) {
-   if (valid_user == "1") {
-      // alert("Signed in");
-   }
-   if (valid_user == "") {
-      // alert("Not Signed in");
-   }
-
-
-   var x = document.getElementById("form");
-   x.style.display = "none";
-
-   var x = document.getElementById("content");
-   x.style.display = "block";
-
-   var x = document.getElementById("main_head");
-   x.style.display = "flex";
-
-   var x = document.getElementById("login_form");
-   x.style.display = "none";
-
-   var x = document.getElementById("sign_up_form");
-   x.style.display = "none";
-
-   var x = document.getElementById("new_user_message");
-   x.style.display = "none";
-
    // Hide all elements and display a congrats message for a successfully created account
    var url = document.URL;
    if (url.includes("set")) {
@@ -43,7 +17,35 @@ function load_home_page(valid_user) {
 
       var x = document.getElementById("new_user_message");
       x.style.display = "inline-block";
+      return;
    }
+   if (valid_user == "") {
+      load_profile_page();
+      return;
+   }
+   else if (valid_user == "1") {
+
+
+      var x = document.getElementById("form");
+      x.style.display = "none";
+
+      var x = document.getElementById("content");
+      x.style.display = "block";
+
+      var x = document.getElementById("main_head");
+      x.style.display = "flex";
+
+      var x = document.getElementById("login_form");
+      x.style.display = "none";
+
+      var x = document.getElementById("sign_up_form");
+      x.style.display = "none";
+
+      var x = document.getElementById("new_user_message");
+      x.style.display = "none";
+      return;
+   }
+
 }
 
 function load_comment_page() {
