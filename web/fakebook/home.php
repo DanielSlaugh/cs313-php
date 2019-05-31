@@ -11,11 +11,11 @@ $stmt->execute();
 $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 if (isset($_POST['psw'])) {
-   $username = "";
-   $user_password = "";
    $valid_user = false;
-   $current_display_name = "";
 }
+$username = "";
+$user_password = "";
+$current_display_name = "";
    if (isset($_POST['uname'])) {
       $username = htmlspecialchars($_POST['uname']);
       echo $username;
