@@ -4,107 +4,56 @@ function load_home_page(valid_user) {
    // Hide all elements and display a congrats message for a successfully created account
    var url = document.URL;
    if (url.includes("set")) {
+
       console.log("Everything totally works and Daniel is smart");
-
-      var x = document.getElementById("content");
-      x.style.display = "none";
-
-      var x = document.getElementById("main_head");
-      x.style.display = "none";
-
-      var x = document.getElementById("login_form");
-      x.style.display = "none";
-
-      var x = document.getElementById("new_user_message");
-      x.style.display = "inline-block";
-      return;
+      document.getElementById("content").style.display = "none";
+      document.getElementById("main_head").style.display = "none";
+      document.getElementById("login_form").style.display = "none";
+      document.getElementById("new_user_message").style.display = "inline-block";
    }
    if (valid_user == "") {
+
       load_profile_page();
    }
    else if (valid_user == "1") {
 
-      var x = document.getElementById("form");
-      x.style.display = "none";
-
+      document.getElementById("form").style.display = "none";
       document.getElementById("content").style.display = "block";
-
-      var x = document.getElementById("main_head");
-      x.style.display = "flex";
-
-      var x = document.getElementById("login_form");
-      x.style.display = "none";
-
-      var x = document.getElementById("sign_up_form");
-      x.style.display = "none";
-
-      var x = document.getElementById("new_user_message");
-      x.style.display = "none";
-
+      document.getElementById("main_head").style.display = "flex";
+      document.getElementById("login_form").style.display = "none";
+      document.getElementById("sign_up_form").style.display = "none";
+      document.getElementById("new_user_message").style.display = "none";
    }
-
 }
 
 function load_comment_page() {
-   var x = document.getElementById("form");
-   x.style.display = "block";
 
-   var x = document.getElementById("content");
-   x.style.display = "none";
-
-   var x = document.getElementById("main_head");
-   x.style.display = "none";
-
-   var x = document.getElementById("login_form");
-   x.style.display = "none";
-
-   var x = document.getElementById("sign_up_form");
-   x.style.display = "none";
-
-   var x = document.getElementById("new_user_message");
-   x.style.display = "none";
+   document.getElementById("form").style.display = "block";
+   document.getElementById("content").style.display = "none";
+   document.getElementById("main_head").style.display = "none";
+   document.getElementById("login_form").style.display = "none";
+   document.getElementById("sign_up_form").style.display = "none";
+   document.getElementById("new_user_message").style.display = "none";
 }
 
 function load_profile_page() {
-   var x = document.getElementById("form");
-   x.style.display = "none";
 
-   var x = document.getElementById("content");
-   x.style.display = "none";
-
-   var x = document.getElementById("main_head");
-   x.style.display = "none";
-
-   var x = document.getElementById("login_form");
-   x.style.display = "inline-block";
-
-   var x = document.getElementById("sign_up_form");
-   x.style.display = "none";
-
-   var x = document.getElementById("new_user_message");
-   x.style.display = "none";
+   document.getElementById("form").style.display = "none";
+   document.getElementById("content").style.display = "none";
+   document.getElementById("main_head").style.display = "none";
+   document.getElementById("login_form").style.display = "inline-block";
+   document.getElementById("sign_up_form").style.display = "none";
+   document.getElementById("new_user_message").style.display = "none";
 }
-
 function load_sign_up_page() {
-   var x = document.getElementById("form");
-   x.style.display = "none";
 
-   var x = document.getElementById("content");
-   x.style.display = "none";
-
-   var x = document.getElementById("main_head");
-   x.style.display = "none";
-
-   var x = document.getElementById("login_form");
-   x.style.display = "none";
-
-   var x = document.getElementById("sign_up_form");
-   x.style.display = "inline-block";
-
-   var x = document.getElementById("new_user_message");
-   x.style.display = "none";
+   document.getElementById("form").style.display = "none";
+   document.getElementById("content").style.display = "none";
+   document.getElementById("main_head").style.display = "none";
+   document.getElementById("login_form").style.display = "none";
+   document.getElementById("sign_up_form").style.display = "inline-block";
+   document.getElementById("new_user_message").style.display = "none";
 }
-
 function search(text) {
    let url = "home.php?search=" + text;
    window.location = url;
