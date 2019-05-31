@@ -43,7 +43,7 @@ function load_home_page(valid_user) {
 
       var x = document.getElementById("new_user_message");
       x.style.display = "none";
-      return;
+
    // }
 
 }
