@@ -43,25 +43,6 @@ if (isset($_POST['psw'])) {
    }
 }
 
-// foreach ($posts as $post) {
-//    $password = $post[password];
-//    echo $password;
-//    echo "<br>";
-//    $dispay_name = $current_user[display_name];
-//    $user_id = $current_user[user_id];
-// }
-
-// if ($username != "") {
-
-//    echo "Test <br>";
-//    echo $dispay_name;
-//    echo $user_id;
-//    echo $username;
-//    echo "<br>";
-//    echo $user_password;
-// }
-
-
 // if we don't have a login, go to the log in page
 // else if we do, ,
 // if the username and password are real, load the page with variables
@@ -89,7 +70,7 @@ if (isset($_POST['psw'])) {
 
       <div class="icon-bar">
          <a href=""><i class="fa fa-home" onclick="load_home_page(val)"></i>Home</a>
-         <a href="3"><i class="fa fa-bell"></i>Notifications</a>
+         <a href="#"><i class="fa fa-bell"></i>Notifications</a>
          <a href="#"><i class="fa fa-envelope"></i>Messages</a>
          <a href="#"><i class="fa fa-user" onclick="load_profile_page()"></i>Me</a>
       </div>
