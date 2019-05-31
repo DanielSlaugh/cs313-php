@@ -97,10 +97,10 @@ if (isset($_POST['psw'])) {
    <div class="app-wrap">
 
       <div class="icon-bar">
-         <a href="https://polar-plateau-20469.herokuapp.com/fakebook/home.php"><i class="fa fa-home" onclick="load_home_page(val)"></i>Home</a>
-         <a href="#"><i class="fa fa-bell"></i>Notifications</a>
-         <a href="#"><i class="fa fa-envelope"></i>Messages</a>
-         <a href="#"><i class="fa fa-user" onclick="load_profile_page()"></i>Me</a>
+         <a href=""><i class="fa fa-home" onclick="load_home_page(val)"></i>Home</a>
+         <a href=""><i class="fa fa-bell"></i>Notifications</a>
+         <a href=""><i class="fa fa-envelope"></i>Messages</a>
+         <a href=""><i class="fa fa-user" onclick="load_profile_page()"></i>Me</a>
       </div>
 
       <header class="app-header" id="main_head">
