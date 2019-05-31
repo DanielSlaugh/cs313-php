@@ -26,20 +26,14 @@ function load_home_page(valid_user) {
    }
 }
 
-function load_comment_page(valid_user) {
-   if (valid_user == "1") {
-      document.getElementById("form").style.display = "block";
-      document.getElementById("content").style.display = "none";
-      document.getElementById("main_head").style.display = "none";
-      document.getElementById("login_form").style.display = "none";
-      document.getElementById("sign_up_form").style.display = "none";
-      document.getElementById("new_user_message").style.display = "none";
-   }
-   if (valid_user == "") {
-      document.getElementById("form").style.display = "none";
-      alert("Please sign in to access message page")
-      load_profile_page();
-   }
+function load_comment_page() {
+
+   document.getElementById("form").style.display = "block";
+   document.getElementById("content").style.display = "none";
+   document.getElementById("main_head").style.display = "none";
+   document.getElementById("login_form").style.display = "none";
+   document.getElementById("sign_up_form").style.display = "none";
+   document.getElementById("new_user_message").style.display = "none";
 }
 
 function load_profile_page() {
