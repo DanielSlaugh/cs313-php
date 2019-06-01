@@ -115,7 +115,8 @@ if (isset($_POST['psw'])) {
                <textarea class="textarea" id="message_text" cols="30" rows="10" placeholder="What's on your mind?" name="message_text"></textarea>
                <input class="submit" type="button" value="Post" onclick="makeRequest(document.getElementById('current_id').value,
                                                                                      document.getElementById('message_text').value);
-                                                                                     load_home_page(val);">
+                                                                                     load_home_page(val);
+                                                                                     window.location.reload();">
             </form>
 
 
