@@ -126,7 +126,7 @@ if (isset($_POST['psw'])) {
                <button class="auth_button" type="submit">Login</button>
                <p class="full_width">or</p>
                <button class="auth_button2" type="button" onclick="load_sign_up_page()">Sign-up</button>
-               <br><br><br><br><br><br><br>
+               <br><br><br><br><br><br>
             </form>
 
             <!-- Sign up Page -->
@@ -140,7 +140,7 @@ if (isset($_POST['psw'])) {
                <button class="auth_button" type="submit">Sign-up</button>
                <p class="full_width">or</p>
                <button class="auth_button2" type="button" onclick="load_profile_page()">Login</button>
-               <br><br><br><br><br><br><br>
+               <br><br><br><br><br>
             </form>
 
             <!-- Confirmation of new Account -->
