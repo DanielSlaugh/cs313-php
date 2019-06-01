@@ -94,6 +94,12 @@ function add_content() {
 
 function makeRequest(url) {
    url = "https://polar-plateau-20469.herokuapp.com/fakebook/new_message.php";
+   // name=value pairs we'll be sending to the server.
+   var data = 'action=ping&testName=testValue';
+
+   // GET requires we add the name=value pairs to the end of the URL.
+   url += '?' + data;
+
    httpRequest = new XMLHttpRequest();
    if (!httpRequest) {
       alert('ERROR: httpRequest is broken');
