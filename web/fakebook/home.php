@@ -114,7 +114,7 @@ if (isset($_POST['psw'])) {
                                                                                      document.getElementById('message_text').value);
                                                                                      load_home_page(val);
                                                                                      window.location.reload();">
-               <br><br><br><br><br><br><br><br><br><br><br><br>
+               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </form>
 
             <!-- Loggin Page -->
