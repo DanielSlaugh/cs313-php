@@ -110,7 +110,7 @@ if (isset($_POST['psw'])) {
                ?>
             </ul>
 
-            <form id="form" action="new_message.php">
+            <form id="form" method="post" action="new_message.php">
                <input type="hidden" name="current_id" value="<?php echo $current_id?>">
                <textarea class="textarea" id="searchbar" cols="30" rows="10" placeholder="What's on your mind?" name="message_text"></textarea>
                <input class="submit" type="submit" value="Post">

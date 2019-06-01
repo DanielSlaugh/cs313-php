@@ -3,6 +3,7 @@
 $current_id = htmlspecialchars($_POST['current_id']);
 $message_text = htmlspecialchars($_POST['message_text']);
 // $display_name = htmlspecialchars($_POST['dname']);
+echo "New Message php";
 
 echo $current_id;
 echo "<br>";
