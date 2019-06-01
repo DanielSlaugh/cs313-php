@@ -114,7 +114,7 @@ if (isset($_POST['psw'])) {
                                                                                      document.getElementById('message_text').value);
                                                                                      load_home_page(val);
                                                                                      window.location.reload();">
-               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </form>
 
             <!-- Loggin Page -->
@@ -126,7 +126,7 @@ if (isset($_POST['psw'])) {
                <button class="auth_button" type="submit">Login</button>
                <p class="full_width">or</p>
                <button class="auth_button2" type="button" onclick="load_sign_up_page()">Sign-up</button>
-               <br><br><br><br><br><br>
+               <br><br><br><br><br><br><br><br>
             </form>
 
             <!-- Sign up Page -->
