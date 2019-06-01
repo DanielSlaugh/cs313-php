@@ -5,7 +5,7 @@ $db = get_db();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 // $query = 'SELECT u.password, u.username, u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
-$query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id';
+$query = 'SELECT u.display_name, m.message_text, m.message_time FROM users u JOIN message m ON u.id = m.user_id ORDER BY m.message_time';
 $stmt = $db->prepare($query);
 $stmt->execute();
 $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
