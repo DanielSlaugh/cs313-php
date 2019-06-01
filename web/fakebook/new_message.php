@@ -1,7 +1,7 @@
 <?php
 
-$current_id = htmlspecialchars($_POST['current_id']);
-$message_text = htmlspecialchars($_POST['message_text']);
+$current_id = htmlspecialchars($_GET['current_id']);
+$message_text = htmlspecialchars($_GET['message_text']);
 // $display_name = htmlspecialchars($_POST['dname']);
 echo "New Message php";
 
@@ -37,10 +37,10 @@ $stmt->execute();
 echo "4";
 echo "<br>";
 
-$new_page = "home.php?";
+// $new_page = "home.php?";
 
-header("Location: $new_page");
-echo "5";
-echo "<br>";
-die();
+// header("Location: $new_page");
+// echo "5";
+// echo "<br>";
+// die();
 ?>

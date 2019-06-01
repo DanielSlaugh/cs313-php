@@ -111,9 +111,9 @@ if (isset($_POST['psw'])) {
             </ul>
 
             <form id="form" action="">
-               <input type="hidden" name="current_id" value="<?php echo $current_id ?>">
+               <input type="hidden" name="current_id" id="current_id" value="<?php echo $current_id ?>">
                <textarea class="textarea" id="message_text" cols="30" rows="10" placeholder="What's on your mind?" name="message_text"></textarea>
-               <input class="submit" type="submit" value="Post" onclick="makeRequest(document.getElementById('message_text').value)">
+               <input class="submit" type="submit" value="Post" onclick="makeRequest(document.getElementById('current_id').value, document.getElementById('message_text').value)">
             </form>
 
 
