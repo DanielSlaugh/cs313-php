@@ -7,6 +7,8 @@ $message_text = htmlspecialchars($_POST['message_text']);
 echo $current_id;
 echo "<br>";
 echo $message_text;
+echo "<br>";
+
 // echo $display_name;
 // echo "-1";
 // echo "<br>";
