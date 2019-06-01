@@ -91,3 +91,34 @@ function add_content() {
 
    console.log("a child is born");
 }
+
+function makeRequest(url) {
+   url = "https://polar-plateau-20469.herokuapp.com/fakebook/new_message.php";
+   httpRequest = new XMLHttpRequest();
+   if (!httpRequest) {
+      alert('ERROR: httpRequest is broken');
+      return false;
+   }
+   else {
+      httpRequest.onreadystatechange = alertContents;
+      httpRequest.open("GET", url, true);
+      httpRequest.send();
+   }
+}
+function alertContents() {
+   if (httpRequest.readyState == 4) {
+      if (httpRequest.status == 200) {
+         var myText = httpRequest.responseText.split('\n');
+         var list = "<table border = '1' width = '100%'><tr><th>The Ten Biggest Cities</th></tr>\n";
+
+         for (var i = 0; i < myText.length; i++) {
+            list = list + "<tr><td>" + myText[i] + "</td></tr>\n";
+         }
+         document.getElementById("text").innerHTML = list;
+      }
+      else {
+         alert('Problem in else in alert contents');
+         alert(httpRequest.status);
+      }
+   }
+}

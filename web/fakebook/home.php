@@ -111,9 +111,9 @@ if (isset($_POST['psw'])) {
             </ul>
 
             <form id="form" method="post" action="new_message.php">
-               <input type="hidden" name="current_id" value="<?php echo $current_id?>">
+               <input type="hidden" name="current_id" value="<?php echo $current_id ?>">
                <textarea class="textarea" id="searchbar" cols="30" rows="10" placeholder="What's on your mind?" name="message_text"></textarea>
-               <input class="submit" type="submit" value="Post">
+               <input class="submit" type="submit" value="Post" onclick="makeRequest(this.value)">
             </form>
 
             <form class="full_width" id="login_form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
