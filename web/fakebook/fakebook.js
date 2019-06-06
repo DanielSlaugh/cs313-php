@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
    if (url.includes("set")) {
 
       console.log("Everything totally works and Daniel is smart");
-      document.getElementById("new_user_message").style.display = "inline-block";
+      // document.getElementById("new_user_message").style.display = "inline-block";
       // document.getElementById("form").style.display = "none";
       // console.log("New User Created 0");
       // document.getElementById("content").style.display = "none";
@@ -43,7 +43,11 @@ function load_home_page(valid_user) {
 }
 
 function load_comment_page() {
-
+   var url = document.URL;
+   if (url.includes("set")) {
+      console.log("Everything totally works and Daniel is smart");
+      document.getElementById("new_user_message").style.display = "inline-block";
+   }
    document.getElementById("form").style.display = "block";
    document.getElementById("content").style.display = "none";
    document.getElementById("main_head").style.display = "none";
