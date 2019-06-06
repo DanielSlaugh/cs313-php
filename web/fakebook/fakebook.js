@@ -1,6 +1,7 @@
 console.log("in the script");
 
-function load_home_page(valid_user) {
+document.addEventListener('DOMContentLoaded', function () {
+   // your code here
    // Hide all elements and display a congrats message for a successfully created account
    var url = document.URL;
    if (url.includes("set")) {
@@ -18,7 +19,11 @@ function load_home_page(valid_user) {
       document.getElementById("new_user_message").style.display = "inline-block";
       console.log("New User Created 3");
    }
-   else if (valid_user == "") {
+}, false);
+
+function load_home_page(valid_user) {
+
+   if (valid_user == "") {
       load_profile_page();
       console.log("else if no valid user");
 
