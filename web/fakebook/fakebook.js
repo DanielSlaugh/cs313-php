@@ -7,16 +7,16 @@ document.addEventListener('DOMContentLoaded', function () {
    if (url.includes("set")) {
 
       console.log("Everything totally works and Daniel is smart");
-      document.getElementById("form").style.display = "none";
-      console.log("New User Created 0");
-      document.getElementById("content").style.display = "none";
-      document.getElementById("sign_up_form").style.display = "none";
-      document.getElementById("main_head").style.display = "none";
-      console.log("New User Created 1");
-      document.getElementById("login_form").style.display = "none";
-      console.log("New User Created 2");
       document.getElementById("new_user_message").style.display = "inline-block";
-      console.log("New User Created 3");
+      // document.getElementById("form").style.display = "none";
+      // console.log("New User Created 0");
+      // document.getElementById("content").style.display = "none";
+      // document.getElementById("sign_up_form").style.display = "none";
+      // document.getElementById("main_head").style.display = "none";
+      // console.log("New User Created 1");
+      // document.getElementById("login_form").style.display = "none";
+      // console.log("New User Created 2");
+      // console.log("New User Created 3");
       load_sign_up_page();
       // window.location.replace("home.php?user='set'");
    }
