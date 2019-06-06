@@ -7,10 +7,10 @@ function load_home_page(valid_user) {
 
       console.log("Everything totally works and Daniel is smart");
       document.getElementById("form").style.display = "none";
+      console.log("New User Created 0");
+      document.getElementById("content").style.display = "none";
       document.getElementById("sign_up_form").style.display = "none";
 
-      // document.getElementById("content").style.display = "none";
-      console.log("New User Created 0");
       document.getElementById("main_head").style.display = "none";
       console.log("New User Created 1");
       document.getElementById("login_form").style.display = "none";
