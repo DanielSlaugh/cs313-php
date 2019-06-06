@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log("New User Created 0");
       document.getElementById("content").style.display = "none";
       document.getElementById("sign_up_form").style.display = "none";
-
       document.getElementById("main_head").style.display = "none";
       console.log("New User Created 1");
       document.getElementById("login_form").style.display = "none";

@@ -156,9 +156,5 @@ if (isset($_POST['psw'])) {
    </div>
 </body>
 <script src="fakebook.js"></script>
-<script>
-   var y = <?php $username ?>;
-   console.log(y);
-</script>
 
 </html>
