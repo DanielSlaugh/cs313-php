@@ -12,14 +12,11 @@ document.addEventListener('DOMContentLoaded', function () {
 }, false);
 
 function load_home_page(valid_user) {
-
    if (valid_user == "") {
       load_profile_page();
       console.log("else if no valid user");
-
    }
    else if (valid_user == "1") {
-
       document.getElementById("form").style.display = "none";
       document.getElementById("content").style.display = "block";
       document.getElementById("main_head").style.display = "flex";
@@ -27,7 +24,6 @@ function load_home_page(valid_user) {
       document.getElementById("sign_up_form").style.display = "none";
       document.getElementById("new_user_message").style.display = "none";
       console.log("else if there is a valid user");
-
    }
 }
 
@@ -72,17 +68,11 @@ function destroy_content() {
    // Destroy half of what's on the page
    console.log("Enter Thanos");
    var element = document.getElementById("content");
-   // element.innerHTML = "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
-   // element.innerHTML = "";
    element.parentNode.removeChild(element);
    var element2 = document.getElementById("main_head");
    element2.parentNode.removeChild(element2);
-
-   console.log("Should have gone for the head");
    var element3 = document.getElementById("spacing");
    element3.innerHTML = "<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";
-
-
 }
 
 function create_message_page() {
@@ -125,13 +115,6 @@ function alertContents() {
    if (httpRequest.readyState == 4) {
       if (httpRequest.status == 200) {
          console.log("Message Successfully loaded");
-         // var myText = httpRequest.responseText.split('\n');
-         // var list = "<table border = '1' width = '100%'><tr><th>The Ten Biggest Cities</th></tr>\n";
-
-         // for (var i = 0; i < myText.length; i++) {
-         //    list = list + "<tr><td>" + myText[i] + "</td></tr>\n";
-         // }
-         // document.getElementById("text").innerHTML = list;
       }
       else {
          alert('Problem in else in alert contents');
