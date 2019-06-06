@@ -10,10 +10,12 @@ function load_home_page(valid_user) {
       document.getElementById("main_head").style.display = "none";
       document.getElementById("login_form").style.display = "none";
       document.getElementById("new_user_message").style.display = "inline-block";
+      console.log("New User Created");
    }
    else if (valid_user == "") {
-
       load_profile_page();
+      console.log("else if no valid user");
+
    }
    else if (valid_user == "1") {
 
@@ -23,6 +25,8 @@ function load_home_page(valid_user) {
       document.getElementById("login_form").style.display = "none";
       document.getElementById("sign_up_form").style.display = "none";
       document.getElementById("new_user_message").style.display = "none";
+      console.log("else if there is a valid user");
+
    }
 }
 
