@@ -43,12 +43,6 @@ function load_home_page(valid_user) {
 }
 
 function load_comment_page() {
-   var url = document.URL;
-   if (url.includes("set")) {
-      console.log("Everything totally works and Daniel is smart");
-      // document.getElementById("new_user_message").style.display = "inline-block";
-      alert("Your account has been created! Sign in so you can have fun with your friends")
-   }
    document.getElementById("form").style.display = "block";
    document.getElementById("content").style.display = "none";
    document.getElementById("main_head").style.display = "none";
@@ -67,7 +61,12 @@ function load_profile_page() {
    document.getElementById("new_user_message").style.display = "none";
 }
 function load_sign_up_page() {
-
+   var url = document.URL;
+   if (url.includes("set")) {
+      console.log("Everything totally works and Daniel is smart");
+      document.getElementById("new_user_message").style.display = "inline-block";
+      alert("Your account has been created! Sign in so you can have fun with your friends")
+   }
    document.getElementById("form").style.display = "none";
    document.getElementById("content").style.display = "none";
    document.getElementById("main_head").style.display = "none";
