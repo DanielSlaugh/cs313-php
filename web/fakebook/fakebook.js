@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log("New User Created 2");
       document.getElementById("new_user_message").style.display = "inline-block";
       console.log("New User Created 3");
+      load_sign_up_page();
+      // window.location.replace("home.php?user='set'");
    }
 }, false);
 
