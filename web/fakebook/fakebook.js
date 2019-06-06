@@ -47,6 +47,7 @@ function load_comment_page() {
    if (url.includes("set")) {
       console.log("Everything totally works and Daniel is smart");
       document.getElementById("new_user_message").style.display = "inline-block";
+      alert("Your account has been created! Sign in so you can have fun with your friends")
    }
    document.getElementById("form").style.display = "block";
    document.getElementById("content").style.display = "none";
