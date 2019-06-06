@@ -1,24 +1,13 @@
 console.log("in the script");
 
+// Calls every time the page has been loaded. Fixes the bug where user
+// couldn't do anything after signing up because the HTML hadn't been created
 document.addEventListener('DOMContentLoaded', function () {
-   // your code here
-   // Hide all elements and display a congrats message for a successfully created account
+   // Redirects the user to login page immediately after creating an account
    var url = document.URL;
    if (url.includes("set")) {
-
       console.log("Everything totally works and Daniel is smart");
-      // document.getElementById("new_user_message").style.display = "inline-block";
-      // document.getElementById("form").style.display = "none";
-      // console.log("New User Created 0");
-      // document.getElementById("content").style.display = "none";
-      // document.getElementById("sign_up_form").style.display = "none";
-      // document.getElementById("main_head").style.display = "none";
-      // console.log("New User Created 1");
-      // document.getElementById("login_form").style.display = "none";
-      // console.log("New User Created 2");
-      // console.log("New User Created 3");
       load_sign_up_page();
-      // window.location.replace("home.php?user='set'");
    }
 }, false);
 
